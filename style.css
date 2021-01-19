@@ -1,0 +1,154 @@
+:root{
+    --principal:rgb(232, 59, 59); 
+    --texto: #545B6B;
+    --opcional: #FF5773; 
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--texto);
+}
+  
+figure{
+    margin: 0;
+}
+
+.header{
+    background-color: var(--opcional); 
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;  
+}
+  
+.header ul{
+    display: flex;
+    height: inherit;
+    list-style-type: none;
+}
+  
+.header ul li{
+    height: inherit;    
+}
+  
+.header a{
+    color:white;
+    font-size: 14px;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.container{
+    width: auto;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+li a:hover {
+    color:var(--principal);
+    background: white;
+    
+}  
+
+.titulo{
+  color: var(--opcional); 
+  text-align: center;
+  font-size: 2rem;  
+}
+  
+  /* CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 59rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 62rem;
+  }
+
+  .carousel-caption{
+      bottom: 28rem !important; 
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+
+.hero{
+    height: 100vh;
+    min-height: 60rem;
+    background-color: #dad5d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+}
+
+  
+.title{
+  color: var(--opcional);
+  text-align: center;
+}
+
+.title button {
+  color:#FF5773;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  margin-top: 3rem;    
+  text-align: center;
+  border: none;    
+  flex: 0 0 100%;
+}
+
+.title button:hover{
+  color:#545B6B;
+}
