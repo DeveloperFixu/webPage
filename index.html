@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,10 +14,10 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header">
-        <div class="container">
-            <figure>
-                <img src="" alt="">
+    <header class="header animated">
+        <div class="contenedor">
+            <figure class="logo">
+                <img src="./assets/img/Sin título-1.png" alt="" height="60px">
             </figure>
             <nav class="menu">
                 <ul>
@@ -32,15 +33,13 @@
                     <li>
                         <a href="">Registro</a>
                     </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
                 </ul>
             </nav>
+            <button>ingresar</button>
         </div>
     </header>
     <!-- hero -->
-    <section id="gallery">
+    <section id="gallery" class="animated fadeIn">
         <div>
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
@@ -83,7 +82,7 @@
         </div>
     </section>
     <!-- Flujo -->
-    <section id="seguimiento" >
+    <section id="seguimiento">
         <div class="container marketing">
           <div class="titulo">
             <h1>¿Como Funciona?</h1>
@@ -94,44 +93,150 @@
               <div class="col-lg-1">
               </div>
               <div class="col-lg-2">
-                <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        
-                <h2>Ingresa</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-2">
-                <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        
-                <h2>Solicita</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-2">
-                <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        
-                <h2>Inscribete</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <button type="button" data-toggle="modal" data-target="#Ingresa">
+                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/carrousel 1.jpg" alt="">
+                  <h2>Ingresa</h2>                
+                </button>                  
               </div><!-- /.col-lg-4 -->
 
               <div class="col-lg-2">
-                <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        
-                <h2>Confirma</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <button type="button" data-toggle="modal" data-target="#Solicita">
+                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/carrousel 1.jpg" alt="">
+                  <h2>Solicita</h2>                
+                </button>
               </div><!-- /.col-lg-4 -->
 
               <div class="col-lg-2">
-                <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        
-                <h2>Recoge, Repara y Entrega</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <button type="button" data-toggle="modal" data-target="#Inscribete">
+                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/carrousel 1.jpg" alt="">
+                  <h2>Inscribete</h2>                
+                </button>
+              </div><!-- /.col-lg-4 -->
+
+              <div class="col-lg-2">
+                <button type="button" data-toggle="modal" data-target="#Confirma">
+                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/carrousel 1.jpg" alt="">
+                  <h2>Confirma</h2>                
+                </button>
+              </div><!-- /.col-lg-4 -->
+
+              <div class="col-lg-2">
+                <button type="button" data-toggle="modal" data-target="#Entrega">
+                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/carrousel 1.jpg" alt="">
+                  <h2>Recoge, Repara y Entrega</h2>               
+                </button>
               </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
-        </section>
+            
+            <!--Modal ingresa  -->
+         <div id="Ingresa" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="tituloVentana" >Ingresa</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal" data-target="#Solicita">
+                Siguiente
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Solicita -->
+      <div id="Solicita" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="tituloVentana" >Solicita</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal" data-target="#Inscribete">
+              Siguiente
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inscribete -->
+    <div id="Inscribete" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="tituloVentana" >Inscribete</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal" data-target="#Confirma">
+            Siguiente
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Confirma -->
+      <div id="Confirma" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="tituloVentana" >Confirma</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal" data-target="#Entrega">
+              Siguiente
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entrega -->
+    <div id="Entrega" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="tituloVentana" >Recoge, Repara y Entrega</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-warning" type="button" data-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
         <section class="hero">
           <div class="title">
               <h1>FixU</h1>
@@ -139,12 +244,41 @@
               <button>Solicitar</button>
           </div>       
       </section>
+      <section>
+         <!-- START THE FEATURETTES -->
+
+           <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              </div>
+              <div class="col-md-5">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+              </div>
+            </div>
+      </section>
+      <section>
+        <h1>Especialistas en resolver problemas</h1>
+      </section>
+      <section>
+        <h1>comentarios</h1>
+      </section>
+      <section id="ubicacion">
+        <div class="ubicacion">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.176008345485!2d-74.1028528498957!3d4.739460242623601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f848d2b0ceced%3A0x8814874b6fb6c9ee!2sFixU%20Colombia!5e0!3m2!1ses!2sco!4v1611074096948!5m2!1ses!2sco"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </section>
     <footer>
 
     </footer>
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/12a99b6783.js"></script>
-    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> -->
+    <script src="https://use.fontawesome.com/12a99b6783.js"></script>    
+    <script src="index.js"></script>    
 </body>
 </html>
