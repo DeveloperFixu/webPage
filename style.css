@@ -2,6 +2,7 @@
     --principal:rgb(232, 59, 59); 
     --texto: #545B6B;
     --opcional: #FF5773; 
+    --background: #dad5d6;
 }
 
 html {
@@ -240,10 +241,136 @@ li a:hover {
   letter-spacing: -.05rem;
 }
 
+/* Carro */
+
+#Comentarios h1{
+  margin: 0;
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  color: var(--opcional);
+  background-color: #dad5d6;
+}
+
+.Carro {
+  background-color: #dad5d6; /* rgb(33, 36, 33); */
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.Ventana {
+  overflow: hidden;
+  width: 100%;
+  padding: 8px;
+}
+
+.project-container {
+  left: 0;
+  position: relative;
+  width: 4000px;
+}
+
+.project-container li {
+  display: inline-block;
+}
+.project-container button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.project-container button:focus-within{
+  outline: 3px solid var(--opcional);
+}
+
+.project-face {
+  /* border-radius: 5px;
+  border: 2px solid #000; */
+  display: block;
+  height: 200px;
+  margin: 0 8px;
+  transition: all 0.2s ease-in-out;
+  width: 350px;
+  object-fit: cover;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.arrow {
+  margin: 20px;
+  height: 65px;
+  transition: all 0.2s ease-in-out;
+  width: 70px;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.arrow-left {
+  background: center / contain no-repeat url(./assets/img/play-button-left.png);
+  background-color: var(--opcional);
+  border-radius: 70%;
+}
+
+.arrow-right {
+  background: center / contain no-repeat url(./assets/img/play-button-right.png);
+  background-color: var(--opcional);
+  border-radius: 50%;
+}
+
+.arrow:focus{
+  outline: 3px solid var(--opcional);
+}
+
+
 .ubicacion iframe{
   display: flex;
   width:100%; 
   height:300px;  
+}
+
+/* footer */
+
+.footer-style {
+  padding-top: 10px;
+  background-color:var(--background);
+}
+footer {
+color: var(--opcional);
+}
+footer h3 {
+margin-bottom: 10px;
+  font-weight: 800;
+}
+footer .footer-above {
+padding-top: 10px;
+background-color: var(--background);
+}
+footer .footer-col {
+margin-bottom: 10px;
+}
+footer .footer-below {
+padding: 25px 0;
+background-color: var(--background);
+}
+
+.list-inline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0 100px;
+}
+
+.list-inline a{
+  font-size: 2rem;
+  color: var(--opcional);
 }
 
 /* Responsive */
