@@ -60,7 +60,7 @@ figure{
 .header{
     /* background-color: var(--opcional);  */
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 23%, rgba(255,87,115,1) 60%, rgba(232,59,59,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(255,87,115,1) 44%, rgba(232,59,59,1) 100%);
     display: flex;
     height: 80px;
     align-items: center;
@@ -177,9 +177,11 @@ li a:hover {
     margin-bottom: 1.5rem;
     text-align: center;
   }
+
   .marketing h2 {
     font-weight: 400;
   }
+  
   /* rtl:begin:ignore */
   .marketing .col-lg-4 p {
     margin-right: .75rem;
@@ -404,7 +406,7 @@ li a:hover {
 }
 
 .main {
-  background-color:var(--opcional) ;
+  background-color: #00BB2D ;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   z-index: 50;
@@ -426,10 +428,16 @@ li a:hover {
   left: 0;
   width: 100%;
   height: 80px;
-  font-size: 1.8em;
+  font-size: 4em;
   line-height: 80px;
   text-align: center;
-  color:var(--color-naranja);
+  color:white;
+}
+
+.first a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
 .main .first:hover {
@@ -526,6 +534,22 @@ background-color: var(--background);
   font-size: 2rem;
   color: var(--opcional);
 }
+
+/* Nuestros servicios */
+
+.colu .col{
+  align-items: center;
+}
+
+.card{
+  width: 300px;
+}
+
+.card img{
+  height: 150px;
+  width: 100;
+}
+
 
 /* Responsive */
 @media (min-width: 40em) {
