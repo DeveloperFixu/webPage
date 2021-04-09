@@ -636,6 +636,10 @@ color: var(--opcional);
   text-align: justify;
 }
 
+.titulo h1{
+  font-size: 3.5rem;
+}
+
 /* Responsive */
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
