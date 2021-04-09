@@ -1,149 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/foundation.css">  
-    <link rel="stylesheet" href="./style/style.css">      
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <title>Fixu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style/foundation.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <title>Fixu</title>
 </head>
+
 <body>
-    <!-- header -->
-    <header class="header animated">
-        <div class="contenedor">
-            <figure class="logo">
-                <img src="./assets/img/Logo.png" alt="" height="60px">
-            </figure>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./servicios.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="">Trayectoria</a>
-                    </li>
-                    <li>
-                        <a href="">Registro</a>
-                    </li>
-                </ul>
-            </nav>
-            <button>ingresar</button>
-        </div>
-    </header>
-    <!-- hero -->
-    <section id="gallery" class="animated fadeIn">
-        <div>
-            <div id="carousel"  class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
-                  <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
-                  <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/img/carrousel 1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h2>First slide label</h2>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/carrousel_2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h2>Second slide label</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/carrousel_3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h2>Third slide label</h2>
-                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </a>
-              </div>
-        </div>
-    </section>
-    <!-- Flujo -->
-    <section id="seguimiento">
-        <div class="container marketing">
-          <div class="titulo">
-            <h1>¿Como Funciona?</h1>
-            <br>
+  <!-- header -->
+  <header class="header animated" id="inicio">
+    <div class="contenedor">
+      <figure class="logo">
+        <img src="./assets/img/Logo.png" alt="" height="60rem">
+      </figure>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="">Inicio</a>
+          </li>
+          <li>
+            <a href="./servicios.html">Servicios</a>
+          </li>
+          <li>
+            <a href="">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="">Registro</a>
+          </li>
+          <li>
+            <a href="#footer">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="boton" type="submit">Ingresar</a>
+    </div>
+  </header>
+  <!-- hero -->
+  <section id="gallery" class="animated fadeIn">
+    <div>
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/carrousel 1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>First slide label</h2>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
           </div>
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-              <div class="col-lg-1">
-              </div>
-              <div class="col-lg-2">
-                <button type="button" data-toggle="modal" data-target="#Ingresa">
-                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/icono 01 como funcionaFINALESTESIxoxo.svg" alt="">
-                  <h2>Ingresa</h2>                
-                </button>                  
-              </div><!-- /.col-lg-4 -->
+          <div class="carousel-item">
+            <img src="./assets/img/carrousel_2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Second slide label</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/carrousel_3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Third slide label</h2>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Flujo -->
+  <section id="seguimiento">
+    <div class="container marketing">
+      <div class="titulo">
+        <h1>¿Como Funciona?</h1>
+        <br>
+      </div>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-2">
+          <button type="button" data-toggle="modal" data-target="#Ingresa">
+            <img class="bd-placeholder-img rounded-circle" width="100" height="100"
+              src="./assets/img/icono 01 como funcionaFINALESTESIxoxo.svg" alt="">
+            <h2>Ingresa</h2>
+          </button>
+        </div><!-- /.col-lg-4 -->
 
-              <div class="col-lg-2">
-                <button type="button" data-toggle="modal" data-target="#Solicita">
-                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/icono 02 como funciona.svg" alt="">
-                  <h2>Solicita</h2>                
-                </button>
-              </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+          <button type="button" data-toggle="modal" data-target="#Solicita">
+            <img class="bd-placeholder-img rounded-circle" width="100" height="100"
+              src="./assets/img/icono 02 como funciona.svg" alt="">
+            <h2>Solicita</h2>
+          </button>
+        </div><!-- /.col-lg-4 -->
 
-              <div class="col-lg-2">
-                <button type="button" data-toggle="modal" data-target="#Inscribete">
-                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/icono 03 como funcionaESTESI.svg" alt="">
-                  <h2>Inscribete</h2>                
-                </button>
-              </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+          <button type="button" data-toggle="modal" data-target="#Inscribete">
+            <img class="bd-placeholder-img rounded-circle" width="100" height="100"
+              src="./assets/img/icono 03 como funcionaESTESI.svg" alt="">
+            <h2>Inscribete</h2>
+          </button>
+        </div><!-- /.col-lg-4 -->
 
-              <div class="col-lg-2">
-                <button type="button" data-toggle="modal" data-target="#Confirma">
-                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/icono 04 como funciona .svg" alt="">
-                  <h2>Confirma</h2>                
-                </button>
-              </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+          <button type="button" data-toggle="modal" data-target="#Confirma">
+            <img class="bd-placeholder-img rounded-circle" width="100" height="100"
+              src="./assets/img/icono 04 como funciona .svg" alt="">
+            <h2>Confirma</h2>
+          </button>
+        </div><!-- /.col-lg-4 -->
 
-              <div class="col-lg-2">
-                <button type="button" data-toggle="modal" data-target="#Entrega">
-                  <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="./assets/img/icono 05 como funciona.svg" alt="">
-                  <h2>Recoge, Repara y Entrega</h2>               
-                </button>
-              </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-            
-            <!--Modal ingresa  -->
-         <div id="Ingresa" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+        <div class="col-lg-2">
+          <button type="button" data-toggle="modal" data-target="#Entrega">
+            <img class="bd-placeholder-img rounded-circle" width="100" height="100"
+              src="./assets/img/icono 05 como funciona.svg" alt="">
+            <h2>Recoge, Repara y Entrega</h2>
+          </button>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <!--Modal ingresa  -->
+      <div id="Ingresa" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tituloVentana"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h3 class="modal-title" id="tituloVentana" >Ingresa</h3>
+              <h3 class="modal-title" id="tituloVentana">Ingresa</h3>
               <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              <p>Ingresa a nuestra plataforma</p>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal" data-target="#Solicita">
+              <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal"
+                data-target="#Solicita">
                 Siguiente
               </button>
             </div>
@@ -151,153 +164,192 @@
         </div>
       </div>
       <!-- Solicita -->
-      <div id="Solicita" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana1" aria-hidden="true">
+      <div id="Solicita" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tituloVentana1"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title" id="tituloVentana1" >Solicita</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal" data-target="#Inscribete">
-              Siguiente
-            </button>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="tituloVentana1">Solicita</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Realiza tu solicitud de reparación</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal"
+                data-target="#Inscribete">
+                Siguiente
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Inscribete -->
-    <div id="Inscribete" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana2" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="tituloVentana2" >Inscribete</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal" data-target="#Confirma">
-            Siguiente
-          </button>
+      <!-- Inscribete -->
+      <div id="Inscribete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tituloVentana2"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="tituloVentana2">Inscribete</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Inscribe los datos de tu celular (Referencia, marca, IMEI).</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal"
+                data-target="#Confirma">
+                Siguiente
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
       <!-- Confirma -->
-      <div id="Confirma" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana3" aria-hidden="true">
+      <div id="Confirma" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tituloVentana3"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title" id="tituloVentana3" >Confirma</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="tituloVentana3">Confirma</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Llegará a tu correo electrónico la notificación de CONFIRMACIÓN de
+                reparación y precio de tu celular. Podrás confirmar o cancelar la solicitud.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal"
+                data-target="#Entrega">
+                Siguiente
+              </button>
+            </div>
           </div>
-          <div class="modal-body">
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-warning" type="button" data-dismiss="modal" data-toggle="modal" data-target="#Entrega">
-              Siguiente
-            </button>
+        </div>
+      </div>
+
+      <!-- Entrega -->
+      <div id="Entrega" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tituloVentana4"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="tituloVentana4">Recoge, Repara y Entrega</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>RECOGE, REPARA Y ENTREGA: El mensajero técnico recogerá tu celular, se
+                procederá a llevar a laboratorio para la reparación y el mismo día te entregamos tu
+                celular como nuevo.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" type="button" data-dismiss="modal">
+                Cerrar
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+  <section class="hero">
+    <div class="title">
+      <h1>servicio vip</h1>
+      <p>Contamos sólo con repuestos originales
+        <br> Proceso de reparación rápido y eficiente
+        <br> Servicio a domicilio
+        Servicios empresariales:
+      <ul>
+        <li><i class="fa fa-check-square" aria-hidden="true"></i>Clínica nocturna</li>
+        <li><i class="fa fa-check-square" aria-hidden="true"></i>Brigada de salud virtual</li>
+        <li><i class="fa fa-check-square" aria-hidden="true"></i>Descuentos personalizados</li>
+      </ul>
+      </p>
+      <a class="boton" type="submit">Solicitar</a>
+    </div>
+  </section>
+  <section>
+    <!-- START THE FEATURETTES -->
 
-    <!-- Entrega -->
-    <div id="Entrega" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="tituloVentana4" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="tituloVentana4" >Recoge, Repara y Entrega</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Descuentos personalizados</h2>
+        <div class="lead">
+          <ul>
+            <li>
+              <i class="fa fa-check-square" aria-hidden="true"></i>
+              Repuestos originales
+            </li>
+            <li>
+              <i class="fa fa-check-square" aria-hidden="true"></i>
+              Servicio técnico especializado
+            </li>
+            <li>
+              <i class="fa fa-check-square" aria-hidden="true"></i>
+              Garantía
+            </li>
+          </ul>
         </div>
-        <div class="modal-body">
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+        </svg>
+
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </section>
+  <section id="Especialistas">
+    <div class="container">
+      <div class="titulo">
+        <h1>Especialistas en resolver problemas</h1>
+      </div>
+      <h2>
+        Tenemos una alta taza de efectividad resolviendo todos los <br>
+        problemas que pueda presentar tu celular
+      </h2>
+      <div class="row">
+        <div class="col">
+          <img src="./assets/img/Clientes_Satisfechos.svg" class="svg" alt="">
+          <div onmouseover="contador()">
+            <div class="counter" data-target="51200">0</div>
+            <h3>Clientes satisfechos</h3>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-warning" type="button" data-dismiss="modal">
-            Cerrar
-          </button>
+        <div class="col">
+          <img src="./assets/img/Equipos_Reparados.svg" class="svg" alt="">
+          <div onmouseover="contador()">
+            <div class="counter" data-target="61500">0</div>
+            <h3>Equipos reparados</h3>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./assets/img/Cafe.svg" class="svg" alt="">
+          <div onmouseover="contador()">
+            <div class="counter" data-target="2150">0</div>
+            <h3>Tazas de café</h3>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</section>
-        <section class="hero">
-          <div class="title">
-              <h1>FixU</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, quae dolorum laudantium facilis <br> qui nulla ipsa sint! Veniam iure maiores atque nemo blanditiis natus temporibus eos eum in facere.</p>
-              <button>Solicitar</button>
-          </div>       
-      </section>
-      <section>
-         <!-- START THE FEATURETTES -->
-
-           <hr class="featurette-divider">
-
-            <div class="row featurette">
-              <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-              </div>
-              <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-              </div>
-            </div>
-            <hr class="featurette-divider">
-      </section>
-      <section id="Especialistas">        
-        <div class="container">
-          <div class="titulo">
-            <h1>Especialistas en resolver problemas</h1>
-          </div>
-          <h2>
-            Tenemos una alta taza de efectividad resolviendo todos los <br>
-            problemas que pueda presentar tu celular
-          </h2>
-          <div class="row">
-            <div class="col">
-              <img src="./assets/img/Clientes_Satisfechos.svg" class="svg" alt="">
-              <div onmouseover="contador()">
-                <div class="counter" data-target="51200">0</div>
-                <h3>Clientes satisfechos</h3>
-              </div>
-            </div>
-            <div class="col">
-              <img src="./assets/img/Equipos_Reparados.svg" class="svg" alt="">
-              <div onmouseover="contador()">
-                <div class="counter" data-target="61500">0</div>
-                <h3>Equipos reparados</h3>
-              </div>
-            </div>
-            <div class="col">
-              <img src="./assets/img/Cafe.svg" class="svg" alt="">
-              <div onmouseover="contador()">
-                <div class="counter" data-target="2150">0</div>
-                <h3>Tazas de café</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="featurette-divider">
-      <!-- <section id="Especialistas">        
+  </section>
+  <hr class="featurette-divider">
+  <!-- <section id="Especialistas">        
         <div class="container">
           <div class="titulo">
             <h1 style="color: #0a0a0a;">Especialistas en resolver problemas</h1>
@@ -331,91 +383,115 @@
           </div>
         </div>
       </section> -->
-      <hr class="featurette-divider">
-      <section id="Comentarios">
-        <h1>La Gente Nos Prefiere</h1>       
-        <div class="Carro">          
-          <button class="arrow arrow-left" aria-label="backward button"></button>
-          <div class="Ventana">
-            <ul class="project-container">
-              <li class="project1-container"><button class="project1 project">
-                <div class="project-face">
-                  <div class="fb-post" data-href="https://www.facebook.com/Juli.Agudelo/posts/10157310382936361" data-width="100" data-show-text="true">
-                    <blockquote cite="https://www.facebook.com/Juli.Agudelo/posts/10157310382936361" class="fb-xfbml-parse-ignore">
-                     <p>Muy buen el servicio con calidad y tiempo de respuesta</p>Publicado por <a href="#" role="button">Juliana Agudelo</a> en&nbsp;
-                     <a href="https://www.facebook.com/Juli.Agudelo/posts/10157310382936361">Domingo, 20 de septiembre de 2020</a>
-                    </blockquote>
-                  </div>        
+  <hr class="featurette-divider">
+  <section id="Comentarios">
+    <h1>La Gente Nos Prefiere</h1>
+    <div class="Carro">
+      <button class="arrow arrow-left" aria-label="backward button"></button>
+      <div class="Ventana">
+        <ul class="project-container">
+          <li class="project1-container"><button class="project1 project">
+              <div class="project-face">
+                <div class="fb-post" data-href="https://www.facebook.com/Juli.Agudelo/posts/10157310382936361"
+                  data-width="100" data-show-text="true">
+                  <blockquote cite="https://www.facebook.com/Juli.Agudelo/posts/10157310382936361"
+                    class="fb-xfbml-parse-ignore">
+                    <p>Muy buen el servicio con calidad y tiempo de respuesta</p>Publicado por <a href="#"
+                      role="button">Juliana Agudelo</a> en&nbsp;
+                    <a href="https://www.facebook.com/Juli.Agudelo/posts/10157310382936361">Domingo, 20 de septiembre de
+                      2020</a>
+                  </blockquote>
                 </div>
-              </button></li>
-              <li class="project2-container"><button class="project2 project">
-                <div class="project-face">
-                  <div class="fb-post" data-href="https://www.facebook.com/sandraluciaaristizabal/posts/10157158429008687" data-width="100" data-show-text="true">
-                    <blockquote cite="https://www.facebook.com/sandraluciaaristizabal/posts/10157158429008687" class="fb-xfbml-parse-ignore">
-                      <p>Quedé muy contenta con el servicio, muy responsables en todo el proceso de recogida y entrega del Equipo</p>Publicado por 
-                      <a href="#" role="button">Sandra Lucia Aristizábal</a> en&nbsp;<a href="https://www.facebook.com/sandraluciaaristizabal/posts/10157158429008687">Lunes, 13 de enero de 2020</a>
-                    </blockquote>
-                  </div>
+              </div>
+            </button></li>
+          <li class="project2-container"><button class="project2 project">
+              <div class="project-face">
+                <div class="fb-post" data-href="https://www.facebook.com/sandraluciaaristizabal/posts/10157158429008687"
+                  data-width="100" data-show-text="true">
+                  <blockquote cite="https://www.facebook.com/sandraluciaaristizabal/posts/10157158429008687"
+                    class="fb-xfbml-parse-ignore">
+                    <p>Quedé muy contenta con el servicio, muy responsables en todo el proceso de recogida y entrega del
+                      Equipo</p>Publicado por
+                    <a href="#" role="button">Sandra Lucia Aristizábal</a> en&nbsp;<a
+                      href="https://www.facebook.com/sandraluciaaristizabal/posts/10157158429008687">Lunes, 13 de enero
+                      de 2020</a>
+                  </blockquote>
                 </div>
+              </div>
 
-              </button></li>
-              <li class="project3-container"><button class="project3 project">
-                <div class="project-face">
-                  <div class="fb-post" data-href="https://www.facebook.com/rocio.cardenas.313/posts/10156806634565939" data-width="100" data-show-text="true">
-                    <blockquote cite="https://www.facebook.com/rocio.cardenas.313/posts/10156806634565939" class="fb-xfbml-parse-ignore">
-                      <p>Súper recomendados! Sin necesidad de moverse, van a tú casa/oficina. Y una excelente calidad en el trabajo.</p>Publicado por <a href="#" role="button">Rocio Cardenas</a> en&nbsp;
-                      <a href="https://www.facebook.com/rocio.cardenas.313/posts/10156806634565939">Sábado, 24 de agosto de 2019</a>
-                    </blockquote>
-                  </div>
+            </button></li>
+          <li class="project3-container"><button class="project3 project">
+              <div class="project-face">
+                <div class="fb-post" data-href="https://www.facebook.com/rocio.cardenas.313/posts/10156806634565939"
+                  data-width="100" data-show-text="true">
+                  <blockquote cite="https://www.facebook.com/rocio.cardenas.313/posts/10156806634565939"
+                    class="fb-xfbml-parse-ignore">
+                    <p>Súper recomendados! Sin necesidad de moverse, van a tú casa/oficina. Y una excelente calidad en
+                      el trabajo.</p>Publicado por <a href="#" role="button">Rocio Cardenas</a> en&nbsp;
+                    <a href="https://www.facebook.com/rocio.cardenas.313/posts/10156806634565939">Sábado, 24 de agosto
+                      de 2019</a>
+                  </blockquote>
                 </div>
-              </button></li>
-              <li class="project4-container" aria-hidden = "true"><button class="project4 project" tabindex="-1">
-                <div class="project-face">
-                  <div class="fb-post" data-href="https://www.facebook.com/alejandro.marin.58173/posts/10220482905479560" data-width="100" data-show-text="true">
-                    <blockquote cite="https://www.facebook.com/alejandro.marin.58173/posts/10220482905479560" class="fb-xfbml-parse-ignore">
-                      <p>Calidad, servicio, responsabilidad y rapidez.</p>Publicado por <a href="https://www.facebook.com/alejandro.marin.58173">Alejandro Marin</a> en&nbsp;
-                      <a href="https://www.facebook.com/alejandro.marin.58173/posts/10220482905479560">Domingo, 11 de agosto de 2019</a>
-                    </blockquote>
-                  </div>
+              </div>
+            </button></li>
+          <li class="project4-container" aria-hidden="true"><button class="project4 project" tabindex="-1">
+              <div class="project-face">
+                <div class="fb-post" data-href="https://www.facebook.com/alejandro.marin.58173/posts/10220482905479560"
+                  data-width="100" data-show-text="true">
+                  <blockquote cite="https://www.facebook.com/alejandro.marin.58173/posts/10220482905479560"
+                    class="fb-xfbml-parse-ignore">
+                    <p>Calidad, servicio, responsabilidad y rapidez.</p>Publicado por <a
+                      href="https://www.facebook.com/alejandro.marin.58173">Alejandro Marin</a> en&nbsp;
+                    <a href="https://www.facebook.com/alejandro.marin.58173/posts/10220482905479560">Domingo, 11 de
+                      agosto de 2019</a>
+                  </blockquote>
                 </div>
-              </button></li>
-              <li class="project5-container" aria-hidden = "true"><button class="project5 project" tabindex="-1">
-                <div class="project-face">
-                  <div class="fb-post" data-href="https://www.facebook.com/alexander.cifueentes/posts/10157553181086579" data-width="100" data-show-text="true">
-                    <blockquote cite="https://www.facebook.com/alexander.cifueentes/posts/10157553181086579" class="fb-xfbml-parse-ignore">
-                      <p>agilidad en la prestacion del servicio.</p>Publicado por <a href="https://www.facebook.com/alexander.cifueentes">Alexander Cifuentes</a> en&nbsp;
-                      <a href="https://www.facebook.com/alexander.cifueentes/posts/10157553181086579">Viernes, 5 de julio de 2019</a>
-                    </blockquote>
-                  </div>
+              </div>
+            </button></li>
+          <li class="project5-container" aria-hidden="true"><button class="project5 project" tabindex="-1">
+              <div class="project-face">
+                <div class="fb-post" data-href="https://www.facebook.com/alexander.cifueentes/posts/10157553181086579"
+                  data-width="100" data-show-text="true">
+                  <blockquote cite="https://www.facebook.com/alexander.cifueentes/posts/10157553181086579"
+                    class="fb-xfbml-parse-ignore">
+                    <p>agilidad en la prestacion del servicio.</p>Publicado por <a
+                      href="https://www.facebook.com/alexander.cifueentes">Alexander Cifuentes</a> en&nbsp;
+                    <a href="https://www.facebook.com/alexander.cifueentes/posts/10157553181086579">Viernes, 5 de julio
+                      de 2019</a>
+                  </blockquote>
                 </div>
-              </button></li>
-            </ul>
-          </div>
-          <button class="arrow arrow-right" aria-label="foward button">
+              </div>
+            </button></li>
+        </ul>
+      </div>
+      <button class="arrow arrow-right" aria-label="foward button">
 
-          </button>
-        </div>
-    </section>
+      </button>
+    </div>
+  </section>
 
-    <hr class="featurette-divider">
+  <hr class="featurette-divider">
 
-      <section id="ubicacion">
-        <div class="ubicacion">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.176008345485!2d-74.1028528498957!3d4.739460242623601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f848d2b0ceced%3A0x8814874b6fb6c9ee!2sFixU%20Colombia!5e0!3m2!1ses!2sco!4v1611074096948!5m2!1ses!2sco"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>        
-      </section>
+  <section id="ubicacion">
+    <div class="ubicacion">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.1252195564966!2d-74.04648349132205!3d4.682657073586621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9693bdc285%3A0x2eecfe901d5cb5c8!2sCra.%2013%20%2398-70%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1617975002189!5m2!1ses!2sco"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
 
-      <!-- <hr class="featurette-divider"> -->
+  <!-- <hr class="featurette-divider"> -->
 
-      <!-- Redes -->
+  <!-- Redes -->
 
-      <input id="check" type="checkbox" />
-      <label class="main" for="check">
-        <div class="first">          
-            <a href="https://wa.me/573124471432?text=Me%20gustaría%20Obtener%20más%20Información%20Sobre%20UStedes" target="_blank"><i class="fa fa-whatsapp"></i></a>          
-        </div>
-      </label>
-<!-- 
+  <input id="check" type="checkbox" />
+  <label class="main" for="check">
+    <div class="first">
+      <a href="https://wa.me/573124471432?text=Me%20gustaría%20Obtener%20más%20Información%20Sobre%20UStedes"
+        target="_blank"><i class="fa fa-whatsapp"></i></a>
+    </div>
+  </label>
+  <!-- 
       <div class="contain" class="width: 5%">
         <a class="plate" href="#">
           <i class="fa fa-facebook"></i>
@@ -431,51 +507,61 @@
         </a>
         </div> -->
 
-    <!-- footer -->
+  <!-- footer -->
 
-      <footer class="text-center footer-style">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 footer-col">
-                    <h3>Dirección</h3>
-                    <p>
-                        UNILAGO
-                    </p>
-                </div>
-                <div class="col-md-4 footer-col">
-                    <h3>Buscanos</h3>
-                    <ul class="list-inline">
-                        <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                        </li>
-                        <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 footer-col">
-                    <h3>Todos los Derechos Reservados</h3>
-                    <p>Fixu Colombia &copy;</p>
-                </div>
-            </div>
+  <footer class="text-center footer-style" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <h3>Dirección</h3>
+          <p>
+            Edificio Óchic
+            <br>Cra. 13 #98-70
+            <br>OFICINA 303
+          </p>
         </div>
-    </footer>
-    <!-- Scripts -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0" nonce="0fMkFIpr"></script>              
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/12a99b6783.js"></script>    
-    <script src="./js/index.js"></script>     
+        <div class="col-md-4 footer-col">
+          <h3>Buscanos</h3>
+          <ul class="list-inline">
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h3>Todos los Derechos Reservados</h3>
+          <p>Fixu Colombia &copy;</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0"
+    nonce="0fMkFIpr"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/12a99b6783.js"></script>
+  <script src="./js/index.js"></script>
 </body>
+
 </html>

@@ -1,190 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/foundation.css">  
-    <link rel="stylesheet" href="./style/style.css">      
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/foundation.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <title>Nuestros Servicios</title>
 </head>
+
 <body>
-     <!-- header -->
-     <header class="header animated">
+    <!-- header -->
+    <header class="header animated">
         <div class="contenedor">
             <figure class="logo">
-                <img src="./assets/img/Logo.png" alt="" height="60px">
+                <a href="./index.html">
+                <img src="./assets/img/Logo.png" alt="" height="60rem">
+            </a>
             </figure>
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href="">Inicio</a>
+                        <a href="./index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="">Nosotros</a>
+                        <a href="">Servicios</a>
                     </li>
                     <li>
-                        <a href="">Trayectoria</a>
+                        <a href="#info-nosotros">Sobre Nosotros</a>
                     </li>
                     <li>
                         <a href="">Registro</a>
                     </li>
+                    <li>
+                        <a href="#footer">Contacto</a>
+                    </li>
                 </ul>
             </nav>
-            <button>ingresar</button>
+            <a class="boton" type="submit">ingresar</a>
         </div>
     </header>
-
-    <div class="titulo">
-        <h1>Nuestros Servicios</h1>
-        <p>
-            Fixu es una compañia con 2 años de trayectoria, formada por un equipo especializado con más de 10 <br>
-            años de experiencia en el campo de servicios tecnologicos. COntamos con personal capacitado en el <br>
-            area comercial, lo que nos brinda la posibilidad de trabajar también como aliados empresariales.
-        </p>
+    <div class="info-nosotros">
+        <div class="titulo">
+            <h1>Nuestros Servicios</h1>
+            <p>
+                FixU Colombia es una empresa creada a partir de la necesidad de comunicación
+                constante e interrumpida que se necesitan en las actividades diarias actualmente. FixU
+                brinda una serie de servicios tecnológicos de reparación y mantenimiento de equipos
+                móviles para ofrecer soluciones inmediatas a problemas inesperados. Contamos con
+                laboratorio propio con equipos de alta tecnología, repuestos de alta calidad y equipo
+                humano especializado con más de 10 años de experiencia en este campo.
+            </p>
+        </div>
     </div>
+
     <div class="row row-cols-4 row-cols-md-4 colu">
         <div class="col mb-4">
             <div class="card">
                 <img src="./assets/img/icono software.svg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Equipos Con:</h5>
-                  <p class="card-text">
-                      - Virus en el sistema <br>
-                      - Falla en el bloqueo <br>
-                      - Rendimiento deficiente <br>
-                      - Sistema operativo lento <br>
-                      - Problemas de encendido
-                  </p>
+                    <h5 class="card-title">Equipos Con:</h5>
+                    <p class="card-text">
+                        - Virus en el sistema <br>
+                        - Falla en el bloqueo <br>
+                        - Rendimiento deficiente <br>
+                        - Sistema operativo lento <br>
+                        - Problemas de encendido
+                    </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Errores De Software</small>
+                    <small class="text-muted">Errores De Software</small>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="col mb-4">
             <div class="card">
                 <img src="./assets/img/icono hardware.svg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Equipos diagnosticados con:</h5>
-                  <p class="card-text">
-                      - Problemas de señal y/o wifi <br>
-                      - Fallas al encender o recalentamiento del equipo <br>
-                      - Problemas con el audio, entrada y salida de sonido <br>
-                      - Sistema operativo lento <br>
-                      - Entre otros errores en la tarjeta principal
-                  </p>
+                    <h5 class="card-title">Equipos diagnosticados con:</h5>
+                    <p class="card-text">
+                        - Problemas de señal y/o wifi <br>
+                        - Fallas al encender o recalentamiento del equipo <br>
+                        - Problemas con el audio, entrada y salida de sonido <br>
+                        - Sistema operativo lento <br>
+                        - Entre otros errores en la tarjeta principal
+                    </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Daños de Hardware</small>
+                    <small class="text-muted">Daños de Hardware</small>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="col mb-4">
             <div class="card">
                 <img src="./assets/img/icono copia de seguridad.svg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">FixU Ofrece la opción de:</h5>
-                  <p class="card-text">
-                      - Recuperar información de equipos apagados <br>
-                      - Hacer backup en dispositivo de almacenamiento solido con el fin de mantener su información segura y disponible. 
-                  </p>
+                    <h5 class="card-title">FixU Ofrece la opción de:</h5>
+                    <p class="card-text">
+                        - Recuperar información de equipos apagados <br>
+                        - Hacer backup en dispositivo de almacenamiento solido con el fin de mantener su información
+                        segura y disponible.
+                    </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Copia de Seguridad</small>
+                    <small class="text-muted">Copia de Seguridad</small>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="col mb-4">
             <div class="card">
                 <img src="./assets/img/icono equipos mojados.svg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">
-                      Contamos con procedimiento especializado para equipos que: 
-                  </h5>
-                  <p class="card-text">
-                      - Han sido expuestos a líquidos o vapores <br>
-                      - Presentan daños a causa de la humedad
-                  </p>
+                    <h5 class="card-title">
+                        Contamos con procedimiento especializado para equipos que:
+                    </h5>
+                    <p class="card-text">
+                        - Han sido expuestos a líquidos o vapores <br>
+                        - Presentan daños a causa de la humedad
+                    </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Equipos Mojados</small>
+                    <small class="text-muted">Equipos Mojados</small>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="col mb-4">
             <div class="card">
-                <img src="./assets/img/icono pantalla rota .svg" class="card-img-top" width="auto" height="100px" alt="...">
+                <img src="./assets/img/icono pantalla rota .svg" class="card-img-top" width="auto" height="10rem"
+                    alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">
-                      Contamos con tecnología y personal especializado en: 
-                  </h5>
-                  <p class="card-text">
-                      - Cambio de pantalla y/o el display de cualquier equipo <br>
-                      - Reparación de pantallas rotas o averiadas de las marcas mas reconocidas en el mercado
-                  </p>
+                    <h5 class="card-title">
+                        Contamos con tecnología y personal especializado en:
+                    </h5>
+                    <p class="card-text">
+                        - Cambio de pantalla y/o el display de cualquier equipo <br>
+                        - Reparación de pantallas rotas o averiadas de las marcas mas reconocidas en el mercado
+                    </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Pantalla Rota</small>
+                    <small class="text-muted">Pantalla Rota</small>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="col mb-4">
             <div class="card">
                 <img src="./assets/img/icono computador empresas.svg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">
-                      Realizamos reparación y mantenimiento de equipos de computo: 
-                  </h5>
-                  <p class="card-text">
-                      - Computadores de mesa <br>
-                      - Portatiles <br>
-                      - Tambien ofrecemos nuestros servicios en la reparación de tablets de diferentes marcas
-                  </p>
+                    <h5 class="card-title">
+                        Realizamos reparación y mantenimiento de equipos de computo:
+                    </h5>
+                    <p class="card-text">
+                        - Computadores de mesa <br>
+                        - Portatiles <br>
+                        - Tambien ofrecemos nuestros servicios en la reparación de tablets de diferentes marcas
+                    </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Computadores y Tablets</small>
+                    <small class="text-muted">Computadores y Tablets</small>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
 
-    <h1>Servicios empresariales</h1>
+    <!-- Servicos  -->
+    <h1 class="titulo">Servicios empresariales</h1>
+    <div class="row row-cols-4 row-cols-md-4 colu">
+
+        <!-- 1° -->
+        <div class="col mb-6">
+            <div class="card">
+                <h5 class="card-title">Clínica nocturna</h5>
+                <img src="./assets/img/icono clinica nocturna .svg" class="card-img-top" width="auto" height="10rem"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Sabemos que hay equipos que
+                        no pueden estar apagados, por
+                        ello ofrecemos la opción de
+                        hacer el mantenimiento en
+                        horario nocturno
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2° -->
+        <div class="col mb-6">
+            <div class="card">
+                <h5 class="card-title">Brigada de salud virtual</h5>
+                <img src="./assets/img/icono brigada de salud.svg" class="card-img-top" width="auto" height="10rem"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Servicio técnico y de mantenimiento
+                        para los equipos de la compañía
+                        directamente en sus instalaciones.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3° -->
+        <div class="col mb-6">
+            <div class="card">
+                <h5 class="card-title">Descuentos personalizados</h5>
+                <img src="./assets/img/icono descuentos 01.svg" class="card-img-top" width="auto" height="10rem"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Sofrecemos la misma calidad de
+                        servicio con precios asequibles
+                        y con descuentos para sus
+                        empleados.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 4° -->
+        <div class="col mb-6">
+            <div class="card">
+                <h5 class="card-title">Préstamos de equipos</h5>
+                <img src="./assets/img/prestamos de equipos .svg" class="card-img-top" width="auto" height="10rem"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Contamos con equipos de
+                        respaldo para que nuestros
+                        clientes siempre estén
+                        comunicados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- footer -->
 
-      <footer class="text-center footer-style">
+    <footer class="text-center footer-style" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-col">
                     <h3>Dirección</h3>
                     <p>
-                        UNILAGO
+                        Edificio Óchic
+                        <br>Cra. 13 #98-70
+                        <br>OFICINA 303
                     </p>
                 </div>
                 <div class="col-md-4 footer-col">
                     <h3>Buscanos</h3>
                     <ul class="list-inline">
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-google-plus"></i></a>
                         </li>
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-linkedin"></i></a>
                         </li>
                         <li>
-                            <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-dribbble"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -197,11 +291,19 @@
     </footer>
     <!-- Scripts -->
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0" nonce="0fMkFIpr"></script>              
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/12a99b6783.js"></script>    
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0"
+        nonce="0fMkFIpr"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/12a99b6783.js"></script>
     <script src="./js/index.js"></script>
 </body>
+
 </html>

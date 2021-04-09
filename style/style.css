@@ -20,7 +20,7 @@ body {
     line-height: 2;
     color: var(--texto);
 }
-  
+
 figure{
     margin: 0 !important;
 }
@@ -62,7 +62,7 @@ figure{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(255,87,115,1) 44%, rgba(232,59,59,1) 100%);
     display: flex;
-    height: 80px;
+    height: 8rem;
     align-items: center;
     justify-content: space-between;
     -webkit-transition: all ease .9s ;
@@ -83,17 +83,22 @@ figure{
   
 .header a{
     color:white;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-decoration: none;
     height: inherit;
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 3rem;
+    border-radius:0.5rem;
 }
+
+/*.header button{
+  border-radius:0.5rem;
+}*/
 
 .contenedor{
     width: 100%;
-    margin:  50px;
+    margin:  5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,23 +123,24 @@ li a:hover {
   z-index: 1000;
   top: 0;
   width: 100%;
-  box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+  box-shadow: 0rem 0.4rem 0.3rem rgba(0,0,0,.5);
   -webkit-transition: all ease 1s ;
     -o-transition: all ease 1s;
     transition: all ease 1s;
 }
 
-.header button {
-  color:#FF5773;
+.header .boton {
+  background-color: #FFFFFF;
+  color: var(--opcional);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.8rem;
   padding: 1rem 2rem;
   /* margin-top: 3rem;     */
   text-align: center;
   border: none; 
 }
 
-.header button:hover{
+.header .boton:hover{
   background: yellowgreen;
   color:#545B6B;
 }
@@ -247,7 +253,7 @@ li a:hover {
 
 #Especialistas{
   /* background: var(--background); */
-  height: 550px;
+  height: 55rem;
   display: flex;
   align-items: center;
 }
@@ -261,7 +267,7 @@ li a:hover {
   font-weight: 400;
   line-height: 2;
   letter-spacing: .6rem;
-  margin: 30px;
+  margin: 3rem;
 }
 
 #Especialistas h2{
@@ -270,34 +276,34 @@ li a:hover {
   text-align: center;
   font-size: 2rem;
   color: var(--texto);
-  margin: 30px;
+  margin: 3rem;
 }
 
 .col{
   text-align: center;
-  margin: 50px;
+  margin: 5rem;
 }
 
 .svg{
   width: 100%;
-  max-height: 150px;
-  margin-bottom: 20px; 
+  max-height: 15rem;
+  margin-bottom: 2rem; 
 }
 
 .counter{
-  font-size:25px;
-  margin:30px 30px 10px 30px;
+  font-size:2.5rem;
+  margin:3rem 3rem 1rem 3rem;
   font-weight:bold;
   text-align:center;
   background-color: var(--opcional);
-  border-radius: 25px;
+  border-radius: 2.5rem;
 }
 
 /* Carro */
 
 #Comentarios h1{
   margin: 0;
-  padding: 25px;
+  padding: 2.5rem;
   font-family: 'Questrial', sans-serif;
   text-align: center;
   font-size: 4rem;
@@ -310,20 +316,20 @@ li a:hover {
   display: flex;
   align-items: center;  
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .Ventana {
   overflow: hidden;
   width: 100%;
-  padding: 8px;
+  padding: 0.8rem;
 }
 
 .project-container {
   left: 0;
   position: relative;
-  width: 4000px;
+  width: 400rem;
 }
 
 .project-container li {
@@ -336,15 +342,15 @@ li a:hover {
 }
 
 .project-container button:focus-within{
-  outline: 3px solid var(--opcional);
+  outline: 0.3rem solid var(--opcional);
 }
 
 .project-face {
   /* border-radius: 5px;
   border: 2px solid #000; */
   display: block;
-  height: 200px;
-  margin: 0 8px;
+  height: 20rem;
+  margin: 0 0.8rem;
   transition: all 0.2s ease-in-out;
   /* width: 400px; */
   object-fit: cover;
@@ -356,10 +362,10 @@ li a:hover {
 }
 
 .arrow {
-  margin: 20px;
-  height: 65px;
+  margin: 2rem;
+  height: 6.5rem;
   transition: all 0.2s ease-in-out;
-  width: 70px;
+  width: 7rem;
 }
 
 .arrow:hover {
@@ -379,14 +385,14 @@ li a:hover {
 }
 
 .arrow:focus{
-  outline: 3px solid var(--opcional);
+  outline: 0.3rem solid var(--opcional);
 }
 
 
 .ubicacion iframe{
   display: flex;
   width:100%; 
-  height:300px;  
+  height:30rem;  
 }
 
 /* Redes */
@@ -397,17 +403,17 @@ li a:hover {
 .contain {
   margin: auto;
   position: fixed; /* fixed */
-  top: 620px;
+  top: 62rem;
   bottom: 0;
-  left: 20px;
-  width: 60px;
-  height: 60px;
+  left: 2rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
 }
 
 .main {
   background-color: #00BB2D ;
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.35);
   cursor: pointer;
   z-index: 50;
 }
@@ -415,7 +421,7 @@ li a:hover {
 .main:hover { background-color:var(--principal); }
 
 .main:active {
-  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.35), inset 2px 3px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.35), inset 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.35);
   background-color: var(--opcional);  
 }
 
@@ -427,9 +433,9 @@ li a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 8rem;
   font-size: 4em;
-  line-height: 80px;
+  line-height: 8rem;
   text-align: center;
   color:white;
 }
@@ -451,15 +457,15 @@ li a:hover {
 .plate {
   margin: auto;  
   position: absolute;
-  top: 25px;
-  right: 25px;
-  bottom: 25px;
-  left: 25px;
-  width: 35px;
-  height: 35px;
+  top: 2.5rem;
+  right: 2.5rem;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   opacity: 0;
   border-radius: 50%;
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.35);
   -webkit-transition: all 0.4s ease-in;
   -moz-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
@@ -468,7 +474,7 @@ li a:hover {
 .plate i {
   width: 100%;
   font-size: 1.3em;
-  line-height: 35px;
+  line-height: 3.5rem;
   text-align: center;
   color: #faf4f2;
 }
@@ -501,25 +507,25 @@ li a:hover {
 /* footer */
 
 .footer-style {
-  padding-top: 10px;
+  padding-top: 1rem;
   background-color:var(--background);
 }
 footer {
 color: var(--opcional);
 }
 footer h3 {
-margin-bottom: 10px;
+margin-bottom: 1rem;
   font-weight: 800;
 }
 footer .footer-above {
-padding-top: 10px;
+padding-top: 1rem;
 background-color: var(--background);
 }
 footer .footer-col {
-margin-bottom: 10px;
+margin-bottom: 1rem;
 }
 footer .footer-below {
-padding: 25px 0;
+padding: 2.5rem 0;
 background-color: var(--background);
 }
 
@@ -527,7 +533,7 @@ background-color: var(--background);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin:0 100px;
+  margin:0 10rem;
 }
 
 .list-inline a{
@@ -542,14 +548,93 @@ background-color: var(--background);
 }
 
 .card{
-  width: 300px;
+  width: 30rem;
 }
 
 .card img{
-  height: 150px;
-  width: 100;
+  height: 19rem;
+  width: 100%;
+}
+.rounded-circle:hover{
+  border: 0.4rem var(--opcional) solid;
+  box-shadow: .2rem .2rem .2rem .2rem var(--texto);
+
 }
 
+.modal-title{
+font-size: 2.3rem;
+color: var(--opcional);
+}
+
+.modal-body p{
+  font-size: 1.5rem;
+}
+
+.modal-header{
+  background-color: rgb(84, 91, 107, 0.2);
+}
+
+.modal-footer button{
+  font-size: 1.6rem;
+}
+.hero .title{
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-align: justify;
+}
+
+.hero .title h1{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero .title ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hero .title .boton{
+  font-size: 1.8rem;
+}
+
+.hero .boton{
+  color: var(--opcional);
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+
+}
+.col-md-7 .lead{
+  font-size: 1.5rem;
+}
+
+.col-md-7 .lead ul{
+  list-style: none;
+}
+
+/**Css Servicos*/
+.info-nosotros{
+  margin: 1rem 5rem;
+}
+
+.card-title{
+  font-size: 2rem;
+}
+
+.card-text{
+  font-size: 1.5rem;
+}
+
+.text-muted{
+  font-size: 1.5rem;
+}
+
+.info-nosotros p{
+  color: var(--texto);
+  text-align: justify;
+}
 
 /* Responsive */
 @media (min-width: 40em) {
@@ -561,7 +646,7 @@ background-color: var(--background);
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 5rem;
   }
 }
 
