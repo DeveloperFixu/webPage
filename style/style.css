@@ -651,13 +651,12 @@ color: var(--opcional);
 }
 
 /** Css Contacto*/
-
+#altura .row{
+  height: 80vh;
+  margin: 0 !important;
+}
 .ml-4{
   margin-left: 1.5rem!important;
-}
-
-.text-center{
-  margin-bottom: 3rem;
 }
 
 .form{
@@ -669,21 +668,48 @@ color: var(--opcional);
 
 .registro{
   background-color: rgb(84, 91, 107, 0.1);
-  padding: 1rem;
 }
 
 .registro .form-control{
-  font-size: 1.5rem;
-  background-color: rgba(0,0,0,.07);
+  font-size: 1.7rem;
 }
 
 .registro .form-control::placeholder{
-  color:#fff;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .registro .form-row{
-  margin: 2rem 20rem;
+  margin: 0rem 20rem !important;
+}
+
+.registro .p-nota{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.registro button{
+font-size: 1.5rem;
+justify-content: center;
+align-items: center;
+}
+.registro .form-check-label{
+  margin: 0rem 1rem;
+}
+
+.form-group button{
+  margin-left: 40%;
+  background-color: #FFFFFF;
+  color: var(--opcional);
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  /* margin-top: 3rem;     */
+  border: none; 
+  margin-top: 2rem;
+}
+
+.modal-body p{
+  text-align: justify;
 }
 /* Responsive */
 @media (min-width: 40em) {
