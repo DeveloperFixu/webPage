@@ -174,7 +174,14 @@ li a:hover {
       bottom: 28rem !important; 
   }
   
+  .card-body{
+    background-color: rgb(84, 91, 107, 0.2);
+  }
   
+  .card-footer{
+    background-color: var(--opcional)  !important;
+  }
+
   /* MARKETING CONTENT
   -------------------------------------------------- */
   
@@ -504,6 +511,9 @@ li a:hover {
 #check:checked ~ .main + .contain .plate:nth-of-type(4) {  bottom: -180%;}
 
 
+#contacto .col-md-6{
+  margin: 1rem;
+}
 /* footer */
 
 .footer-style {
@@ -628,7 +638,7 @@ color: var(--opcional);
 }
 
 .text-muted{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .info-nosotros p{
@@ -640,6 +650,41 @@ color: var(--opcional);
   font-size: 3.5rem;
 }
 
+/** Css Contacto*/
+
+.ml-4{
+  margin-left: 1.5rem!important;
+}
+
+.text-center{
+  margin-bottom: 3rem;
+}
+
+.form{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.registro{
+  background-color: rgb(84, 91, 107, 0.1);
+  padding: 1rem;
+}
+
+.registro .form-control{
+  font-size: 1.5rem;
+  background-color: rgba(0,0,0,.07);
+}
+
+.registro .form-control::placeholder{
+  color:#fff;
+  font-weight: 700;
+}
+
+.registro .form-row{
+  margin: 2rem 20rem;
+}
 /* Responsive */
 @media (min-width: 40em) {
   /* Bump up size of carousel content */

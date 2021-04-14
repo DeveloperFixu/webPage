@@ -34,7 +34,7 @@
       // Altura Header
 
       $(document).ready(function(){
-         var altura = $('#carousel').offset().top; 
+         var altura = $('#altura').offset().top; 
         //  alert(altura); 
         $(window).on('scroll', function(){
             if( $(window).scrollTop() > (altura -1) ){
