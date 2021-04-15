@@ -562,7 +562,13 @@ background-color: var(--background);
 }
 
 .card img{
-  height: 19rem;
+  height: 16rem;
+  width: 16rem;
+  margin: 1rem 7rem;
+}
+
+.segundas .card img{
+  height: 100%rem;
   width: 100%;
 }
 .rounded-circle:hover{
