@@ -661,7 +661,7 @@ color: var(--opcional);
 }
 
 /** Css Registro*/
-#altura .row{
+.altura .row{
   height: 100vh;
   margin: 0 !important;
 }
