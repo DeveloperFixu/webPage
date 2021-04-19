@@ -17,7 +17,7 @@
     <header class="header animated" id="inicio">
         <div class="contenedor">
             <figure class="logo">
-                <img src="./assets/img/Logo.png" alt="" height="60rem">
+                    <img src="./assets/img/Logo.png" alt="" height="60rem">
             </figure>
             <nav class="menu">
                 <ul>
@@ -43,64 +43,495 @@
     </header>
 
     <!-- formulario de Registro -->
-    <div>
-        <form class="form">
-            <div class="registro">
-                <div class="text-center">
-                    <h1>¡Saludanos!
-                        <br>Mantente en Contacto
-                    </h1>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <!-- <label for="">Tu Nombre y apellido</label> -->
-                        <input type="text" class="form-control" placeholder="Tu Nombre y apellido">
-                    </div>
-    
-                    <div class="form-group col-md-6 input-group input-group-prepend">
-                        <div class="input-group-text">@</div>
-                        <input type="text" class="form-control" placeholder="Correo Electronico">
-                    </div>
-    
-                    <div class="form-group col-md-6">
-                        <!-- <label for="">Celular</label> -->
-                        <input type="text" class="form-control" placeholder="Celular">
-    
-                    </div>
-                    <div class="form-group col-md-6">
-                        <!-- <label for="">Ciudad de contacto</label> -->
-                        <input type="text" class="form-control" placeholder="Ciudad de contacto">
-    
-                    </div>
-                    <div class="form-group col-md">
-                        <!-- <label for="">Direccion</label> -->
-                        <input type="text" class="form-control" placeholder="Direccion">
-                    </div>
-    
-                    <div class="form-group col-md-12">
-                        <!-- <label for="">Descripción Breve Del Daño</label> -->
-                        <input type="text" class="form-control" placeholder="Descripción Breve Del Daño">
-                    </div>
-    
-                    <div class="form-group col-md-6">
-                        <!-- <label for="">Marca</label> -->
-                        <input type="text" class="form-control" placeholder="Marca">
-                    </div>
-    
-                    <div class="form-group col-md-6">
-                        <!-- <label for="">Modelo</label> -->
-                        <input type="text" class="form-control" placeholder="Modelo">
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Registrar</button>
+    <main>
+        <div class="formulario_card" id="altura" name="altura">
+            <div class="banner">
+                <h1>
+                    registrate en fixu
+                </h1>
+                <img class="img1" rel="" src="./assets/img/BANNER_FORMULARIO.png">
+                <img class="img2" rel="" src="./assets/img/64255772.png">
             </div>
-        </form>
-    </div>
+            <div  class="card_title">
+                <h2>¡Salúdanos!</h2>
+                <h2>Mantente en Contacto</h2>
+            </div>
+            <form class="formulario" id="formulario">
+                <div class="formulario_nombres">
+                    <!--1° Primer campo de formulario NOMBRES-->
+                    <div class="formulario_grupo" id="grupo_usuario">
+                        <!-- <label for="usuario" class="formulario_label">Tu Nombre y apellido</label> -->
+                        <div class="formulario_grupo-input">
+                            <input type="text" class="formulario_input" name="usuario"
+                                placeholder="Tu Nombre y apellido">
+                            <i class="formulario_validacion-estado fas fa-times"></i>
+                        </div>
+                        <p class="formulario_input-error">El nombre y apellidos debe contener solo letras</p>
+                    </div>
 
-    <!--SCRIPTS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
+                    <!--2° Primer campo de formulario CORREO -->
+                    <div class="formulario_grupo" id="grupo_correo">
+                        <!-- <label for="correo" class="formulario_label">Correo</label> -->
+                        <div class="formulario_grupo-input">
+                            <input type="email" class="formulario_input" placeholder="Correo Electronico" name="correo">
+                            <i class="formulario_validacion-estado fas fa-times"></i>
+                        </div>
+                        <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guiones
+                            y guion bajo</p>
+                    </div>
+                </div>
+                <div class="formulario_nombres">
+                    <!--3° Primer campo de formulario CELULAR -->
+                    <div class="formulario_grupo" id="grupo_celular">
+                        <!-- <label for="celular" class="formulario_label">Celular</label> -->
+                        <div class="formulario_grupo-input">
+                            <input type="text" class="formulario_input" placeholder="Celular" name="celular"
+                                id="celular">
+                            <i class="formulario_validacion-estado fas fa-times"></i>
+                        </div>
+                        <p class="formulario_input-error">El numero de celular solo puede contener numero y debe
+                            contener entre 7 y 20 numeros </p>
+                    </div>
+
+                    <!--4° Primer campo de formulario CIUDAD -->
+                    <div class="formulario_grupo" id="grupo_ciudad">
+                        <!-- <label for="ciudad" class="formulario_label">Ciudad de contacto</label> -->
+                        <div class="formulario_grupo-input">
+                            <input type="text" class="formulario_input" placeholder="Ciudad de contacto" name="ciudad"
+                                id="ciudad">
+                            <i class="formulario_validacion-estado fas fa-times"></i>
+                        </div>
+                        <p class="formulario_input-error">La ciudad debe contener solo letras</p>
+                    </div>
+                </div>
+
+                <!--5° Primer campo de formulario DIRECCION-->
+                <div class="formulario_grupo" id="grupo_direccion">
+                    <!-- <label for="direccion" class="formulario_label">Direccion</label> -->
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" placeholder="Direccion" name="direccion"
+                            id="direccion">
+                        <i class="formulario_validacion-estado fas fa-times"></i>
+                    </div>
+                    <p class="formulario_input-error">La direccion debe debe contener signos, letras y numeros</p>
+                </div>
+
+                <!--6° Primer campo de formulario DESCRIPCIÓN -->
+                <div class="formulario_grupo" id="grupo_descripcion">
+                    <!-- <label for="descripcion" class="formulario_label">Descripción Breve Del Daño</label> -->
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" placeholder="Descripción Breve Del Daño"
+                            name="descripcion" id="descripcion">
+                        <i class="formulario_validacion-estado fas fa-times"></i>
+                    </div>
+                    <p class="formulario_input-error">Debe ser una descripcion breve (100 caracteres) y solo letras</p>
+                </div>
+                <div class="formulario_nombres">
+                    <!--7° Primer campo de formulario MARCA-->
+                    <div class="formulario_grupo" id="grupo_marca">
+                        <!-- <label for="marca" class="formulario_label">Marca</label> -->
+                        <div class="formulario_grupo-input">
+                            <input type="text" class="formulario_input" placeholder="Marca" name="marca" id="marca">
+                            <i class="formulario_validacion-estado fas fa-times"></i>
+                        </div>
+                        <p class="formulario_input-error">La marca debe contener solo letras, numeros, guiones y guion
+                            bajo</p>
+                    </div>
+
+                    <!--8° Primer campo de formulario MODELO-->
+                    <div class="formulario_grupo" id="grupo_modelo">
+                        <!-- <label for="modelo" class="formulario_label">Modelo</label> -->
+                        <div class="formulario_grupo-input">
+                            <input type="text" class="formulario_input" placeholder="Modelo" name="modelo" id="modelo">
+                            <i class="formulario_validacion-estado fas fa-times"></i>
+                        </div>
+                        <p class="formulario_input-error">El modelo debe contener solo letras, numeros, guiones y guion
+                            bajo</p>
+                    </div>
+                </div>
+                <!--Texto Advertencia-->
+                <div class="formulario_grupo nota" id="grupo_advertencia">
+                    <p class="p-nota">NOTA: Si el equipo NO se encuentra en las opciones disponibles, por favor
+                        seleccione en el campo
+                        Marca "otro", Modelo, "otro" e ingresa el modelo y marca manualmente</p>
+                </div>
+
+                <!-- Terminos y condinciones checkbox trigger modal -->
+                <div class="formulario_grupo checkbox" id="grupo_terminos">
+                    <label class="formulario_label">
+                        <input class="formulario_checkbox" type="checkbox" name="checkbox" data-toggle="modal"
+                            data-target="#staticBackdrop" id="terminos"></input>
+                        Confirmo que deseo enviar mis datos para exclusivamente ser contactado por
+                        FixU
+                    </label>
+                </div>
+
+                <div class="formulario_mensaje" id="formulario_mensaje">
+                    <p>
+                        <i class="fas fa-exclamation"></i>
+                        <b>Error:</b> Por favor rellena el formulario correctamente.</B>
+                    </p>
+                </div>
+
+                <div class="formulario_grupo formulario_grupo-btn-enviar">
+                    <button type="submit" class="formulario_btn">Enviar Datos</button>
+                    <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formilario Enviado Correctamente
+                    </p>
+                </div>
+
+                <!-- Scrollable modal -->
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Términos y condiciones.
+                                        <br>El cliente acepta el servicio técnico bajo los siguientes términos y
+                                        condiciones, los cuales afirma haber leído y aceptado al momento de la
+                                        entrega del equipo:
+                                        <br><br>
+
+                                        1. Previo diagnóstico: El equipo está sujeto a verificación técnica para
+                                        establecer las posibles fallas que presenta; una vez diagnosticado se le
+                                        informará al cliente el resultado, la cual FixU Colombia elaborará un
+                                        presupuesto de la reparación donde le será comunicado por los canales
+                                        digitales para su aprobación. En caso de no autorizar la reparación, el
+                                        diagnóstico y el servicio a domicilio, no tendrá ningún costo adicional.
+                                        <br><br>
+
+                                        El presupuesto para la reparación tiene una validez de dos (2) días contados
+                                        a partir del momento en que se le indique al usuario el valor de dicha
+                                        reparación. Los costos de reparación podrían aumentar respecto de la
+                                        cotización original, de acuerdo con la revisión efectuada en el laboratorio,
+                                        costo que deberá ser aprobado de forma previa por el cliente antes de
+                                        cualquier intervención. Las piezas de repuestos o productos son iguales o
+                                        equivalentes a los remplazados, tanto en rendimiento como en fiabilidad.
+                                        <br><br>
+
+                                        2. Garantía: Todas las reparaciones tienen una garantía de 60 días
+                                        calendario, para tramitar una garantía hay que tener en cuenta las
+                                        siguientes condiciones:
+                                        <br>1. Todo equipo con rastros de humedad, maltrato, o intervención en otros
+                                        talleres perderá la garantía.
+                                        <br>2. Displays rayados, fisurados doblados o con humedad, perderá la
+                                        garantía.
+                                        <br>3. Puertos de carga, slots de micro sd, sim card y Jack de manos libres
+                                        con
+                                        pines rotos, perderán garantía.
+                                        <br>4. el software bloqueos por cuenta de correo son responsabilidad del
+                                        usuario, todo equipo q tenga algún tipo de reporte por robo será notificado
+                                        a las autoridades correspondientes.
+                                        <br>5. si el equipo no es retirado en el transcurso de 60 días se entenderá
+                                        como
+                                        abandono, sin tener derecho a ninguna indemnización ni reintegro de equipos.
+                                        <br>6. FIXU COLOMBIA o su equipo técnico no se hará responsable de ningún
+                                        contenido de información que este almacenada en celulares computadores o
+                                        unidades externas, la cual será responsabilidad del cliente.
+                                        <br>7. Al momento de efectuar una reparación a nivel componente el cliente
+                                        asumirá el riesgo que el equipo no vuelva a encender o presente algunos
+                                        otros problemas técnicos por lo cual será bajo absoluta responsabilidad del
+                                        cliente, mas no por el personal de FIXU COLOMBIA.
+                                        <br>8. Todo equipo se entregará probado y se dará garantía por el daño
+                                        reportado.
+                                        <br>
+                                        TIEMPO DE GARANTÍA
+                                        <br>• BATERIAS: tres meses de garantía
+                                        <br>• DISPLAYS: 60 días calendario de garantía teniendo en cuentas las
+                                        condiciones de las políticas.
+                                        <br>• PUERTOS DE CARGA: 60 días calendario.
+                                        <br>• SOFTWARE Y CUENTAS: no tienen garantía se entregan probados y
+                                        funcionando
+                                        puesto q nosotros no tenemos el control de las cuentas a los cuales se va a
+                                        vincular.
+
+                                        <br><br>
+
+
+                                        3. Custodia: FixU Colombia no se hace responsable por equipos que no sean
+                                        reclamados y/o entregados después de 90 días de haber sido ingresados a
+                                        nuestras instalaciones, se entiende como abandono del equipo y FixU
+                                        Colombia, deberá disponer conforme lo ordene el gobierno de acuerdo con la
+                                        reglamentación que para el efecto se expida.
+
+                                        <br><br>
+                                        4. Tiempo de la cotización del servicio: El tiempo de la cotización del
+                                        servicio de reparación tendrá una vigencia de dos (2) días calendario,
+                                        contados a partir del momento en que se le indique al usuario el valor de
+                                        dicha reparación. Pasado este tiempo, deberá generarse una nueva cotización
+                                        del servicio.
+                                        <br><br>
+
+                                        5. Protección de Datos: Es responsabilidad del cliente realizar una copia
+                                        (backup) de la información contenida en el dispositivo electrónico antes de
+                                        ingresar el equipo a servicio técnico, teniendo en cuenta que la información
+                                        contenida en el equipo es confidencial y propiedad del cliente, toda la
+                                        información (directorio telefónico y contenidos multimedia) será borrada.
+                                        FixU Colombia, no se hace responsable por la pérdida o deterioro de
+                                        complementos cosméticos tales como protectores de pantalla, calcomanías,
+                                        anti-espías, vidrios, templados soportes, entre otros. Conforme a la Ley
+                                        1581 del 17 de 2012; “por la cual se dictan disposiciones generales para la
+                                        protección de datos personales”. La siguiente información personal
+                                        solicitada (nombre, domicilio, número de teléfono y dirección de correo
+                                        electrónico) es necesaria para proceder con la solicitud de servicio. Si el
+                                        servicio se solicita en conformidad con una obligación de servicio de un
+                                        tercero, dicha información se transferirá al tercero para fines de
+                                        verificación y calidad, incluida la confirmación de la transacción de
+                                        servicio y el envío de una encuesta de cliente. Al firmar a continuación,
+                                        aceptas esta transferencia y el uso por parte del tercero para dicho
+                                        propósito, sus datos personales (nombre, números de contacto y otra
+                                        información) serán compartidos con el fabricante para su revisión. Se
+                                        requiere de su autorización para el tratamiento de sus datos personales, así
+                                        mismo el compartir su información con terceros y colaboradores con fines
+                                        exclusivamente del servicio, según lo dispone el artículo 9° de dicha Ley,
+                                        los cuales deben ser incorporados a la base de datos de la cual es
+                                        responsable FixU Colombia. Adicionalmente, usted podrá ejercer sus derechos
+                                        de conocer, actualizar, rectificar y solicitar la supresión de sus datos
+                                        personales e informarse sobre la Política a través de los canales de
+                                        atención al cliente de nuestra compañía. Esta información es y será
+                                        utilizada solo en el desarrollo de las funciones propias de la empresa.
+                                        <br><br>
+
+                                        6. Entrega de Equipos: El equipo será entregado únicamente al titular de la
+                                        orden de Servicio, presentando el documento de identidad original. En caso
+                                        de pérdida o robo del documento, el titular deberá presentar el respectivo
+                                        denuncio realizado ante la autoridad competente y un documento válido con
+                                        foto para proceder con la entrega.
+                                        <br><br>
+
+                                        7. Conozca el estado de su orden de servicio: Señor usuario, el estado se su
+                                        equipo será notificado por medio de su correo electrónico que haya inscrito
+                                        a nuestra base de datos, o si prefiere a través de nuestra línea atención al
+                                        cliente (+57) 321 591 7556
+                                        <br><br>
+
+                                        8. Política Ambiental: Según el Decreto 1076 de 2015 Titulo 6, del
+                                        Ministerio de Ambiente, los repuestos dañados deben tener una disposición
+                                        final adecuada, para evitar la contaminación y daños a la salud humana y al
+                                        medioambiente, por este motivo no se restituirán al usuario, repuestos,
+                                        accesorios ni baterías que hayan sido reemplazadas.
+                                        <br><br>
+
+                                        9. Pérdida o hurto: En caso de pérdida o hurto, del equipo durante el
+                                        proceso de custodia por parte de FixU Colombia, la Compañía informará al
+                                        Cliente sobre el evento de pérdida o hurto y tendrá 5 días hábiles,
+                                        siguientes, para reintegrar un equipo celular de las mismas o similares
+                                        características técnicas, en todo caso, FixU Colombia no podrá desmejorar
+                                        las condiciones técnicas del equipo originalmente entregado por el Cliente.
+                                        <br><br>
+
+                                        10. Declaraciones del Cliente:
+                                        <br><br>
+
+                                        10.1. Declaro que conozco que el servicio técnico prestado por FIXU COLOMBIA
+                                        SAS, aplica únicamente para equipos en condición de fuera de garantía del
+                                        fabricante y que asumo la responsabilidad del diagnóstico en caso contrario.
+                                        <br><br>
+                                        10.2. Declaro que la información sobre el estado del equipo para su
+                                        diagnóstico es real y corresponde a la realidad, y que, en caso de alguna
+                                        omisión, se exonera a FixU Colombia de toda responsabilidad por los
+                                        hallazgos no declarados por el cliente en la fase de solicitud del servicio,
+                                        a través del Contact Center.
+                                        <br><br>
+                                        10.3. Declaro que conozco y acepto que el servicio de diagnóstico y
+                                        reparación del equipo celular se realizarán en las instalaciones de FixU
+                                        Colombia, con personal especializado y certificado por las marcas en
+                                        convenio.
+                                        <br><br>
+                                        10.4 Declaro que la información entregada a través del Contact Center es
+                                        clara y precisa, por lo cual hace parte integral del presente documento.
+                                        <br><br>
+                                        10.5. Declaro que la información entregada a través de la página web
+                                        www.fixu.com.co es clara y precisa, por lo cual hace parte integral del
+                                        presente documento.
+
+                                        <br><br>
+
+                                        POLÍTICA DE PROTECCIÓN DE DATOS.
+                                        FixU Colombia, en desarrollo de sus actividades previstas en su objeto
+                                        social ha conformado una base de datos proveniente de la información
+                                        previamente suministrada por nuestros clientes, colaboradores, proveedores y
+                                        contratistas, razón por la cual, creemos importante contar con su presencia
+                                        en nuestra base de datos y tener el privilegio de comunicarnos
+                                        frecuentemente con usted.
+                                        En consecuencia, y en los términos de la Ley 1581 de 2012, mediante la cual
+                                        se desarrolla el derecho constitucional que tienen todas las personas a
+                                        conocer, actualizar y rectificar las informaciones que se hayan recogido
+                                        sobre ellas en bases de datos o archivos, requerimos su autorización para el
+                                        tratamiento de sus datos personales y de la información que manejamos en
+                                        nuestras bases de datos.
+                                        <br><br>
+
+                                        De acuerdo con la Ley 1581 de 2012, los titulares de datos personales tienen
+                                        los siguientes derechos:
+                                        <br><br>
+                                        a) Conocer, actualizar y rectificar sus datos personales frente a FixU
+                                        Colombia. Este derecho se podrá ejercer, entre otros frente a datos
+                                        parciales, inexactos, incompletos, fraccionados, que induzcan a error, o
+                                        aquellos cuyo tratamiento esté expresamente prohibido o no haya sido
+                                        autorizado.
+                                        <br><br>
+
+                                        b) Solicitar prueba de la autorización otorgada a FixU Colombia, salvo que
+                                        la Ley 1581 de 2012 indique que dicha autorización no es necesaria.
+                                        <br><br>
+
+                                        c) Presentar solicitudes ante FixU Colombia respecto del uso que le ha dado
+                                        a sus datos personales, y a que éstas le entreguen tal información.
+                                        <br><br>
+
+                                        d) Presentar ante la Superintendencia de Industria y Comercio quejas por
+                                        infracciones a la Ley 1581 de 2012.
+                                        <br><br>
+
+                                        e) Revocar su autorización y/o solicitar la supresión o modificación de sus
+                                        datos personales de las bases de datos de FixU Colombia, cuando se ha
+                                        incurrido en conductas contrarias a la ley 1581 de 2012 o cuando no hay una
+                                        obligación legal o contractual de mantener el dato personal en la base de
+                                        datos de FixU Colombia, o cuando así lo requiera el titular de los datos
+                                        personales.
+                                        <br><br>
+
+                                        f) Solicitar acceso y acceder en forma fácil y gratuita a sus datos
+                                        personales que hayan sido objeto de tratamiento por parte de FixU Colombia.
+                                        <br><br>
+
+                                        g) Conocer las modificaciones a los términos de esta Política de manera
+                                        previa y eficiente a la implementación de las nuevas modificaciones o, en su
+                                        defecto, de la nueva política de tratamiento de la información.
+                                        <br>
+                                        <br><br>
+
+                                        Según lo dispone la ley 1581 de 2012, se requiere de su autorización expresa
+                                        y escrita para poder hacer uso de su información y agregarlos a una base de
+                                        datos que será manejada de manera exclusiva y de la cual será responsable
+                                        FixU Colombia. Esto es de vital importancia, pues al interior manejamos
+                                        información especial para todos nuestros clientes, proveedores,
+                                        colaboradores y contratistas que tenemos registrados. El recaudo,
+                                        autorización, utilización, circulación y supresión de datos personales por
+                                        parte de FixU Colombia se tramitará según el procedimiento descrito en la
+                                        ley.
+                                        <br><br>
+
+                                        TRATAMIENTO DE INFORMACIÓN PERSONAL
+                                        FixU Colombia en calidad de responsable del tratamiento de datos personales
+                                        y con el fin de ejecutar adecuadamente sus actividades comerciales y
+                                        fortalecer las relaciones con terceros, recopila, almacena, utiliza,
+                                        circula, transmite, transfiere, actualiza, rectifica y suprime datos
+                                        personales, incluyendo datos sensibles, correspondientes a personas
+                                        naturales con quienes tiene o ha tenido relación, tales como, trabajadores,
+                                        clientes, proveedores, distribuidores, accionistas, acreedores y deudores.
+                                        Igualmente, FixU Colombia protege la privacidad de los datos sensibles de
+                                        los titulares de la información, entendiendo estos como aquellos que afectan
+                                        la intimidad del titular o cuyo uso indebido puede generar su
+                                        discriminación, tales como aquellos que revelen el origen racial o étnico,
+                                        la orientación política, las convicciones religiosas o filosóficas, la
+                                        pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que
+                                        promueva intereses de cualquier partido político o que garanticen los
+                                        derechos y garantías de partidos políticos de oposición así como los datos
+                                        relativos a la salud, a la vida sexual y los datos biométricos.
+                                        En el caso de que el titular de los datos personales considere que se ha
+                                        dado un uso inapropiado, se han incumplido las finalidades antes descritas o
+                                        se han desconocido los mandatos legales o sus derechos fundamentales, el
+                                        procedimiento que debe seguir es el siguiente:
+                                        <br><br>
+
+                                        1.El titular del dato o su representante legal en caso de personas jurídicas
+                                        o el apoderado de estos, mediante poder debidamente otorgado, deberá
+                                        presentar comunicación por escrito donde conste su calidad, informe su
+                                        interés y exprese de manera clara los fundamentos de su solicitud.
+                                        <br><br>
+                                        2.La misma deberá ser radicada en la oficina principal de FixU Colombia,
+                                        ubicadas en la carrera 13 N° 98-13 de la ciudad de Bogotá D.C. o remitida al
+                                        correo electrónico: soporte@fixu.com.co
+                                        <br><br>
+
+                                        3.FixU Colombia por conducto de su representante legal o del funcionario
+                                        delegado para el efecto, procederá a dar respuesta en un término máximo de
+                                        quince (15) días hábiles. En ella, se señalarán las medidas adoptadas con el
+                                        fin de salvaguardar los derechos del titular.
+                                        <br><br>
+                                        Sin perjuicio de lo anterior, Usted podrá, en cualquier tiempo, ejercer sus
+                                        derechos de conocer, autorizar, rectificar y solicitar la supresión de sus
+                                        datos personales y conocer la política de tratamiento de datos a través de
+                                        los canales de atención anteriormente mencionados.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+
+    <footer class="text-center footer-style" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h3>Dirección</h3>
+                    <p>
+                        Edificio Óchic
+                        <br>Cra. 13 #98-70
+                        <br>OFICINA 303
+                        <br>comercial@fixu.com.co
+                    </p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>Buscanos</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>Todos los Derechos Reservados</h3>
+                    <p>Fixu Colombia &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0"
+        nonce="0fMkFIpr"></script>
+
+    <script src="https://use.fontawesome.com/12a99b6783.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="./js/registro.js"></script>
 
 </body>
 
