@@ -22,6 +22,8 @@ body {
     font-size: 1.6rem;
     line-height: 2;
     color: var(--texto);
+    width: 100%;
+    height: 100vh;
 }
 
 figure{
@@ -95,6 +97,28 @@ figure{
     border-radius:0.5rem;
 }
 
+.header .boton {
+  background-color: #FFFFFF;
+  color: var(--opcional);
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  /* margin-top: 3rem;     */
+  text-align: center;
+  border: none; 
+}
+
+.header .boton:hover{
+  background: yellowgreen;
+  color:#545B6B;
+}
+
+li a:hover {
+  color:var(--principal);
+  background: white;
+  
+}  
+
 /*.header button{
   border-radius:0.5rem;
 }*/
@@ -109,11 +133,7 @@ figure{
     flex-wrap: inherit; */
 }
 
-li a:hover {
-    color:var(--principal);
-    background: white;
-    
-}  
+
 
 .titulo{
   color: var(--opcional); 
@@ -132,21 +152,6 @@ li a:hover {
     transition: all ease 1s;
 }
 
-.header .boton {
-  background-color: #FFFFFF;
-  color: var(--opcional);
-  text-decoration: none;
-  font-size: 1.8rem;
-  padding: 1rem 2rem;
-  /* margin-top: 3rem;     */
-  text-align: center;
-  border: none; 
-}
-
-.header .boton:hover{
-  background: yellowgreen;
-  color:#545B6B;
-}
   
   /* CAROUSEL
   -------------------------------------------------- */
@@ -709,7 +714,6 @@ main{
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1rem;
   background-color: rgb(84, 91, 107, 0.6);
 }
 
@@ -728,6 +732,7 @@ main{
   flex-direction:column;
   justify-content: space-between;
   height: 50rem;
+  margin: 1rem;
 }
 
 .formulario_label{
@@ -739,8 +744,6 @@ main{
 
 .formulario_grupo-input{
   display: flex;
-  flex-direction: column;
-  position: relative;  /** para el grupo tenga un posicionamiento relativo*/
 }
 
 .formulario_input{
@@ -893,6 +896,47 @@ main{
   .formulario_input{
     border: .3rem solid  #bb2929;
   }
+
+/*Css Sobre Nosotros*/
+
+
+.item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedor_galeria{
+  /**Ya se pueden borrar el css Grid debido a que el Js con ayuda de una libreria lo hacen*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 23rem); /**asignamos las columnas "auto-fit"para tomar todo el espacio disponible y "15rem" para indicarle el tamañano*/
+  grid-auto-rows: 28rem;/**definir el tamaño de cada fila*/
+  /*width: 80%;/**asignamos un ancho a la clase padre
+  /*justify-content: center; /**Para centra el contenido dentro*/
+  /*gap: 1rem; /**Espacio entre los elementos*/
+  /*max-width: 1200px;*/
+  margin-left: auto; /**Definimos una margen para cada lado automatica*/
+  margin-right: auto;
+  justify-content: center;
+  gap:2rem; /**espacio entre los elemntos*/
+}
+
+.item{
+  /*grid-column: span 2; /**266px + 10px = 274px*/ /**Le decimos que tome dos columnas*/
+  transition: 0.5s filter;
+  width: 23rem;
+  cursor: zoom-in;
+  background-color: lightgray;
+
+}
+
+.item img{
+  border-radius: 1rem;
+}
+.item:hover{
+  filter: brightness(0.5); /**Filtro de brillo*/
+
+}
 
 
 /* Responsive */
