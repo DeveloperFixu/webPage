@@ -22,8 +22,6 @@ body {
     font-size: 1.6rem;
     line-height: 2;
     color: var(--texto);
-    width: 100%;
-    height: 100vh;
 }
 
 figure{
@@ -899,48 +897,54 @@ main{
 
 /*Css Sobre Nosotros*/
 
-
 .item img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 1rem;
+  background: lightgray;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contenedor_galeria{
   /**Ya se pueden borrar el css Grid debido a que el Js con ayuda de una libreria lo hacen*/
   display: grid;
   grid-template-columns: repeat(auto-fit, 23rem); /**asignamos las columnas "auto-fit"para tomar todo el espacio disponible y "15rem" para indicarle el tamañano*/
-  grid-auto-rows: 28rem;/**definir el tamaño de cada fila*/
-  /*width: 80%;/**asignamos un ancho a la clase padre
-  /*justify-content: center; /**Para centra el contenido dentro*/
-  /*gap: 1rem; /**Espacio entre los elementos*/
+  grid-auto-rows: 20rem;/**definir el tamaño de cada fila*/
+  width: 90%;/**asignamos un ancho a la clase padre*/
+  justify-content: center; /**Para centra el contenido dentro*/
+  gap: 1.5rem; /**Espacio entre los elementos*/
   /*max-width: 1200px;*/
-  margin-left: auto; /**Definimos una margen para cada lado automatica*/
-  margin-right: auto;
-  justify-content: center;
-  gap:2rem; /**espacio entre los elemntos*/
+   margin: 1rem auto;/**Definimos una margen para cada lado automatica*/
+   grid-auto-flow: dense;
 }
 
 .item{
   /*grid-column: span 2; /**266px + 10px = 274px*/ /**Le decimos que tome dos columnas*/
   transition: 0.5s filter;
-  width: 23rem;
   cursor: zoom-in;
-  background-color: lightgray;
-
 }
 
-.item img{
-  border-radius: 1rem;
-}
 .item:hover{
   filter: brightness(0.5); /**Filtro de brillo*/
+}
+
+.item:first-of-type{
 
 }
 
+.item:nth-of-type(2n + 1){
+  grid-column: span 2;
+}
+
+.item:nth-of-type(3n + 1){
+  grid-row: span 2;
+}
 
 /* Responsive */
-@media (min-width: 40em) {
+@media (min-width: 400px) {
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 1.25rem;
@@ -953,13 +957,13 @@ main{
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 620px) {
   .featurette-heading {
     margin-top: 7rem;
   }
 }
 
-@media (max-width: 50rem){ /**50rem equivalen a 800px "16px"*/
+@media (max-width: 500px){
   .formulario{
     display: flex;
     flex-direction: column;
@@ -967,4 +971,10 @@ main{
   .formulario_btn{
     width: 100%;
   }
+}
+
+/**media query para img sobre nosotros*/
+
+@media (min-width: 600px){
+
 }
