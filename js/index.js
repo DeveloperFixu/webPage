@@ -32,6 +32,17 @@
 //       }
 
 
+//activar el Menu de Navegación
+
+const ham = document.querySelector('.ham');
+const enlaces = document.querySelector('.enlaces-menu');
+const barras = document.querySelectorAll('.ham span'); /**esto quiere reprensar todos los span que estan el boton*/
+
+ham.addEventListener('click', () => {
+ enlaces.classList.toggle('activado');
+ barras.forEach(child => {child.classList.toggle('animado')}); /**Para cada elemento de la variables barras  qie incluye los tres elemtos span le agregamos la clase animado*/
+});
+
 // Altura Header
 
 $(document).ready(function () {

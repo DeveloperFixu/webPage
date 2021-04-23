@@ -58,80 +58,112 @@ figure{
   animation-name: fadeIn;
 }
 
+@keyframes muestraMenu{ /*Nos sirve para crear una animación para el menu**/ 
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
 /* Inicio Paginá */
 
 .header{
-    /* background-color: var(--opcional);  */
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(255,87,115,1) 44%, rgba(232,59,59,1) 100%);
-    display: flex;
-    height: 8rem;
-    align-items: center;
-    justify-content: space-between;
-    -webkit-transition: all ease .9s ;
-    -o-transition: all ease .9s;
-    transition: all ease .9s;
+  -webkit-transition: all ease .9s ;
+  -o-transition: all ease .9s;
+  transition: all ease .9s;
 }
 
- 
-.header ul{
-    display: flex;
-    height: inherit;
-    list-style-type: none;
+nav{
+  display: flex !important;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 11vh;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(255,87,115,1) 44%, rgba(232,59,59,1) 100%);
 }
-  
-.header ul li{
-    height: inherit;    
+
+.ham{
+  display: none;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  transition: 0.2s 0.1s /**la demora*/;
 }
-  
-.header a{
-    color:white;
-    font-size: 1.8rem;
-    text-decoration: none;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    padding: 0 3rem;
-    border-radius:0.5rem;
+
+.ham span{
+  display: block;
+  background-color: var(--blanco);
+  height: .3rem;
+  width: 2.8rem;
+  margin: 1rem auto;
+  border-radius: .2rem;
+}
+
+.ham:hover{
+  transform: rotate(360deg); 
+}
+
+.enlaces-menu{
+  display: flex;
+  padding: 0;
+}
+
+.enlaces-menu li{
+  list-style-type: none;
+  padding: .5rem 5rem;
+  transition: 0.3;
+}
+
+.enlaces-menu li a{
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.enlaces-menu li:hover{
+  color:var(--principal);
+  background:rgba(255, 255, 255, 0.6);
+}
+
+
+.enlaces-menu.activado{
+  display: flex; /**Se crea la clase activado para cuando damos clic*/
+  animation: muestraMenu 350ms ease-in-out both /**el proposito de 'ease-in-out' quiere decir que va a iniciar lento y va a terminar lento  y 'both' quiere decir que 'opacity:0 ;' se va a mantener antes que empiece la animación y 'opacity:1 ;' se va a mantener despues de terminar la animación*/;
+}
+
+
+/**animar las barras span*/
+
+.br-1.animado{
+  transform: rotate(-45deg) translate(-10px/*10px para la dirrección horizontal*/, 8px /*10px para la dirrección vertical*/);
+}
+
+.br-2.animado{
+  opacity: 0;
+}
+
+.br-3.animado{
+  transform: rotate(45deg) translate(-10px/*10px para la dirrección horizontal*/, -8px /*10px para la dirrección vertical*/); /**girar 45 Grados*/
 }
 
 .header .boton {
+  justify-content: center;
+  width: 10rem;
   background-color: #FFFFFF;
   color: var(--opcional);
   text-decoration: none;
   font-size: 1.8rem;
   padding: 1rem 2rem;
   /* margin-top: 3rem;     */
-  text-align: center;
+  text-align:center;
   border: none; 
+  border-radius: .5rem;
 }
 
 .header .boton:hover{
   background: yellowgreen;
   color:#545B6B;
 }
-
-li a:hover {
-  color:var(--principal);
-  background: white;
-  
-}  
-
-/*.header button{
-  border-radius:0.5rem;
-}*/
-
-.contenedor{
-    width: 100%;
-    margin:  5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* height: inherit;
-    flex-wrap: inherit; */
-}
-
-
 
 .titulo{
   color: var(--opcional); 
@@ -146,8 +178,8 @@ li a:hover {
   width: 100%;
   box-shadow: 0rem 0.4rem 0.3rem rgba(0,0,0,.5);
   -webkit-transition: all ease 1s ;
-    -o-transition: all ease 1s;
-    transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
   
@@ -931,10 +963,6 @@ main{
   filter: brightness(0.5); /**Filtro de brillo*/
 }
 
-.item:first-of-type{
-
-}
-
 .item:nth-of-type(2n + 1){
   grid-column: span 2;
 }
@@ -971,4 +999,60 @@ main{
   .formulario_btn{
     width: 100%;
   }
+}
+
+
+/**DISPOSITIVOS MOVILES*/
+
+@media (max-width: 760px){
+
+    .logo{
+    padding-left: 25px;
+    }
+
+    .ham{
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 25px;
+    }
+
+    nav{
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 25px 0;
+
+    }
+
+    .enlaces-menu{
+      flex-direction: column;
+      justify-content:space-around;
+      align-items: center;
+      height: 92vh;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: none;
+      opacity: 0;
+    }
+
+    .enlaces-menu li{
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+    
+    .enlaces-menu a{
+      text-align: center;
+      padding: 0;
+      justify-content: center;
+    }
+
+    .header .boton{
+      height: 10%;
+      width: 90%;
+      font-weight: 600;
+      font-size: 2rem;
+      margin: auto;
+    }
 }
