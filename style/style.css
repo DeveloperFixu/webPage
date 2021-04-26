@@ -71,7 +71,7 @@ figure{
   transition: all ease .9s;
 }
 
-nav{
+.header nav{
   display: flex !important;
   align-items: center;
   justify-content: space-around;
@@ -79,6 +79,7 @@ nav{
   background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(255,87,115,1) 44%, rgba(232,59,59,1) 100%);
 }
 
+.menu,
 .ham{
   display: none;
   cursor: pointer;
@@ -1002,7 +1003,7 @@ main{
 }
 
 
-/**DISPOSITIVOS MOVILES*/
+/**DISPOSITIVOS MOVILES para Srobre Nosotros*/
 
 @media (max-width: 760px){
 
