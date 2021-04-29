@@ -110,8 +110,9 @@ figure{
 
 .enlaces-menu li{
   list-style-type: none;
-  padding: .5rem 5rem;
+  padding: .5rem 2rem;
   transition: 0.3;
+  margin: 1rem 3rem;
 }
 
 .enlaces-menu li a{
@@ -124,6 +125,7 @@ figure{
 .enlaces-menu li:hover{
   color:var(--principal);
   background:rgba(255, 255, 255, 0.6);
+  border-radius: .5rem;
 }
 
 
@@ -148,15 +150,17 @@ figure{
 }
 
 .header .boton {
+  display: flex;
   justify-content: center;
+  text-align:center;
+  align-items: center;
   width: 10rem;
   background-color: #FFFFFF;
   color: var(--opcional);
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 1rem 2rem;
-  /* margin-top: 3rem;     */
-  text-align:center;
+  padding: .3rem 2rem;
+  /* margin-top: 3rem;*/
   border: none; 
   border-radius: .5rem;
 }
@@ -164,6 +168,10 @@ figure{
 .header .boton:hover{
   background: yellowgreen;
   color:#545B6B;
+}
+
+.header ul{
+  margin: 1rem;
 }
 
 .titulo{
@@ -220,6 +228,10 @@ figure{
   .card-footer{
     background-color: var(--opcional)  !important;
   }
+
+/** Css para carosel ¿Como funciona? */
+
+
 
   /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -287,6 +299,7 @@ figure{
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
@@ -335,6 +348,9 @@ figure{
   max-height: 15rem;
   margin-bottom: 2rem; 
 }
+
+
+
 
 .counter{
   font-size:2.5rem;
@@ -942,7 +958,6 @@ main{
 }
 
 .contenedor_galeria{
-  /**Ya se pueden borrar el css Grid debido a que el Js con ayuda de una libreria lo hacen*/
   display: grid;
   grid-template-columns: repeat(auto-fit, 23rem); /**asignamos las columnas "auto-fit"para tomar todo el espacio disponible y "15rem" para indicarle el tamañano*/
   grid-auto-rows: 20rem;/**definir el tamaño de cada fila*/
@@ -1002,6 +1017,63 @@ main{
   }
 }
 
+@media (max-width: 480px){
+  .carro-2{
+    display: none;
+   }
+   .carro-3{
+    display: none;
+   }
+   .carro-4{
+    display: none;
+   }
+   .carro-5{
+    display: none;
+   }
+   .carro-1 button{
+     margin-bottom: 5rem;
+     box-shadow: 7px 7px 5px 5px var(--principal);
+   }
+   .carro-1 button:hover{
+     margin-bottom: 5rem;
+     box-shadow: none;
+     transition: 1s;
+   }
+   .carro-1{
+     width: 30rem;
+   }
+    
+   .carro-1 img{
+     width: 100%;
+   }
+   .modales_seguimiento{
+     width: 110%;
+     margin: auto;
+   }
+    .container{
+     padding-left: 0 !important;
+   }
+
+   .col-lg-2{
+     padding-left: 0 !important;
+   }
+
+.title h1{
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  padding: 0 3rem;
+}
+
+.title a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ }
+
 
 /**DISPOSITIVOS MOVILES para Srobre Nosotros*/
 
@@ -1022,15 +1094,16 @@ main{
       flex-direction: column;
       align-items: flex-start;
       padding: 25px 0;
-
+      
     }
-
+      
     .enlaces-menu{
+      margin-top: 5rem;
       flex-direction: column;
       justify-content:space-around;
       align-items: center;
       height: 92vh;
-      margin: 0;
+      
       padding: 0;
       width: 100%;
       display: none;
@@ -1051,9 +1124,58 @@ main{
 
     .header .boton{
       height: 10%;
-      width: 90%;
+      width: 80%;
       font-weight: 600;
       font-size: 2rem;
       margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+    .header li:hover{
+      border-radius: 0;
+    }
+}
+
+/**Espesialistas*/
+@media(max-width: 767px){
+ #Especialistas .col{
+   width: 60px;
+   margin: 0;
+ }
+ .row{
+   margin-left: 0 !important;
+   margin-right: 0 !important;
+ 
+  }
+  
+.counter{
+  margin: 0;
+}
+
+  .svg{
+   justify-content: center;
+   align-items: center;
+   }
+
+  .dedo_arriba{
+    width: 77%;
+  }
+
+  .taza{
+    width: 87%;
+  }
+
+#Especialistas h1{
+  margin: 0;
+}
+
+}
+
+
+/**COMENTARIOS*/
+@media(max-width: 480px){
+  .Carro button{
+    display: flex;
+  }
 }
