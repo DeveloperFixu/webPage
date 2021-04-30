@@ -229,6 +229,9 @@ figure{
     background-color: var(--opcional)  !important;
   }
 
+  .card{
+    margin-right: 0 !important;
+  }
 /** Css para carosel ¿Como funciona? */
 
 
@@ -237,6 +240,11 @@ figure{
   -------------------------------------------------- */
   
   /* Center align the text within the three columns below the carousel */
+
+  #seguimiento{
+    margin-bottom: 4rem;
+  }
+
   .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -697,6 +705,9 @@ color: var(--opcional);
 }
 
 .card-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
 }
 
@@ -715,6 +726,15 @@ color: var(--opcional);
 
 .titulo h1{
   font-size: 3.5rem;
+}
+
+.row{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.servicios{
+  margin: 5rem auto;
 }
 
 /** Css Registro*/
@@ -767,6 +787,7 @@ main{
 .card_title{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 6rem;
   margin-bottom: 5rem;
@@ -779,7 +800,7 @@ main{
   flex-direction:column;
   justify-content: space-between;
   height: 50rem;
-  margin: 1rem;
+  margin: 1rem 5rem;
 }
 
 .formulario_label{
@@ -1007,6 +1028,16 @@ main{
   }
 }
 
+@media (max-width: 760px){
+  .banner .img2{
+    display: none;
+  }
+
+  .banner h1{
+    display: none;
+  }
+}
+
 @media (max-width: 500px){
   .formulario{
     display: flex;
@@ -1177,5 +1208,49 @@ main{
 @media(max-width: 480px){
   .Carro button{
     display: flex;
+  }
+}
+
+/**REGISTRO*/
+@media (max-width: 1250px){
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+  } 
+  .formulario_nombres{
+    display: flex;
+    flex-direction: column;
+}
+    .formulario_nombres input{
+      width: 120rem;
+}
+     .formulario_input{
+    margin-bottom: 2rem;
+}
+  
+}
+
+@media (min-width: 1805px){
+  .formulario{ 
+    margin: 2rem 20rem;
+  }
+  .formulario_nombres input{
+    width: 70rem;
+  }
+
+}
+
+@media (max-width: 679px){
+  .formulario{
+    margin-bottom: 30rem;
+  }
+
+  .formulario_btn{
+    width: 100%;
+  }
+
+  .formulario_input{
+    margin-bottom: 2rem;
   }
 }
