@@ -737,6 +737,13 @@ color: var(--opcional);
   margin: 5rem auto;
 }
 
+.container-fluit,
+.col-4{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
 /** Css Registro*/
 
 main{
@@ -853,7 +860,7 @@ main{
 }
 
 .formulario_nombres input{
-  width: 60rem;
+  width: 57rem;
 }
 
 .formulario_validacion-estado{
@@ -1010,11 +1017,15 @@ main{
 
 /* Responsive */
 
-@media (max-width:){
+@media (max-width:1280px){
 }  
-1280
-720
-480
+@media (max-width:720px){
+}  
+@media (max-width:480px){
+}  
+
+
+
 
 @media (min-width: 400px) {
   /* Bump up size of carousel content */
