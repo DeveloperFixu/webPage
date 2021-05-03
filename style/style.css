@@ -1,31 +1,33 @@
-:root{
-    --principal:rgb(232, 59, 59); 
-    --texto: #545B6B;
-    --opcional: #FF5773; 
-    --background: #dad5d6;
-    --blanco: rgb(255, 255, 255);
-    --negro: rgb(0, 0, 0);
+:root {
+  --principal: rgb(232, 59, 59);
+  --texto: #545B6B;
+  --opcional: #FF5773;
+  --background: #dad5d6;
+  --blanco: rgb(255, 255, 255);
+  --negro: rgb(0, 0, 0);
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
-    
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-    margin: 0;
-}
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;    
-    font-size: 1.6rem;
-    line-height: 2;
-    color: var(--texto);
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** Reset para REMS - 62.5% = 10px de 16px **/
 }
 
-figure{
-    margin: 0 !important;
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: var(--texto);
+}
+
+figure {
+  margin: 0 !important;
 }
 
 /* Animaciones  */
@@ -48,7 +50,6 @@ figure{
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -58,39 +59,44 @@ figure{
   animation-name: fadeIn;
 }
 
-@keyframes muestraMenu{ /*Nos sirve para crear una animación para el menu**/ 
-  from{opacity: 0;}
-  to{opacity: 1;}
+@keyframes muestraMenu {
+  /*Nos sirve para crear una animación para el menu**/
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Inicio Paginá */
 
-.header{
-  -webkit-transition: all ease .9s ;
+.header {
+  -webkit-transition: all ease .9s;
   -o-transition: all ease .9s;
   transition: all ease .9s;
 }
 
-.header nav{
+.header nav {
   display: flex !important;
   align-items: center;
   justify-content: space-around;
   min-height: 11vh;
-  background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(255,87,115,1) 44%, rgba(232,59,59,1) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 15%, rgba(255, 87, 115, 1) 44%, rgba(232, 59, 59, 1) 100%);
 }
 
-.menu,
-.ham{
+.menu, .ham {
   display: none;
   cursor: pointer;
   border: none;
   margin: 0;
   padding: 0;
   background-color: transparent;
-  transition: 0.2s 0.1s /**la demora*/;
+  transition: 0.2s 0.1s/**la demora*/
+  ;
 }
 
-.ham span{
+.ham span {
   display: block;
   background-color: var(--blanco);
   height: .3rem;
@@ -99,60 +105,65 @@ figure{
   border-radius: .2rem;
 }
 
-.ham:hover{
-  transform: rotate(360deg); 
+.ham:hover {
+  transform: rotate(360deg);
 }
 
-.enlaces-menu{
+.enlaces-menu {
   display: flex;
   padding: 0;
 }
 
-.enlaces-menu li{
+.enlaces-menu li {
   list-style-type: none;
   padding: .5rem 2rem;
   transition: 0.3;
   margin: 1rem 3rem;
 }
 
-.enlaces-menu li a{
+.enlaces-menu li a {
   color: var(--blanco);
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
 }
 
-.enlaces-menu li:hover{
-  color:var(--principal);
-  background:rgba(255, 255, 255, 0.6);
+.enlaces-menu li:hover {
+  color: var(--principal);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: .5rem;
 }
 
-
-.enlaces-menu.activado{
-  display: flex; /**Se crea la clase activado para cuando damos clic*/
-  animation: muestraMenu 350ms ease-in-out both /**el proposito de 'ease-in-out' quiere decir que va a iniciar lento y va a terminar lento  y 'both' quiere decir que 'opacity:0 ;' se va a mantener antes que empiece la animación y 'opacity:1 ;' se va a mantener despues de terminar la animación*/;
+.enlaces-menu.activado {
+  display: flex;
+  /**Se crea la clase activado para cuando damos clic*/
+  animation: muestraMenu 350ms ease-in-out both/**el proposito de 'ease-in-out' quiere decir que va a iniciar lento y va a terminar lento  y 'both' quiere decir que 'opacity:0 ;' se va a mantener antes que empiece la animación y 'opacity:1 ;' se va a mantener despues de terminar la animación*/
+  ;
 }
-
 
 /**animar las barras span*/
 
-.br-1.animado{
-  transform: rotate(-45deg) translate(-10px/*10px para la dirrección horizontal*/, 8px /*10px para la dirrección vertical*/);
+.br-1.animado {
+  transform: rotate(-45deg) translate(-10px/*10px para la dirrección horizontal*/
+  , 8px/*10px para la dirrección vertical*/
+  );
 }
 
-.br-2.animado{
+.br-2.animado {
   opacity: 0;
 }
 
-.br-3.animado{
-  transform: rotate(45deg) translate(-10px/*10px para la dirrección horizontal*/, -8px /*10px para la dirrección vertical*/); /**girar 45 Grados*/
+.br-3.animado {
+  transform: rotate(45deg) translate(-10px/*10px para la dirrección horizontal*/
+  , -8px/*10px para la dirrección vertical*/
+  );
+  /**girar 45 Grados*/
 }
 
 .header .boton {
   display: flex;
   justify-content: center;
-  text-align:center;
+  text-align: center;
   align-items: center;
   width: 10rem;
   background-color: #FFFFFF;
@@ -161,154 +172,157 @@ figure{
   font-size: 1.8rem;
   padding: .3rem 2rem;
   /* margin-top: 3rem;*/
-  border: none; 
+  border: none;
   border-radius: .5rem;
 }
 
-.header .boton:hover{
+.header .boton:hover {
   background: yellowgreen;
-  color:#545B6B;
+  color: #545B6B;
 }
 
-.header ul{
+.header ul {
   margin: 1rem;
 }
 
-.titulo{
-  color: var(--opcional); 
+.titulo {
+  color: var(--opcional);
   text-align: center;
-  font-size: 2rem;  
+  font-size: 2rem;
 }
 
-.menu-fixed{
+.menu-fixed {
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
-  box-shadow: 0rem 0.4rem 0.3rem rgba(0,0,0,.5);
-  -webkit-transition: all ease 1s ;
+  box-shadow: 0rem 0.4rem 0.3rem rgba(0, 0, 0, .5);
+  -webkit-transition: all ease 1s;
   -o-transition: all ease 1s;
   transition: all ease 1s;
 }
 
-  
-  /* CAROUSEL
+/* CAROUSEL
   -------------------------------------------------- */
-  
-  /* Carousel base class */
-  .carousel {
-    margin-bottom: 4rem;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 59rem;
-  }
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 62rem;
-  }
 
-  .carousel-caption{
-      bottom: 28rem !important; 
-  }
-  
-  .card-body{
-    background-color: rgb(84, 91, 107, 0.2);
-  }
-  
-  .card-footer{
-    background-color: var(--opcional)  !important;
-  }
+/* Carousel base class */
 
-  .card{
-    margin-right: 0 !important;
-  }
-/** Css para carosel ¿Como funciona? */
-
-
-
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-  
-  /* Center align the text within the three columns below the carousel */
-
-  #seguimiento{
-    margin-bottom: 4rem;
-  }
-
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  .marketing h2 {
-    font-weight: 400;
-  }
-  
-  /* rtl:begin:ignore */
-  .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
-
-  .marketing button{
-    border: none; 
-    background: none; 
-    outline: none;
-  }
-
-  .marketing button:focus{
-    outline: 0 !important;
-  } 
-
-.hero{
-    height: 100vh;
-    min-height: 60rem;
-    background-color: #dad5d6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Questrial', sans-serif;
-    color: white;
+.carousel {
+  margin-bottom: 4rem;
 }
 
-  
-.title{
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+  height: 59rem;
+}
+
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 62rem;
+}
+
+.carousel-caption {
+  bottom: 28rem !important;
+}
+
+.card-body {
+  background-color: rgb(84, 91, 107, 0.2);
+}
+
+.card-footer {
+  background-color: var(--opcional) !important;
+}
+
+.card {
+  margin-right: 0 !important;
+}
+
+/** Css para carosel ¿Como funciona? */
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+#seguimiento {
+  margin-bottom: 4rem;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.marketing button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.marketing button:focus {
+  outline: 0 !important;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 60rem;
+  background-color: #dad5d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Questrial', sans-serif;
+  color: white;
+}
+
+.title {
   color: var(--opcional);
   text-align: center;
 }
 
 .title button {
-  color:#FF5773;
+  color: #FF5773;
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem 3rem;
-  margin-top: 3rem;    
+  margin-top: 3rem;
   text-align: center;
-  border: none;    
+  border: none;
   flex: 0 0 100%;
 }
 
-.title button:hover{
-  color:#545B6B;
+.title button:hover {
+  color: #545B6B;
 }
-
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
 }
 
-
 /* Thin out the marketing headings */
+
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
@@ -318,14 +332,14 @@ figure{
 
 /* Comentarios */
 
-#Especialistas{
+#Especialistas {
   /* background: var(--background); */
   height: 55rem;
   display: flex;
   align-items: center;
 }
 
-#Especialistas h1{
+#Especialistas h1 {
   margin: 0;
   font-family: 'Questrial', sans-serif;
   text-align: center;
@@ -337,7 +351,7 @@ figure{
   margin: 3rem;
 }
 
-#Especialistas h2{
+#Especialistas h2 {
   margin: 0;
   font-family: 'Questrial', sans-serif;
   text-align: center;
@@ -346,32 +360,29 @@ figure{
   margin: 3rem;
 }
 
-.col{
+.col {
   text-align: center;
   margin: 5rem;
 }
 
-.svg{
+.svg {
   width: 100%;
   max-height: 15rem;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 }
 
-
-
-
-.counter{
-  font-size:2.5rem;
-  margin:3rem 3rem 1rem 3rem;
-  font-weight:bold;
-  text-align:center;
+.counter {
+  font-size: 2.5rem;
+  margin: 3rem 3rem 1rem 3rem;
+  font-weight: bold;
+  text-align: center;
   background-color: var(--opcional);
   border-radius: 2.5rem;
 }
 
 /* Carro */
 
-#Comentarios h1{
+#Comentarios h1 {
   margin: 0;
   padding: 2.5rem;
   font-family: 'Questrial', sans-serif;
@@ -382,9 +393,10 @@ figure{
 }
 
 .Carro {
-  background-color: #2a2a2a; /* rgb(33, 36, 33); */
+  background-color: #2a2a2a;
+  /* rgb(33, 36, 33); */
   display: flex;
-  align-items: center;  
+  align-items: center;
   margin: 0;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -405,13 +417,14 @@ figure{
 .project-container li {
   display: inline-block;
 }
+
 .project-container button {
   background: none;
   border: none;
   padding: 0;
 }
 
-.project-container button:focus-within{
+.project-container button:focus-within {
   outline: 0.3rem solid var(--opcional);
 }
 
@@ -454,25 +467,26 @@ figure{
   border-radius: 50%;
 }
 
-.arrow:focus{
+.arrow:focus {
   outline: 0.3rem solid var(--opcional);
 }
 
-
-.ubicacion iframe{
+.ubicacion iframe {
   display: flex;
-  width:100%; 
-  height:30rem;  
+  width: 100%;
+  height: 30rem;
 }
 
 /* Redes */
- 
-#check { display: flex; }
 
-.main,
-.contain {
+#check {
+  display: flex;
+}
+
+.main, .contain {
   margin: auto;
-  position: fixed; /* fixed */
+  position: fixed;
+  /* fixed */
   top: 62rem;
   bottom: 0;
   left: 2rem;
@@ -482,17 +496,19 @@ figure{
 }
 
 .main {
-  background-color: #00BB2D ;
+  background-color: #00BB2D;
   box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.35);
   cursor: pointer;
   z-index: 50;
 }
 
-.main:hover { background-color:var(--principal); }
+.main:hover {
+  background-color: var(--principal);
+}
 
 .main:active {
   box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.35), inset 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.35);
-  background-color: var(--opcional);  
+  background-color: var(--opcional);
 }
 
 .main .first {
@@ -507,25 +523,26 @@ figure{
   font-size: 4em;
   line-height: 8rem;
   text-align: center;
-  color:white;
+  color: white;
 }
 
-.first a{
+.first a {
   text-decoration: none;
   color: white;
   text-align: center;
 }
 
 .main .first:hover {
-    color: #fafafa;
+  color: #fafafa;
 }
 
-.contain { 
+.contain {
   width: 4% !important;
-  z-index: 10; }
+  z-index: 10;
+}
 
 .plate {
-  margin: auto;  
+  margin: auto;
   position: absolute;
   top: 2.5rem;
   right: 2.5rem;
@@ -549,32 +566,40 @@ figure{
   color: #faf4f2;
 }
 
-.plate:hover i { color: var(--opcional); }
+.plate:hover i {
+  color: var(--opcional);
+}
 
 .plate {
-  background-color: var(--texto);         
+  background-color: var(--texto);
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   transition-delay: 0s;
 }
 
-#check:checked ~ .main + .contain .plate { opacity: 1; }
+#check:checked~.main+.contain .plate {
+  opacity: 1;
+}
 
-#check:checked ~ .main + .contain .plate:nth-of-type(1) { top: -180%; }
+#check:checked~.main+.contain .plate:nth-of-type(1) {
+  top: -180%;
+}
 
-#check:checked ~ .main + .contain .plate:nth-of-type(2) {
+#check:checked~.main+.contain .plate:nth-of-type(2) {
   top: -60%;
   right: -130%;
 }
 
-#check:checked ~ .main + .contain .plate:nth-of-type(3) {   
-    right: -130%;
-    bottom: -60%;}
+#check:checked~.main+.contain .plate:nth-of-type(3) {
+  right: -130%;
+  bottom: -60%;
+}
 
-#check:checked ~ .main + .contain .plate:nth-of-type(4) {  bottom: -180%;}
+#check:checked~.main+.contain .plate:nth-of-type(4) {
+  bottom: -180%;
+}
 
-
-#contacto .col-md-6{
+#contacto .col-md-6 {
   margin: 1rem;
 }
 
@@ -582,57 +607,62 @@ figure{
 
 .footer-style {
   padding-top: 1rem;
-  background-color:var(--background);
-}
-footer {
-color: var(--opcional);
-}
-footer h3 {
-margin-bottom: 1rem;
-  font-weight: 800;
-}
-footer .footer-above {
-padding-top: 1rem;
-background-color: var(--background);
-}
-footer .footer-col {
-margin-bottom: 1rem;
-}
-footer .footer-below {
-padding: 2.5rem 0;
-background-color: var(--background);
+  background-color: var(--background);
 }
 
-.list-inline{
+footer {
+  color: var(--opcional);
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+footer .footer-above {
+  padding-top: 1rem;
+  background-color: var(--background);
+}
+
+footer .footer-col {
+  margin-bottom: 1rem;
+}
+
+footer .footer-below {
+  padding: 2.5rem 0;
+  background-color: var(--background);
+}
+
+.list-inline {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin:0 10rem;
+  margin: 0 10rem;
 }
 
-.list-inline a{
+.list-inline a {
   font-size: 2rem;
   color: var(--opcional);
 }
 
 /* Nuestros servicios */
 
-.tarjeta img{
+.tarjeta img {
   display: block;
   block-size: auto;
   width: 34rem;
   margin: -2rem;
 }
 
-.colu .col{
+.colu .col {
   align-items: center;
 }
 
-.card{
+.card {
   width: 30rem;
 }
 
-.card .imagen{
+.card .imagen {
   position: relative;
   height: 15rem;
   width: 15rem;
@@ -640,105 +670,105 @@ background-color: var(--background);
   margin: 2rem;
 }
 
-.rounded-circle:hover{
+.rounded-circle:hover {
   border: 0.4rem var(--opcional) solid;
   box-shadow: .2rem .2rem .2rem .2rem var(--texto);
-
 }
 
-.modal-title{
-font-size: 2.3rem;
-color: var(--opcional);
+.modal-title {
+  font-size: 2.3rem;
+  color: var(--opcional);
 }
 
-.modal-body p{
+.modal-body p {
   font-size: 1.5rem;
 }
 
-.modal-header{
+.modal-header {
   background-color: rgb(84, 91, 107, 0.2);
 }
 
-.modal-footer button{
+.modal-footer button {
   font-size: 1.6rem;
 }
-.hero .title{
+
+.hero .title {
   font-size: 2rem;
   letter-spacing: 0.2rem;
   text-align: justify;
 }
 
-.hero .title h1{
+.hero .title h1 {
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.hero .title ul{
+.hero .title ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.hero .title .boton{
+.hero .title .boton {
   font-size: 1.8rem;
 }
 
-.hero .boton{
+.hero .boton {
   color: var(--opcional);
   background: #fff;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   text-decoration: none;
-
 }
-.col-md-7 .lead{
+
+.col-md-7 .lead {
   font-size: 1.5rem;
 }
 
-.col-md-7 .lead ul{
+.col-md-7 .lead ul {
   list-style: none;
 }
 
 /**Css Servicos*/
-.info-nosotros{
+
+.info-nosotros {
   margin: 1rem 5rem;
 }
 
-.card-title{
+.card-title {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
 }
 
-.card-text{
+.card-text {
   font-size: 1.5rem;
 }
 
-.text-muted{
+.text-muted {
   font-size: 1.8rem;
 }
 
-.info-nosotros p{
+.info-nosotros p {
   color: var(--texto);
   text-align: justify;
 }
 
-.titulo h1{
+.titulo h1 {
   font-size: 3.5rem;
 }
 
-.row{
+.row {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
 
-.servicios{
+.servicios {
   margin: 5rem auto;
 }
 
-.container-fluit,
-.col-4{
+.container-fluit, .col-4 {
   display: flex;
   justify-content: space-around;
   margin-bottom: 1rem;
@@ -746,17 +776,17 @@ color: var(--opcional);
 
 /** Css Registro*/
 
-main{
+main {
   max-width: 100%;
-  width: 100%; 
+  width: 100%;
 }
 
-.banner{
+.banner {
   display: flex;
   position: relative;
 }
 
-.banner h1{
+.banner h1 {
   display: flex;
   flex-direction: column;
   color: var(--blanco);
@@ -767,31 +797,31 @@ main{
   font-size: 5rem;
 }
 
-.banner .img1{
+.banner .img1 {
   display: block;
   width: 100%;
 }
 
-.img2{
+.img2 {
   display: block;
   position: absolute;
   top: 70%;
   left: 44%;
   height: 12rem;
   padding: 1.5rem;
-  box-shadow:inset 0rem 0rem 8rem 1rem rgba(0,0,0);
+  box-shadow: inset 0rem 0rem 8rem 1rem rgba(0, 0, 0);
   border: none;
   border-radius: 50%;
-  }
+}
 
-.formulario_card{
+.formulario_card {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: rgb(84, 91, 107, 0.6);
 }
 
-.card_title{
+.card_title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -799,182 +829,193 @@ main{
   margin-top: 6rem;
   margin-bottom: 5rem;
 }
-.card_title h2{
+
+.card_title h2 {
   font-size: 2.7rem;
 }
-.formulario{
+
+.formulario {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
   height: 50rem;
   margin: 1rem 5rem;
 }
 
-.formulario_label{
-  display: block; /**Ocupe el 100% de espacio disponible*/
+.formulario_label {
+  display: block;
+  /**Ocupe el 100% de espacio disponible*/
   font-weight: 600;
   padding: 1rem;
-  cursor: pointer; /*Para poder darle clic*/
+  cursor: pointer;
+  /*Para poder darle clic*/
 }
 
-.formulario_grupo-input{
+.formulario_grupo-input {
   display: flex;
 }
 
-.formulario_input{
-  width: 100%; /*Ancho del 100% para que abarque todo el espacio disponible*/
+.formulario_input {
+  width: 100%;
+  /*Ancho del 100% para que abarque todo el espacio disponible*/
   background: #fff;
-  border: 0.3rem solid transparent; /**La intencion es que se vea cuando tiene su estado focus*/
+  border: 0.3rem solid transparent;
+  /**La intencion es que se vea cuando tiene su estado focus*/
   border-radius: 0.3rem;
   height: 4rem;
-  line-height: 4.5rem;  /**Altura de linea de esta forma nos aseguramos que el texto quede centrado*/
+  line-height: 4.5rem;
+  /**Altura de linea de esta forma nos aseguramos que el texto quede centrado*/
   padding: 0rem 4rem 0rem 1rem;
   transition: .3s ease all;
   font-size: 1.3rem!important;
 }
 
-.formulario_input::placeholder{
+.formulario_input::placeholder {
   color: var(--negro);
   font-weight: 600;
 }
 
-.formulario_input:focus{
+.formulario_input:focus {
   border: 0.3rem solid #0075ff;
-  outline: none; /**Quita una linea que agrega el navegador*/
+  outline: none;
+  /**Quita una linea que agrega el navegador*/
   box-shadow: .3rem 0rem 3rem rgb(163, 163, 163, 0.4);
 }
 
-.formulario_input-error{
+.formulario_input-error {
   font-size: 1.2rem;
-  margin-bottom: 0; /**generalmente a los Parrafos agrega un margen*/
-  display: none; /** Solo los voy a mostrar cuando cuando el usuario tenga algun error en el input*/
+  margin-bottom: 0;
+  /**generalmente a los Parrafos agrega un margen*/
+  display: none;
+  /** Solo los voy a mostrar cuando cuando el usuario tenga algun error en el input*/
 }
 
-.formulario_input-error-activo{ /**quiere decir que cuando el error del input este activo el mensaje de muestre*/
+.formulario_input-error-activo {
+  /**quiere decir que cuando el error del input este activo el mensaje de muestre*/
   display: block;
 }
 
-.formulario_nombres{
+.formulario_nombres {
   display: flex;
   justify-content: space-between;
 }
 
-.formulario_nombres input{
+.formulario_nombres input {
   width: 57rem;
 }
 
-.formulario_validacion-estado{
+.formulario_validacion-estado {
   position: absolute;
   right: 1rem;
   bottom: 1.5rem;
-  z-index: 100; /*Para asegurar que va a estar por arriba de otro elementos*/
+  z-index: 100;
+  /*Para asegurar que va a estar por arriba de otro elementos*/
   font-size: 1.6rem;
-  opacity: 0; /**Para que de esta forma no se muestre, solomnete se muestre cuando hay error*/
-  }
-.nota{
+  opacity: 0;
+  /**Para que de esta forma no se muestre, solomnete se muestre cuando hay error*/
+}
+
+.nota {
   font-size: 1.5rem;
-  font-weight: 600;  
+  font-weight: 600;
   text-align: justify;
 }
 
-.checkbox{
+.checkbox {
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
   color: var(--blanco);
 }
 
-  .formulario_checkbox{
-    margin-right: 1rem;
-  }
+.formulario_checkbox {
+  margin-right: 1rem;
+}
 
-  .formulario_mensaje{
-    font-size: 1.5rem;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    background: #F66060;
-    padding: 0rem 1.5rem;
-    border-radius: .3rem;
-    display: none; /*quiero que aparesca en ciertos momentos*/
-  }
+.formulario_mensaje {
+  font-size: 1.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background: #F66060;
+  padding: 0rem 1.5rem;
+  border-radius: .3rem;
+  display: none;
+  /*quiero que aparesca en ciertos momentos*/
+}
 
-  .formulario_mensaje-activo{
-    display: block;
-  }
+.formulario_mensaje-activo {
+  display: block;
+}
 
-  .formulario_mensaje p{
-    margin: 0;
-  }
+.formulario_mensaje p {
+  margin: 0;
+}
 
-  .formulario_grupo-btn-enviar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.formulario_grupo-btn-enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .formulario_btn{
-    height: 4.5rem;
-    line-height: 4.5rem;
-    width: 20%;
-    background: #FFFFFF;
-    color: var(--opcional);
-    font-weight: 600; 
-    font-size: 1.8rem;
-    border: none;
-    border-radius: .3rem;
-    cursor: pointer;  /**para que el usuario sepa que le puede dar clic*/
-    transition: .1s ease all;
-  }
-  
-  .formulario_btn:hover{
-    background: yellowgreen;
-    color:#545B6B;
-  }
+.formulario_btn {
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 20%;
+  background: #FFFFFF;
+  color: var(--opcional);
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: .3rem;
+  cursor: pointer;
+  /**para que el usuario sepa que le puede dar clic*/
+  transition: .1s ease all;
+}
 
-  .formulario_mensaje-exito{
-    margin-top: .5rem;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    background: rgb(255,255,255, 0.3);
-    color: #119200;
-    display: none; /**Solo que se muestre que todo esta correcto*/
-  }
+.formulario_btn:hover {
+  background: yellowgreen;
+  color: #545B6B;
+}
 
-  .formulario_mensaje-exito-activo{
-    display: block;
-  }
+.formulario_mensaje-exito {
+  margin-top: .5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: rgb(255, 255, 255, 0.3);
+  color: #119200;
+  display: none;
+  /**Solo que se muestre que todo esta correcto*/
+}
 
+.formulario_mensaje-exito-activo {
+  display: block;
+}
 
-  /*** Estilos para validación  ***/
+/*** Estilos para validación  ***/
 
-  .formulario_grupo-correcto 
-  .formulario_validacion-estado{
-    color: #1ed12d;
-    opacity: 1;
+.formulario_grupo-correcto .formulario_validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
 
-  }
+.formulario_grupo-incorrecto .formulario_label {
+  color: #bb2929;
+}
 
-  .formulario_grupo-incorrecto 
-  .formulario_label{
-    color: #bb2929;
-  }
+.formulario_grupo-incorrecto .formulario_validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
 
-  .formulario_grupo-incorrecto 
-  .formulario_validacion-estado{
-    color: #bb2929;
-    opacity: 1;
-  }
-
-  .formulario_grupo-incorrecto 
-  .formulario_input{
-    border: .3rem solid  #bb2929;
-  }
+.formulario_grupo-incorrecto .formulario_input {
+  border: .3rem solid #bb2929;
+}
 
 /*Css Sobre Nosotros*/
 
-.item img{
+.item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -985,47 +1026,225 @@ main{
   background-repeat: no-repeat;
 }
 
-.contenedor_galeria{
+.contenedor_galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 23rem); /**asignamos las columnas "auto-fit"para tomar todo el espacio disponible y "15rem" para indicarle el tamañano*/
-  grid-auto-rows: 20rem;/**definir el tamaño de cada fila*/
-  width: 90%;/**asignamos un ancho a la clase padre*/
-  justify-content: center; /**Para centra el contenido dentro*/
-  gap: 1.5rem; /**Espacio entre los elementos*/
+  grid-template-columns: repeat(auto-fit, 23rem);
+  /**asignamos las columnas "auto-fit"para tomar todo el espacio disponible y "15rem" para indicarle el tamañano*/
+  grid-auto-rows: 20rem;
+  /**definir el tamaño de cada fila*/
+  width: 90%;
+  /**asignamos un ancho a la clase padre*/
+  justify-content: center;
+  /**Para centra el contenido dentro*/
+  gap: 1.5rem;
+  /**Espacio entre los elementos*/
   /*max-width: 1200px;*/
-   margin: 1rem auto;/**Definimos una margen para cada lado automatica*/
-   grid-auto-flow: dense;
+  margin: 1rem auto;
+  /**Definimos una margen para cada lado automatica*/
+  grid-auto-flow: dense;
 }
 
-.item{
-  /*grid-column: span 2; /**266px + 10px = 274px*/ /**Le decimos que tome dos columnas*/
+.item {
+  /*grid-column: span 2; /**266px + 10px = 274px*/
+  /**Le decimos que tome dos columnas*/
   transition: 0.5s filter;
   cursor: zoom-in;
 }
 
-.item:hover{
-  filter: brightness(0.5); /**Filtro de brillo*/
+.item:hover {
+  filter: brightness(0.5);
+  /**Filtro de brillo*/
 }
 
-.item:nth-of-type(2n + 1){
+.item:nth-of-type(2n + 1) {
   grid-column: span 2;
 }
 
-.item:nth-of-type(3n + 1){
+.item:nth-of-type(3n + 1) {
   grid-row: span 2;
 }
 
 /* Responsive */
 
-@media (max-width:1280px){
-}  
-@media (max-width:720px){
-}  
-@media (max-width:480px){
-}  
+@media (max-width:480px) {
+  .carro-2 {
+    display: none;
+  }
+  .carro-3 {
+    display: none;
+  }
+  .carro-4 {
+    display: none;
+  }
+  .carro-5 {
+    display: none;
+  }
+  .carro-1 button {
+    margin-bottom: 5rem;
+    box-shadow: 7px 7px 5px 5px var(--principal);
+  }
+  .carro-1 button:hover {
+    margin-bottom: 5rem;
+    box-shadow: none;
+    transition: 1s;
+  }
+  .carro-1 {
+    width: 30rem;
+  }
+  .carro-1 img {
+    width: 100%;
+  }
+  .modales_seguimiento {
+    width: 110%;
+    margin: auto;
+  }
+  .container {
+    padding-left: 0 !important;
+  }
+  .col-lg-2 {
+    padding-left: 0 !important;
+  }
+  .title h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    padding: 0 3rem;
+  }
+  .title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario_btn {
+    width: 100%;
+  }
+ 
+}
 
+@media (max-width: 720px) {
+  /**DISPOSITIVOS MOVILES para Srobre Nosotros*/
+  .logo {
+    padding-left: 25px;
+  }
+  .ham {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+  }
+  .enlaces-menu {
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    padding: 0;
+    width: 100%;
+    display: none;
+    opacity: 0;
+  }
+  .enlaces-menu li {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  .enlaces-menu a {
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+  }
+  .header .boton {
+    height: 10%;
+    width: 80%;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header li:hover {
+    border-radius: 0;
+  }
 
+  /**Espesialistas*/
+  #Especialistas .col {
+    width: 60px;
+    margin: 0;
+  }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .counter {
+    margin: 0;
+  }
+  .svg {
+    justify-content: center;
+    align-items: center;
+  }
+  .dedo_arriba {
+    width: 77%;
+  }
+  .taza {
+    width: 87%;
+  }
+  #Especialistas h1 {
+    margin: 0;
+  }
 
+/**Registro*/
+
+  .banner .img2 {
+    display: none;
+  }
+  .banner h1 {
+    display: none;
+  }
+ 
+  .formulario {
+    margin-bottom: 30rem !important;
+  }
+
+  .formulario_btn {
+    width: 100%;
+  }
+  .formulario_input {
+    margin-bottom: 2rem;
+  }
+  .Carro button {
+    display: flex;
+  }
+}
+
+@media (max-width:1280px) {
+  /**Registro*/
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+  }
+  .formulario_nombres {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario_nombres input {
+    width: 120rem;
+  }
+  .formulario_input {
+    margin-bottom: 2rem;
+  }
+}
 
 @media (min-width: 400px) {
   /* Bump up size of carousel content */
@@ -1034,7 +1253,6 @@ main{
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
   .featurette-heading {
     font-size: 5rem;
   }
@@ -1046,229 +1264,20 @@ main{
   }
 }
 
-@media (max-width: 760px){
-  .banner .img2{
-    display: none;
+@media (min-width: 1805px) {
+  .formulario {
+    margin: 2rem 20rem;
   }
-
-  .banner h1{
-    display: none;
-  }
-}
-
-@media (max-width: 500px){
-  .formulario{
-    display: flex;
-    flex-direction: column;
-  }
-  .formulario_btn{
-    width: 100%;
+  .formulario_nombres input {
+    width: 70rem;
   }
 }
 
-@media (max-width: 480px){
-  .carro-2{
-    display: none;
-   }
-   .carro-3{
-    display: none;
-   }
-   .carro-4{
-    display: none;
-   }
-   .carro-5{
-    display: none;
-   }
-   .carro-1 button{
-     margin-bottom: 5rem;
-     box-shadow: 7px 7px 5px 5px var(--principal);
-   }
-   .carro-1 button:hover{
-     margin-bottom: 5rem;
-     box-shadow: none;
-     transition: 1s;
-   }
-   .carro-1{
-     width: 30rem;
-   }
-    
-   .carro-1 img{
-     width: 100%;
-   }
-   .modales_seguimiento{
-     width: 110%;
-     margin: auto;
-   }
-    .container{
-     padding-left: 0 !important;
-   }
-
-   .col-lg-2{
-     padding-left: 0 !important;
-   }
-
-.title h1{
-  display: flex;
-  justify-content: center;
-}
-
-.title{
-  padding: 0 3rem;
-}
-
-.title a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
- }
-
-
-/**DISPOSITIVOS MOVILES para Srobre Nosotros*/
-
-@media (max-width: 760px){
-
-    .logo{
-    padding-left: 25px;
-    }
-
-    .ham{
-      display: block;
-      position: absolute;
-      top: 15px;
-      right: 25px;
-    }
-
-    nav{
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 25px 0;
-      
-    }
-      
-    .enlaces-menu{
-      margin-top: 5rem;
-      flex-direction: column;
-      justify-content:space-around;
-      align-items: center;
-      height: 92vh;
-      
-      padding: 0;
-      width: 100%;
-      display: none;
-      opacity: 0;
-    }
-
-    .enlaces-menu li{
-      text-align: center;
-      padding: 20px;
-      width: 100%;
-    }
-    
-    .enlaces-menu a{
-      text-align: center;
-      padding: 0;
-      justify-content: center;
-    }
-
-    .header .boton{
-      height: 10%;
-      width: 80%;
-      font-weight: 600;
-      font-size: 2rem;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .header li:hover{
-      border-radius: 0;
-    }
-}
-
-/**Espesialistas*/
-@media(max-width: 767px){
- #Especialistas .col{
-   width: 60px;
-   margin: 0;
- }
- .row{
-   margin-left: 0 !important;
-   margin-right: 0 !important;
- 
-  }
-  
-.counter{
-  margin: 0;
-}
-
-  .svg{
-   justify-content: center;
-   align-items: center;
-   }
-
-  .dedo_arriba{
-    width: 77%;
-  }
-
-  .taza{
-    width: 87%;
-  }
-
-#Especialistas h1{
-  margin: 0;
-}
-
-}
-
-
-/**COMENTARIOS*/
+/**COMENTARIOS
 @media(max-width: 480px){
   .Carro button{
     display: flex;
   }
-}
+}*/
 
 /**REGISTRO*/
-@media (max-width: 1250px){
-  .formulario{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15rem;
-  } 
-  .formulario_nombres{
-    display: flex;
-    flex-direction: column;
-}
-    .formulario_nombres input{
-      width: 120rem;
-}
-     .formulario_input{
-    margin-bottom: 2rem;
-}
-  
-}
-
-@media (min-width: 1805px){
-  .formulario{ 
-    margin: 2rem 20rem;
-  }
-  .formulario_nombres input{
-    width: 70rem;
-  }
-
-}
-
-@media (max-width: 679px){
-  .formulario{
-    margin-bottom: 30rem;
-  }
-
-  .formulario_btn{
-    width: 100%;
-  }
-
-  .formulario_input{
-    margin-bottom: 2rem;
-  }
-}
