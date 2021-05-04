@@ -1225,6 +1225,30 @@ main {
   .Carro button {
     display: flex;
   }
+
+  /**SERVICIOS*/
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .col-4{
+    width: 30rem !important;
+    max-width: none !important;
+  }
+
+  .col-sm{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin:1rem;
+  }
+
+  .card-body{
+    text-align: justify;
+  }
 }
 
 @media (max-width:1280px) {
