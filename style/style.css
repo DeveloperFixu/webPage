@@ -1091,11 +1091,13 @@ main {
   .carro-1 {
     width: 30rem;
   }
+
   .carro-1 img {
     width: 100%;
   }
+
   .modales_seguimiento {
-    width: 110%;
+    width: 100%;
     margin: auto;
   }
   .container {
