@@ -1228,17 +1228,17 @@ main {
 
   /**SERVICIOS*/
 
-  .row{
+  .servicios .row{
     display: flex;
     flex-direction: column;
     align-content: center;
   }
-  .col-4{
+  .servicios .col-4{
     width: 30rem !important;
     max-width: none !important;
   }
 
-  .col-sm{
+  .servicios .col-sm{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1246,7 +1246,7 @@ main {
     margin:1rem;
   }
 
-  .card-body{
+  .servicios .card-body{
     text-align: justify;
   }
 }
