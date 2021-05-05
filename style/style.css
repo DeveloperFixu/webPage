@@ -170,7 +170,7 @@ figure {
   color: var(--opcional);
   text-decoration: none;
   font-size: 1.8rem;
-  padding: .3rem 2rem;
+  padding: 1rem 2rem;
   /* margin-top: 3rem;*/
   border: none;
   border-radius: .5rem;
@@ -179,6 +179,10 @@ figure {
 .header .boton:hover {
   background: yellowgreen;
   color: #545B6B;
+}
+
+.header a{
+  margin: auto;
 }
 
 .header ul {
@@ -500,6 +504,7 @@ figure {
   box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.35);
   cursor: pointer;
   z-index: 50;
+  margin-bottom: 1rem;
 }
 
 .main:hover {
@@ -1255,6 +1260,8 @@ main {
     align-content: center;
     align-items: center;
     margin:1rem;
+    justify-content: center;
+    justify-items: center;
   }
 
   .servicios .card-body{
@@ -1313,6 +1320,14 @@ main {
     width: 70rem;
   }
 }
+
+@media (min-width: 576px){
+  .col-sm{
+    display: flex;
+    justify-content: center;
+  }
+}
+
 
 /**COMENTARIOS
 @media(max-width: 480px){
