@@ -852,6 +852,7 @@ main {
 }
 
 .formulario_grupo-input {
+  position: relative;/**Le indicamos que tenga un posicion relativa, con esto los iconos de error y correcto pueden ir sobre el input*/
   display: flex;
 }
 
@@ -868,6 +869,7 @@ main {
   padding: 0rem 4rem 0rem 1rem;
   transition: .3s ease all;
   font-size: 1.3rem!important;
+  
 }
 
 .formulario_input::placeholder {
@@ -883,6 +885,7 @@ main {
 }
 
 .formulario_input-error {
+  color: var(--blanco);
   font-size: 1.2rem;
   margin-bottom: 0;
   /**generalmente a los Parrafos agrega un margen*/
@@ -905,9 +908,9 @@ main {
 }
 
 .formulario_validacion-estado {
-  position: absolute;
+  position:absolute;
   right: 1rem;
-  bottom: 1.5rem;
+  bottom: 1.2rem;
   z-index: 100;
   /*Para asegurar que va a estar por arriba de otro elementos*/
   font-size: 1.6rem;
@@ -941,6 +944,7 @@ main {
   border-radius: .3rem;
   display: none;
   /*quiero que aparesca en ciertos momentos*/
+  margin-bottom: 1rem;
 }
 
 .formulario_mensaje-activo {
@@ -1270,6 +1274,12 @@ main {
   .formulario_input {
     margin-bottom: 2rem;
   }
+
+  .formulario_validacion-estado{
+    position: absolute;
+    bottom: 3rem;
+  }
+
 }
 
 @media (min-width: 400px) {

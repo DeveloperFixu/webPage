@@ -182,6 +182,7 @@ const campos = {
     marca: false,
     modelo: false
 }
+
 /** se crear una constante en al cual va a ir toda la validacion
  * al igual que se crea una funcion de tipo fecha
  */
@@ -239,7 +240,7 @@ const validarCampo = (expresion, input, campo) => {
     }
 }
 /**Cuando levante la tecla quiero que ejecute esta función
- * va a comprar los campos 
+ * va a comprobar los campos 
  * y cuando le de clic fuera del input tambien valide
  */
 inputs.forEach((input) => {
