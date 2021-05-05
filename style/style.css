@@ -1219,7 +1219,7 @@ main {
   }
  
   .formulario {
-    margin-bottom: 30rem !important;
+    margin-bottom: 60rem !important;
   }
 
   .formulario_btn {
@@ -1231,6 +1231,11 @@ main {
   .Carro button {
     display: flex;
   }
+
+  .formulario_mensaje-activo{
+    height: 10rem;
+  }
+
 
   /**SERVICIOS*/
 
