@@ -128,8 +128,13 @@ figure {
   font-weight: 600;
 }
 
+.enlaces-menu li a:hover {
+  color: var(--texto);
+  font-size: 2.1rem;
+}
+
 .enlaces-menu li:hover {
-  color: var(--principal);
+  color: var(--texto);
   background: rgba(255, 255, 255, 0.6);
   border-radius: .5rem;
 }
