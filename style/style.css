@@ -854,9 +854,9 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 50rem;
-  margin: 1rem 5rem;
+  margin: 1rem 20rem;
 }
-
+/**el label del formilario esta en comentaios por lo tanto el css no se usa*/
 .formulario_label {
   display: block;
   /**Ocupe el 100% de espacio disponible*/
@@ -919,7 +919,7 @@ main {
 }
 
 .formulario_nombres input {
-  width: 57rem;
+ /* width: 48rem;*/
 }
 
 .formulario_validacion-estado {
@@ -1286,6 +1286,7 @@ main {
     flex-direction: column;
     margin-bottom: 15rem;
   }
+
   .formulario_nombres {
     display: flex;
     flex-direction: column;
@@ -1322,14 +1323,35 @@ main {
   }
 }
 
-@media (min-width: 1805px) {
-  .formulario {
-    margin: 2rem 20rem;
-  }
-  .formulario_nombres input {
-    width: 70rem;
+@media (min-width: 1281px){
+  .formulario_nombres input{
+    width: 40rem;
   }
 }
+@media (min-width: 1400px){
+  .formulario_nombres input{
+    width: 47rem;
+  }
+}
+@media (min-width: 1600px){
+  .formulario_nombres input{
+    width: 50rem;
+  }
+
+  .formulario {
+    margin: 2rem 30rem;
+  }
+}
+
+@media (min-width: 1950px) {
+  .formulario {
+    margin: 2rem 35rem;
+  }
+  .formulario_nombres input {
+    width: 60rem;
+  }
+}
+
 
 @media (min-width: 576px){
   .col-sm{
