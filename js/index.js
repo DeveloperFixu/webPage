@@ -162,7 +162,7 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-    usuario: /^[a-zA-ZÀ-ÿ\s]{1,30}$/, // Letras, numeros, guion y guion_bajo
+    nombre: /^[a-zA-ZÀ-ÿ\s]{1,30}$/, // Letras, numeros, guion y guion_bajo
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     celular: /^\d{7,14}$/, // 7 a 14 numeros.
     ciudad: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -173,7 +173,7 @@ const expresiones = {
 }
 
 const campos = {
-    usuario: false,
+    nombre: false,
     correo: false,
     celular: false,
     ciudad: false,
@@ -188,8 +188,8 @@ const campos = {
  */
 const validarFormulario = (e) => {
     switch (e.target.name) {
-        case "usuario":
-            validarCampo(expresiones.usuario, e.target, 'usuario');
+        case "nombre":
+            validarCampo(expresiones.nombre, e.target, 'nombre');
             break;
 
         case "correo":
@@ -249,9 +249,9 @@ inputs.forEach((input) => {
 });
 
 formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
+    //e.preventDefault();
     const terminos = document.getElementById('terminos');
-    if(campos.usuario && campos.celular  && campos.ciudad && campos.direccion && campos.descripcion && campos.marca && campos.modelo && terminos.checked){
+    if(campos.nombre && campos.celular  && campos.ciudad && campos.direccion && campos.descripcion && campos.marca && campos.modelo && terminos.checked){
         formulario.reset();
         
         document.getElementById('formulario_mensaje-exito').classList.add('formulario_mensaje-exito-activo');

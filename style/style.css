@@ -216,8 +216,13 @@ figure {
 
 /* Carousel base class */
 
+.carousel h2{
+  font-size: 3rem;
+}
+
 .carousel {
   margin-bottom: 4rem;
+  
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -242,7 +247,7 @@ figure {
 }
 
 .carousel-caption {
-  bottom: 28rem !important;
+  top:26%;
 }
 
 .card-body {
@@ -260,6 +265,35 @@ figure {
 .card:hover{
   border: 0.4rem var(--opcional) solid;
   box-shadow: .2rem .2rem .2rem .2rem var(--texto);
+}
+
+.carousel .boton{
+  color: var(--opcional);
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.carousel .boton:hover {
+  background: yellowgreen;
+  color: #545B6B;
+}
+
+.oscureser-img{
+  filter: brightness(40%);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: .7 !important;
+  font-size: 2.2rem;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  height: 2.2rem !important;
+  width: 2.2rem !important;
 }
 
 /** Css para carosel ¿Como funciona? */
@@ -343,6 +377,59 @@ figure {
   /* rtl:remove */
   letter-spacing: -.05rem;
 }
+
+/**Servicos VIP index*/
+
+.contenido{
+  position: absolute;
+  letter-spacing: 0.2rem;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+.hero{
+  position: relative;
+}
+
+.img_hero{
+width: 100%;
+height: 100vh;
+filter: brightness(20%);
+
+}
+
+.contenido_hero{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.hero .title h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hero .boton {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--opcional);
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+}
+
 
 /* Comentarios */
 
@@ -707,42 +794,21 @@ footer .footer-below {
   font-size: 1.6rem;
 }
 
-.hero .title {
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  text-align: justify;
-}
-
-.hero .title h1 {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.hero .title ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.hero .title .boton {
-  font-size: 1.8rem;
-}
-
-.hero .boton {
-  color: var(--opcional);
-  background: #fff;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-}
-
 .col-md-7 .lead {
-  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  margin-left: 10rem;
 }
 
 .col-md-7 .lead ul {
+  padding: 0;
   list-style: none;
 }
+
+.featurette-heading{
+  margin-left: 10rem;
+}
+
 
 /**Css Servicos*/
 
@@ -761,8 +827,11 @@ footer .footer-below {
   font-size: 1.5rem;
 }
 
-.text-muted {
+.text-white {
   font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .info-nosotros p {
@@ -821,12 +890,12 @@ main {
   display: block;
   position: absolute;
   top: 70%;
-  left: 44%;
+  left: 45%;
   height: 12rem;
   padding: 1.5rem;
-  box-shadow: inset 0rem 0rem 8rem 1rem rgba(0, 0, 0);
+  /**box-shadow: inset 0rem 0rem 8rem 1rem rgba(0, 0, 0);*/
   border: none;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 }
 
 .formulario_card {
@@ -917,10 +986,11 @@ main {
   display: flex;
   justify-content: space-between;
 }
-
+/**Se comenta porque ya se le da ancho en los @Media*/
+/*
 .formulario_nombres input {
- /* width: 48rem;*/
-}
+  width: 48rem;
+}*/
 
 .formulario_validacion-estado {
   position:absolute;
@@ -1063,25 +1133,67 @@ main {
   grid-auto-flow: dense;
 }
 
-.item {
+.contenedor_galeria-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 23rem);
+  /**asignamos las columnas "auto-fit"para tomar todo el espacio disponible y "15rem" para indicarle el tamañano*/
+  grid-auto-rows: 20rem;
+  /**definir el tamaño de cada fila*/
+  width: 90%;
+  /**asignamos un ancho a la clase padre*/
+  justify-content: center;
+  /**Para centra el contenido dentro*/
+  gap: 8rem;
+  /**Espacio entre los elementos*/
+  /*max-width: 1200px;*/
+  margin: 1rem auto;
+  /**Definimos una margen para cada lado automatica*/
+  grid-auto-flow: dense;
+}
+
+.item,
+.item_g {
   /*grid-column: span 2; /**266px + 10px = 274px*/
   /**Le decimos que tome dos columnas*/
   transition: 0.5s filter;
-  cursor: zoom-in;
 }
 
-.item:hover {
+.item_g{
+  grid-row: span 2;
+  grid-column: span 2;
+ 
+}
+
+.item:hover, .item_g:hover{
   filter: brightness(0.5);
   /**Filtro de brillo*/
 }
 
 .item:nth-of-type(2n + 1) {
-  grid-column: span 2;
-}
-
-.item:nth-of-type(3n + 1) {
   grid-row: span 2;
 }
+
+.item_g img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  background: lightgray;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-fluid {
+  margin-bottom: 20rem;
+
+}
+.container-fluid p{
+  font-size: 1.5rem;
+}
+
+
+
 
 /* Responsive */
 
@@ -1148,6 +1260,13 @@ main {
 }
 
 @media (max-width: 720px) {
+
+/**INDEX*/
+
+  .row{
+    justify-content: center;
+  }
+
   /**DISPOSITIVOS MOVILES para Srobre Nosotros*/
   .logo {
     padding-left: 25px;
@@ -1301,6 +1420,12 @@ main {
   .formulario_validacion-estado{
     position: absolute;
     bottom: 3rem;
+  }
+
+  /**Sobre Nosotros*/
+
+  .contenedor_galeria-2{
+    gap: 10rem;
   }
 
 }

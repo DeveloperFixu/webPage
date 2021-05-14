@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <title>Fixu</title>
 </head>
+
 <body>
 
   <!-- header -->
@@ -50,34 +51,43 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/img/carrousel 1.png" class="d-block w-100" alt="...">
+            <img src="./assets/img/carrousel 1.jpg" class="d-block w-100 oscureser-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h2>First slide label</h2>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <figure class="logo">
+                <img src="./assets/img/icono_carrusel_de_imágenes.png" alt="logo de la navegación" height="120px">
+              </figure>
+              <h2>Realiza tu solicitud <br> de reparación de tu celular</h2>
+              <a href="registro.html" class="boton" type="submit">Solicitar</a>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/carrousel_2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Second slide label</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="./assets/img/carrousel_2.jpg" class="d-block w-100 oscureser-img" alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+              <figure class="logo">
+                <img src="./assets/img/icono_carrusel_de_imágenes.png" alt="logo de la navegación" height="120px">
+              </figure>
+              <h2>Realiza tu solicitud de reparación de tu celular</h2>
+              <a href="registro.html" class="boton" type="submit">Solicitar</a>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/carrousel_3.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/carrousel_3.jpg" class="d-block w-100 oscureser-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h2>Third slide label</h2>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <figure class="logo">
+                <img src="./assets/img/icono_carrusel_de_imágenes.png" alt="logo de la navegación" height="120px">
+              </figure>
+              <h2>Realiza tu solicitud de reparación de tu celular</h2>
+              <a href="registro.html" class="boton" type="submit">Solicitar</a>
             </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <!--<span class="visually-hidden">Previous</span>-->
         </a>
         <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <!--<span class="visually-hidden">Next</span>-->
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
         </a>
       </div>
     </div>
@@ -91,7 +101,7 @@
         <br>
       </div>
       <!-- Three columns of text below the carousel -->
-      <div class="modales_seguimiento row justify-content-center align-items-center">
+      <div class="modales_seguimiento row align-items-center">
         <div class="col-lg-1">
         </div>
         <div class="col-lg-2 col-auto carro-1">
@@ -256,20 +266,29 @@
       </div>
     </div>
   </section>
+
+
   <section class="hero">
-    <div class="title">
-      <h1>servicio vip</h1>
-      <p>Contamos sólo con repuestos originales
-        <br> Proceso de reparación rápido y eficiente
-        <br> Servicio a domicilio
-        Servicios empresariales:
-      <ul>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>Clínica nocturna</li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>Brigada de salud virtual</li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>Descuentos personalizados</li>
-      </ul>
-      </p>
-      <a class="boton" type="submit">Solicitar</a>
+    <div class="img_hero">
+      <img src="./assets/img/vip.jpg" alt="imagen VIP" width="100%" height="655px">
+    </div>
+    <div class="contenido">
+      <div class="title">
+        <h1>servicio vip</h1>
+      </div>
+      <div class="contenido_hero">
+        <p>Contamos sólo con repuestos originales
+          <br> Proceso de reparación rápido y eficiente
+          <br> Servicio a domicilio
+          Servicios empresariales:
+        <ul>
+          <li><i class="fa fa-check-square" aria-hidden="true"></i>Clínica nocturna</li>
+          <li><i class="fa fa-check-square" aria-hidden="true"></i>Brigada de salud virtual</li>
+          <li><i class="fa fa-check-square" aria-hidden="true"></i>Descuentos personalizados</li>
+        </ul>
+        </p>
+        <a href="./registro.html" class="boton" type="submit">Solicitar</a>
+      </div>
     </div>
   </section>
 
@@ -278,7 +297,7 @@
     <!-- START THE FEATURETTES -->
     <hr class="featurette-divider">
     <div class="row featurette justify-content-center align-items-center">
-      <div class="col-md-7 col-auto">
+      <div class="card_descuentos col-md-7 col-auto">
         <h2 class="featurette-heading">Descuentos personalizados</h2>
         <div class="lead">
           <ul>
@@ -310,7 +329,7 @@
     <hr class="featurette-divider">
   </section>
 
-<!--parte 5 - ESPECIALISTAS-->
+  <!--parte 5 - ESPECIALISTAS-->
   <section id="Especialistas">
     <div class="container">
       <div class="titulo">
@@ -321,29 +340,29 @@
         problemas que pueda presentar tu celular
       </h2>
       <div class="row justify-content-around align-items-center">
-      
-          <div class="col">
-            <img src="./assets/img/Clientes_Satisfechos.svg" class="svg dedo_arriba" alt="dedo arriba">
-            <div onmouseover="contador()">
-              <div class="counter" data-target="51200">0</div>
-              <h3>Clientes satisfechos</h3>
-            </div>
+
+        <div class="col">
+          <img src="./assets/img/Clientes_Satisfechos.svg" class="svg dedo_arriba" alt="dedo arriba">
+          <div onmouseover="contador()">
+            <div class="counter" data-target="51200">0</div>
+            <h3>Clientes satisfechos</h3>
           </div>
-          <div class="col">
-            <img src="./assets/img/Equipos_Reparados.svg" class="svg" alt="pantalla de celular">
-            <div onmouseover="contador()">
-              <div class="counter" data-target="61500">0</div>
-              <h3>Equipos reparados</h3>
-            </div>
+        </div>
+        <div class="col">
+          <img src="./assets/img/Equipos_Reparados.svg" class="svg" alt="pantalla de celular">
+          <div onmouseover="contador()">
+            <div class="counter" data-target="61500">0</div>
+            <h3>Equipos reparados</h3>
           </div>
-          <div class="col">
-            <img src="./assets/img/Cafe.svg" class="svg taza" alt="taza de cafe">
-            <div onmouseover="contador()">
-              <div class="counter" data-target="2150">0</div>
-              <h3>Tazas de café</h3>
-            </div>
+        </div>
+        <div class="col">
+          <img src="./assets/img/Cafe.svg" class="svg taza" alt="taza de cafe">
+          <div onmouseover="contador()">
+            <div class="counter" data-target="2150">0</div>
+            <h3>Tazas de café</h3>
           </div>
-       
+        </div>
+
       </div>
     </div>
   </section>
