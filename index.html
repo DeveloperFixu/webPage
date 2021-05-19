@@ -293,11 +293,11 @@
   </section>
 
   <!--parte 4 - DESCUENTOS PERSONALIZADOS -->
-  <section>
+  <section class="descuento">
     <!-- START THE FEATURETTES -->
     <hr class="featurette-divider">
-    <div class="row featurette justify-content-center align-items-center">
-      <div class="card_descuentos col-md-7 col-auto">
+    <div class="container-all row featurette justify-content-center align-items-center">
+      <div class="card_descuentos col-md col-auto">
         <h2 class="featurette-heading">Descuentos personalizados</h2>
         <div class="lead">
           <ul>
@@ -316,14 +316,11 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-5 col-auto">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-          height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-        </svg>
-
+      <div class="col-md col-auto content">
+        <input type="range" min="1" max="100" value="50" class="slider" name="slider" id="slider">
+        <div class="img background-img"></div>
+        <div class="img foreground-img"></div>
+        <div class='slider-button'></div>
       </div>
     </div>
     <hr class="featurette-divider">

@@ -186,7 +186,7 @@ figure {
   color: #545B6B;
 }
 
-.header a{
+.header a {
   margin: auto;
 }
 
@@ -216,13 +216,12 @@ figure {
 
 /* Carousel base class */
 
-.carousel h2{
+.carousel h2 {
   font-size: 3rem;
 }
 
 .carousel {
   margin-bottom: 4rem;
-  
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -247,7 +246,7 @@ figure {
 }
 
 .carousel-caption {
-  top:26%;
+  top: 26%;
 }
 
 .card-body {
@@ -262,12 +261,12 @@ figure {
   margin-right: 0 !important;
 }
 
-.card:hover{
+.card:hover {
   border: 0.4rem var(--opcional) solid;
   box-shadow: .2rem .2rem .2rem .2rem var(--texto);
 }
 
-.carousel .boton{
+.carousel .boton {
   color: var(--opcional);
   background: #fff;
   padding: 1rem 2rem;
@@ -282,7 +281,7 @@ figure {
   color: #545B6B;
 }
 
-.oscureser-img{
+.oscureser-img {
   filter: brightness(40%);
 }
 
@@ -291,7 +290,7 @@ figure {
   font-size: 2.2rem;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon{
+.carousel-control-next-icon, .carousel-control-prev-icon {
   height: 2.2rem !important;
   width: 2.2rem !important;
 }
@@ -380,28 +379,27 @@ figure {
 
 /**Servicos VIP index*/
 
-.contenido{
+.contenido {
   position: absolute;
   letter-spacing: 0.2rem;
   text-align: justify;
   font-size: 2rem;
 }
 
-.hero{
+.hero {
   position: relative;
 }
 
-.img_hero{
-width: 100%;
-height: 100vh;
-filter: brightness(20%);
-
+.img_hero {
+  width: 100%;
+  height: 100vh;
+  filter: brightness(20%);
 }
 
-.contenido_hero{
- display: flex;
- flex-direction: column;
- align-items: center;
+.contenido_hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero .title h1 {
@@ -430,6 +428,102 @@ filter: brightness(20%);
   width: 50%;
 }
 
+/**INDEX-DESCUENTOS PERSONALIZADOS*/
+
+.descuento {
+  position: relative;
+}
+
+.container-all {
+  background: #545B6B;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  position: relative !important;
+  width: 900px !important;
+  height: 600px;
+  border: 2px solid white;
+  margin-right: 5rem;
+}
+
+.content .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 900px 100%;
+}
+
+/*.background-img {
+  background-image: url(/webPage/assets/img_prueba/img-antes.jpg);
+}
+
+.foreground-img {
+  background-image: url(/webPage/assets/img_prueba/img-despues.jpg);
+  width: 50%;
+}*/
+
+.slider {
+  position: absolute;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(#f2f2f2, .3);
+  outline: none;
+  margin: 0;
+  transition: all .2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider:hover {
+  background: rgba(#f2f2f2, .1);
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 6px;
+  height: 600px;
+  background: white;
+  cursor: pointer;
+}
+
+.slider-button {
+  pointer-events: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  left: calc(50% - 18px);
+  top: calc(50% - 18px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-button:after {
+  content: '';
+  padding: 3px;
+  display: inline-block;
+  border: solid #5D5D5D;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+}
+
+.slider-button:before {
+  content: '';
+  padding: 3px;
+  display: inline-block;
+  border: solid #5D5D5D;
+  border-width: 0 2px 2px 0;
+  transform: rotate(135deg);
+}
 
 /* Comentarios */
 
@@ -794,21 +888,25 @@ footer .footer-below {
   font-size: 1.6rem;
 }
 
-.col-md-7 .lead {
+.col-md, .col-auto {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.col-md .lead {
   margin-top: 2rem;
   font-size: 2rem;
   margin-left: 10rem;
 }
 
-.col-md-7 .lead ul {
+.col-md .lead ul {
   padding: 0;
   list-style: none;
 }
 
-.featurette-heading{
+.featurette-heading {
   margin-left: 10rem;
 }
-
 
 /**Css Servicos*/
 
@@ -902,7 +1000,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: rgb(84, 91, 107, 0.6);
 }
 
 .card_title {
@@ -919,13 +1016,17 @@ main {
 }
 
 .formulario {
+  background-color: rgb(84, 91, 107, 0.6);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 50rem;
+  justify-content: space-around;
+  height: 100vh;
   margin: 1rem 20rem;
+  padding: 2rem;
 }
+
 /**el label del formilario esta en comentaios por lo tanto el css no se usa*/
+
 .formulario_label {
   display: block;
   /**Ocupe el 100% de espacio disponible*/
@@ -936,8 +1037,10 @@ main {
 }
 
 .formulario_grupo-input {
-  position: relative;/**Le indicamos que tenga un posicion relativa, con esto los iconos de error y correcto pueden ir sobre el input*/
+  position: relative;
+  /**Le indicamos que tenga un posicion relativa, con esto los iconos de error y correcto pueden ir sobre el input*/
   display: flex;
+  margin-bottom: 3rem;
 }
 
 .formulario_input {
@@ -953,7 +1056,6 @@ main {
   padding: 0rem 4rem 0rem 1rem;
   transition: .3s ease all;
   font-size: 1.3rem!important;
-  
 }
 
 .formulario_input::placeholder {
@@ -985,15 +1087,18 @@ main {
 .formulario_nombres {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
 }
+
 /**Se comenta porque ya se le da ancho en los @Media*/
+
 /*
 .formulario_nombres input {
   width: 48rem;
 }*/
 
 .formulario_validacion-estado {
-  position:absolute;
+  position: absolute;
   right: 1rem;
   bottom: 1.2rem;
   z-index: 100;
@@ -1151,20 +1256,18 @@ main {
   grid-auto-flow: dense;
 }
 
-.item,
-.item_g {
+.item, .item_g {
   /*grid-column: span 2; /**266px + 10px = 274px*/
   /**Le decimos que tome dos columnas*/
   transition: 0.5s filter;
 }
 
-.item_g{
+.item_g {
   grid-row: span 2;
   grid-column: span 2;
- 
 }
 
-.item:hover, .item_g:hover{
+.item:hover, .item_g:hover {
   filter: brightness(0.5);
   /**Filtro de brillo*/
 }
@@ -1173,7 +1276,7 @@ main {
   grid-row: span 2;
 }
 
-.item_g img{
+.item_g img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1186,14 +1289,75 @@ main {
 
 .container-fluid {
   margin-bottom: 20rem;
-
 }
-.container-fluid p{
+
+.container-fluid p {
   font-size: 1.5rem;
 }
 
+/**Css Contactenos*/
 
+.contenido h1 {
+  font-size: 4rem !important;
+}
 
+.backgroud {
+  background-image: url(/webPage/assets/img/IMG_1176.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido {
+  color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 2.1rem;
+  text-align: justify;
+  margin-left: 26rem;
+  margin-right: 26rem;
+  line-height: 5rem;
+}
+
+.all_contenido {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.grupo_contenido {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 2rem 3rem;
+}
+
+.iconos-contacto{
+  margin: 1rem 40%;
+  width: 8rem;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.all_contenido hr {
+  border: none;
+  border-left: .1rem solid rgb(0, 0, 0, .3);
+  height: 50vh;
+  width: .1rem;
+}
 
 /* Responsive */
 
@@ -1222,11 +1386,9 @@ main {
   .carro-1 {
     width: 30rem;
   }
-
   .carro-1 img {
     width: 100%;
   }
-
   .modales_seguimiento {
     width: 100%;
     margin: auto;
@@ -1256,17 +1418,13 @@ main {
   .formulario_btn {
     width: 100%;
   }
- 
 }
 
 @media (max-width: 720px) {
-
-/**INDEX*/
-
-  .row{
+  /**INDEX*/
+  .row {
     justify-content: center;
   }
-
   /**DISPOSITIVOS MOVILES para Srobre Nosotros*/
   .logo {
     padding-left: 25px;
@@ -1316,7 +1474,6 @@ main {
   .header li:hover {
     border-radius: 0;
   }
-
   /**Espesialistas*/
   #Especialistas .col {
     width: 60px;
@@ -1342,20 +1499,16 @@ main {
   #Especialistas h1 {
     margin: 0;
   }
-
-/**Registro*/
-
+  /**Registro*/
   .banner .img2 {
     display: none;
   }
   .banner h1 {
     display: none;
   }
- 
   .formulario {
     margin-bottom: 60rem !important;
   }
-
   .formulario_btn {
     width: 100%;
   }
@@ -1365,35 +1518,29 @@ main {
   .Carro button {
     display: flex;
   }
-
-  .formulario_mensaje-activo{
+  .formulario_mensaje-activo {
     height: 10rem;
   }
-
-
   /**SERVICIOS*/
-
-  .servicios .row{
+  .servicios .row {
     display: flex;
     flex-direction: column;
     align-content: center;
   }
-  .servicios .col-4{
+  .servicios .col-4 {
     width: 30rem !important;
     max-width: none !important;
   }
-
-  .servicios .col-sm{
+  .servicios .col-sm {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    margin:1rem;
+    margin: 1rem;
     justify-content: center;
     justify-items: center;
   }
-
-  .servicios .card-body{
+  .servicios .card-body {
     text-align: justify;
   }
 }
@@ -1401,33 +1548,32 @@ main {
 @media (max-width:1280px) {
   /**Registro*/
   .formulario {
+    height: 67rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-bottom: 15rem;
+    padding: 1rem;
   }
-
   .formulario_nombres {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
   }
   .formulario_nombres input {
     width: 120rem;
   }
-  .formulario_input {
-    margin-bottom: 2rem;
+  .formulario_grupo-input {
+    margin-bottom: .5rem;
   }
-
-  .formulario_validacion-estado{
+  .formulario_validacion-estado {
     position: absolute;
-    bottom: 3rem;
+    bottom: 1rem;
   }
-
   /**Sobre Nosotros*/
-
-  .contenedor_galeria-2{
+  .contenedor_galeria-2 {
     gap: 10rem;
   }
-
 }
 
 @media (min-width: 400px) {
@@ -1448,6 +1594,7 @@ main {
   }
 }
 
+/*
 @media (min-width: 1281px){
   .formulario_nombres input{
     width: 40rem;
@@ -1475,16 +1622,14 @@ main {
   .formulario_nombres input {
     width: 60rem;
   }
-}
+}*/
 
-
-@media (min-width: 576px){
-  .col-sm{
+@media (min-width: 576px) {
+  .col-sm {
     display: flex;
     justify-content: center;
   }
 }
-
 
 /**COMENTARIOS
 @media(max-width: 480px){
