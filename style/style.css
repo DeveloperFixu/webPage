@@ -130,7 +130,6 @@ figure {
 
 .enlaces-menu li a:hover {
   color: var(--texto);
-  font-size: 2.1rem;
 }
 
 .enlaces-menu li:hover {
@@ -1324,17 +1323,18 @@ main {
   text-align: justify;
   margin-left: 26rem;
   margin-right: 26rem;
-  line-height: 5rem;
+  line-height: 4.5rem;
 }
 
 .all_contenido {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: auto;
+  margin: 5rem auto;
 }
 
 .grupo_contenido {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -1343,7 +1343,7 @@ main {
 }
 
 .iconos-contacto{
-  margin: 1rem 40%;
+  margin: 1rem 40% 5rem 40%;
   width: 8rem;
   height: 13vh;
   display: flex;
@@ -1356,8 +1356,46 @@ main {
   border: none;
   border-left: .1rem solid rgb(0, 0, 0, .3);
   height: 50vh;
-  width: .1rem;
+  width: 5rem;
 }
+
+.all_contenido h2{
+  text-align: center;
+}
+
+.all_contenido p{
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.info-contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--principal);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.grupo_contenido .boton {
+  color: var(--blanco);
+  background: var(--opcional);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo_contenido .boton:hover {
+  background: yellowgreen;
+  color: #545B6B;
+}
+
 
 /* Responsive */
 
@@ -1471,6 +1509,7 @@ main {
     justify-content: center;
     align-items: center;
   }
+
   .header li:hover {
     border-radius: 0;
   }
@@ -1543,6 +1582,51 @@ main {
   .servicios .card-body {
     text-align: justify;
   }
+
+  /**CONTACTENOS*/
+
+  .backgroud{
+    flex-direction: column;
+  }
+
+  .all_contenido{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      margin: 2rem 20%;
+  }
+
+  .grupo_contenido {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 1rem 1rem;
+  }
+  
+  .contenido{
+    margin: auto 1rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  .all_contenido hr {
+    border: .1rem solid rgb(0, 0, 0, .3);
+    height: 0;
+    width: 100%;
+  }
+
+  .iconos-contacto{
+    margin: 1rem 35%;
+    width: 8rem;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
 }
 
 @media (max-width:1280px) {
