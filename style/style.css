@@ -427,6 +427,10 @@ figure {
   width: 50%;
 }
 
+.hero .boton:hover {
+  background: yellowgreen;
+  color: #545B6B;
+}
 /**INDEX-DESCUENTOS PERSONALIZADOS*/
 
 .descuento {
@@ -1305,7 +1309,7 @@ main {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   justify-content: center;
