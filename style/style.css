@@ -197,6 +197,7 @@ figure {
   color: var(--opcional);
   text-align: center;
   font-size: 2rem;
+  margin-top: 5rem;
 }
 
 .menu-fixed {
@@ -1026,6 +1027,7 @@ main {
   height: 100vh;
   margin: 1rem 20rem;
   padding: 2rem;
+  border-radius: 2rem;
 }
 
 /**el label del formilario esta en comentaios por lo tanto el css no se usa*/
@@ -1259,6 +1261,13 @@ main {
   grid-auto-flow: dense;
 }
 
+
+.contenedor_galeria-2 p{
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem !important;
+}
+
 .item, .item_g {
   /*grid-column: span 2; /**266px + 10px = 274px*/
   /**Le decimos que tome dos columnas*/
@@ -1295,7 +1304,7 @@ main {
 }
 
 .container-fluid p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 /**Css Contactenos*/
@@ -1460,6 +1469,9 @@ main {
   .formulario_btn {
     width: 100%;
   }
+  .formulario_grupo{
+    margin-bottom: .2rem !important;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1517,6 +1529,7 @@ main {
   .header li:hover {
     border-radius: 0;
   }
+
   /**Espesialistas*/
   #Especialistas .col {
     width: 60px;
@@ -1542,6 +1555,7 @@ main {
   #Especialistas h1 {
     margin: 0;
   }
+
   /**Registro*/
   .banner .img2 {
     display: none;
@@ -1551,19 +1565,27 @@ main {
   }
   .formulario {
     margin-bottom: 60rem !important;
+    width: 80%;
+    height: 107rem !important; 
+    margin: auto 5rem;
   }
   .formulario_btn {
     width: 100%;
   }
   .formulario_input {
-    margin-bottom: 2rem;
+    margin-bottom: .2rem;
   }
   .Carro button {
     display: flex;
   }
-  .formulario_mensaje-activo {
-    height: 10rem;
+   .formulario_grupo{
+    margin: 1.5rem;
   }
+  .formulario_validacion-estado {
+    position: absolute;
+    bottom: 1.5rem !important;
+  }
+
   /**SERVICIOS*/
   .servicios .row {
     display: flex;
@@ -1636,28 +1658,46 @@ main {
 @media (max-width:1280px) {
   /**Registro*/
   .formulario {
-    height: 67rem;
+    height: 90rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 15rem;
     padding: 1rem;
   }
+
   .formulario_nombres {
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
+
   .formulario_nombres input {
     width: 120rem;
   }
+
   .formulario_grupo-input {
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;
+ 
   }
+
   .formulario_validacion-estado {
     position: absolute;
     bottom: 1rem;
   }
+
+  .formulario_grupo{
+    margin-bottom: 1.5rem;
+  }
+
+  .formulario_grupo p{
+    margin-left: .5rem;
+  }
+
+  .formulario_btn{
+    width: 70%;
+  }
+
   /**Sobre Nosotros*/
   .contenedor_galeria-2 {
     gap: 10rem;
@@ -1682,12 +1722,13 @@ main {
   }
 }
 
-/*
+
 @media (min-width: 1281px){
   .formulario_nombres input{
     width: 40rem;
   }
 }
+/*
 @media (min-width: 1400px){
   .formulario_nombres input{
     width: 47rem;
