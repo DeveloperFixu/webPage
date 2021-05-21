@@ -197,7 +197,6 @@ figure {
   color: var(--opcional);
   text-align: center;
   font-size: 2rem;
-  margin-top: 5rem;
 }
 
 .menu-fixed {
@@ -254,7 +253,7 @@ figure {
 }
 
 .card-footer {
-  background-color: var(--opcional) !important;
+  background-color: rgb(84, 91, 107, 0.2) !important;
 }
 
 .card {
@@ -303,7 +302,7 @@ figure {
 /* Center align the text within the three columns below the carousel */
 
 #seguimiento {
-  margin-bottom: 4rem;
+  margin: 15rem auto;
 }
 
 .marketing .col-lg-4 {
@@ -333,14 +332,13 @@ figure {
 }
 
 .hero {
-  height: 100vh;
-  min-height: 60rem;
-  background-color: #dad5d6;
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Questrial', sans-serif;
-  color: white;
+  color: var(--texto);
 }
 
 .title {
@@ -386,14 +384,15 @@ figure {
   font-size: 2rem;
 }
 
-.hero {
-  position: relative;
-}
-
 .img_hero {
   width: 100%;
-  height: 100vh;
-  filter: brightness(20%);
+  padding: 5rem;
+  margin-left: 5rem;
+}
+
+.img_hero img{
+  width: 100%;
+  height: 70vh;
 }
 
 .contenido_hero {
@@ -416,8 +415,8 @@ figure {
 .hero .boton {
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--opcional);
-  background: #fff;
+  color: var(--blanco);
+  background: var(--opcional);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -439,7 +438,6 @@ figure {
 }
 
 .container-all {
-  background: #545B6B;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -449,7 +447,7 @@ figure {
   position: relative !important;
   width: 900px !important;
   height: 600px;
-  border: 2px solid white;
+  border: 2px solid coral;
   margin-right: 5rem;
 }
 
@@ -914,8 +912,8 @@ footer .footer-below {
 
 /**Css Servicos*/
 
-.info-nosotros {
-  margin: 3rem auto;
+.servicios-all{
+  margin-top: 5rem;
 }
 
 .card-title {
@@ -929,11 +927,12 @@ footer .footer-below {
   font-size: 1.5rem;
 }
 
-.text-white {
-  font-size: 1.8rem;
+.texto-abajo{
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: 0 !important;
 }
 
 .info-nosotros p {
@@ -957,7 +956,7 @@ footer .footer-below {
 .container-fluit, .col-4 {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 /** Css Registro*/
@@ -1045,7 +1044,6 @@ main {
   position: relative;
   /**Le indicamos que tenga un posicion relativa, con esto los iconos de error y correcto pueden ir sobre el input*/
   display: flex;
-  margin-bottom: 3rem;
 }
 
 .formulario_input {
@@ -1082,6 +1080,7 @@ main {
   /**generalmente a los Parrafos agrega un margen*/
   display: none;
   /** Solo los voy a mostrar cuando cuando el usuario tenga algun error en el input*/
+  margin-left: .5rem;
 }
 
 .formulario_input-error-activo {
@@ -1238,7 +1237,7 @@ main {
   gap: 1.5rem;
   /**Espacio entre los elementos*/
   /*max-width: 1200px;*/
-  margin: 1rem auto;
+  margin: 20rem auto;
   /**Definimos una margen para cada lado automatica*/
   grid-auto-flow: dense;
 }
@@ -1266,6 +1265,14 @@ main {
   text-align: center;
   font-weight: 600;
   font-size: 2rem !important;
+}
+
+.contenedor_galeria-2 .featurette-divider{
+  margin: 2rem auto !important;
+}
+
+.contenedor_galeria-2 hr{
+  border-top: 1px solid rgba(0,0,0, .3);
 }
 
 .item, .item_g {
@@ -1300,11 +1307,12 @@ main {
 }
 
 .container-fluid {
-  margin-bottom: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
 }
 
 .container-fluid p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /**Css Contactenos*/
@@ -1326,16 +1334,24 @@ main {
 }
 
 .contenido {
-  color: var(--blanco);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   flex-direction: column;
   font-size: 2.1rem;
   text-align: justify;
-  margin-left: 26rem;
-  margin-right: 26rem;
+  line-height: 4.5rem;
+  color: var(--blanco);
+  padding: 1rem 10rem 1rem 10rem;
+}
+
+.contenido h1{
+  text-align: center;
+}
+
+.contenido_VIP{
+  display: flex;
+  flex-direction: column;
+  font-size: 2.1rem;
+  text-align: justify;
   line-height: 4.5rem;
 }
 
@@ -1725,18 +1741,19 @@ main {
 
 @media (min-width: 1281px){
   .formulario_nombres input{
-    width: 40rem;
+    width: 45rem;
   }
 }
-/*
+
 @media (min-width: 1400px){
   .formulario_nombres input{
-    width: 47rem;
+    width: 48rem;
   }
 }
+
 @media (min-width: 1600px){
   .formulario_nombres input{
-    width: 50rem;
+    width: 49rem;
   }
 
   .formulario {
@@ -1751,7 +1768,7 @@ main {
   .formulario_nombres input {
     width: 60rem;
   }
-}*/
+}
 
 @media (min-width: 576px) {
   .col-sm {
