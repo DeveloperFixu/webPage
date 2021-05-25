@@ -305,6 +305,44 @@ figure {
   margin: 15rem auto;
 }
 
+.tooltip-box{
+  position: absolute;
+  display: none;
+  background: var(--principal);
+  line-height: 2rem;
+  z-index: 500;/**Nos permite poner elementos sobre otros elementos siempre y cuando esta propiedad sea mayor*/
+  text-align: center;
+  color: var(--blanco);
+  font-size: 1.4rem;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  left: 0;
+  /**si ponemos el right hacemos que se centre °*/
+  right: 0;
+  bottom: 15rem;
+}
+
+.marketing h2:hover 
+.tooltip-box {
+  display: block !important;
+}
+
+.tooltip-box::after{
+  content: "";
+  display: block;
+  /**se agregar el triangulo que señala de donde es el texto se agrega con bordes*/
+  border-top: .7rem solid var(--principal);
+  border-left: .7rem solid transparent; /**Para darle forma al triangulo*/
+  border-right: .7rem solid transparent; /**Para darle forma al triangulo*/
+  position: absolute; /**lo pone encina y con este podemos debajo*/
+  /**listo ahora toca decirle que muestre un poco más el triangulo, lo hacemos con: */
+  bottom: -.7rem; /**le decimos que lo empuje de abajo hacia arriba*/
+  /**Si queremos que este centrado utilizamos la funcion de "calc"*/
+  left: calc(25% - .7rem);
+  /**ay algo fantante y es que cuando el texto de los span"o sea de los tooltip-box" crezca la fecha no se va a centrar sola  °*/
+}
+
+
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -312,6 +350,7 @@ figure {
 
 .marketing h2 {
   font-weight: 400;
+  position: relative;
 }
 
 /* rtl:begin:ignore */
@@ -1426,8 +1465,6 @@ main {
     margin-bottom: 50rem !important;
     margin-left: -5em !important;
   }
-
-
 
   .carro-2 {
     display: none;
