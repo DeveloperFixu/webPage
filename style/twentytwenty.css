@@ -75,6 +75,9 @@
   margin-left: -6px; }
 
 .twentytwenty-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -85,8 +88,9 @@
   -moz-user-select: none;
   -ms-user-select: none;
   width: 60%;
-  height: 80vh; }
-  
+  margin-left: 14rem ;
+}
+
   .twentytwenty-container img {
     max-width: 100%;
     position: absolute;

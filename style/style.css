@@ -1419,6 +1419,16 @@ main {
 /* Responsive */
 
 @media (max-width:480px) {
+
+  /**INDEX*/
+
+  .container-all{
+    margin-bottom: 50rem !important;
+    margin-left: -5em !important;
+  }
+
+
+
   .carro-2 {
     display: none;
   }
@@ -1492,17 +1502,12 @@ main {
   }
 
   .container-all{
-    display: flex;
-    flex-direction: column !important;
     width: 100%;
+    margin-bottom: 30rem;
   }
 
-.content{
-  width: 100% !important;
-}
-
-  .twentytwenty-containe{
-    opacity: 0 !important;
+  .content{
+    margin-top: 5rem;
   }
 
   /**DISPOSITIVOS MOVILES para Srobre Nosotros*/
@@ -1562,7 +1567,7 @@ main {
     margin: 0;
   }
   .row {
-    margin-left: 0 !important;
+
     margin-right: 0 !important;
   }
   .counter {
