@@ -21,7 +21,7 @@ html {
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 2;
   color: var(--texto);
 }
@@ -193,12 +193,6 @@ figure {
   margin: 1rem;
 }
 
-.titulo {
-  color: var(--opcional);
-  text-align: center;
-  font-size: 2rem;
-}
-
 .menu-fixed {
   position: fixed;
   z-index: 1000;
@@ -302,24 +296,36 @@ figure {
 /* Center align the text within the three columns below the carousel */
 
 #seguimiento {
-  margin: 15rem auto;
+  position: relative;
+  margin: 8rem auto;
 }
 
-.tooltip-box{
+.carro{
+  position: relative;
+}
+
+.tooltip_i{
   position: absolute;
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: .3s ease all;
+  width: 6.25em;
+  opacity: 0;
   background: var(--principal);
   line-height: 2rem;
-  z-index: 500;/**Nos permite poner elementos sobre otros elementos siempre y cuando esta propiedad sea mayor*/
   text-align: center;
   color: var(--blanco);
   font-size: 1.4rem;
   padding: .5rem 1rem;
-  border-radius: .5rem;
-  left: 0;
-  /**si ponemos el right hacemos que se centre °*/
-  right: 0;
-  bottom: 15rem;
+  border-radius: .5rem; 
+  /**es una transicion de abajo hacia arriba*/
+  transform: translateY(10px);
+}
+
+.tooltip_i.activo{
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .marketing h2:hover 
@@ -327,7 +333,7 @@ figure {
   display: block !important;
 }
 
-.tooltip-box::after{
+.tooltip_i::after{
   content: "";
   display: block;
   /**se agregar el triangulo que señala de donde es el texto se agrega con bordes*/
@@ -338,10 +344,13 @@ figure {
   /**listo ahora toca decirle que muestre un poco más el triangulo, lo hacemos con: */
   bottom: -.7rem; /**le decimos que lo empuje de abajo hacia arriba*/
   /**Si queremos que este centrado utilizamos la funcion de "calc"*/
-  left: calc(25% - .7rem);
+  left: calc(50% - .7rem);
   /**ay algo fantante y es que cuando el texto de los span"o sea de los tooltip-box" crezca la fecha no se va a centrar sola  °*/
 }
 
+.fa-info-circle{
+  color: var(--principal);
+}
 
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -372,7 +381,6 @@ figure {
 
 .hero {
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,6 +392,14 @@ figure {
   color: var(--opcional);
   text-align: center;
 }
+
+.titulo {
+  color: var(--opcional);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10rem;
+}
+
 
 .title button {
   color: #FF5773;
@@ -398,6 +414,11 @@ figure {
 
 .title button:hover {
   color: #545B6B;
+}
+
+.modales_seguimiento{
+  position: relative;
+  margin-bottom: 10rem;
 }
 
 .featurette-divider {
@@ -619,6 +640,7 @@ figure {
 }
 
 .Carro {
+  position: relative;
   background-color: #2a2a2a;
   /* rgb(33, 36, 33); */
   display: flex;
@@ -1456,43 +1478,17 @@ main {
 
 
 /* Responsive */
-
+/**480*/
 @media (max-width:480px) {
 
   /**INDEX*/
+
 
   .container-all{
     margin-bottom: 50rem !important;
     margin-left: -5em !important;
   }
 
-  .carro-2 {
-    display: none;
-  }
-  .carro-3 {
-    display: none;
-  }
-  .carro-4 {
-    display: none;
-  }
-  .carro-5 {
-    display: none;
-  }
-  .carro-1 button {
-    margin-bottom: 5rem;
-    box-shadow: 7px 7px 5px 5px var(--principal);
-  }
-  .carro-1 button:hover {
-    margin-bottom: 5rem;
-    box-shadow: none;
-    transition: 1s;
-  }
-  .carro-1 {
-    width: 30rem;
-  }
-  .carro-1 img {
-    width: 100%;
-  }
   .modales_seguimiento {
     width: 100%;
     margin: auto;
@@ -1527,8 +1523,51 @@ main {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 576px){
+  .icono{
+    margin-bottom: 1rem;
+  }
+
+  .tooltip_i{
+    position: static;
+    opacity: 1;
+    width: 100%;
+    transform: translate(0);
+  }
+  figure{
+   text-align: center;
+  }
+  .tooltip_i::after{
+    content: "";
+    position: absolute;
+    border-top: none;
+    border-bottom: .7rem solid var(--principal);
+    bottom: auto;
+    top: -.6rem;
+    left: calc(70% - .7rem);
+  }
+}
+
+@media (max-width: 768px) {
   /**INDEX*/
+
+  .modales_seguimiento{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+  }
+
+    figcaption .tooltip_i{
+    font-size: 12px;
+    }
+
+   .carro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .row {
     justify-content: center;
   }
@@ -1545,6 +1584,10 @@ main {
 
   .content{
     margin-top: 5rem;
+  }
+
+  .img_hero{
+    margin-left: 0;
   }
 
   /**DISPOSITIVOS MOVILES para Srobre Nosotros*/
@@ -1828,6 +1871,7 @@ main {
     justify-content: center;
   }
 }
+
 
 /**COMENTARIOS
 @media(max-width: 480px){
