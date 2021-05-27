@@ -397,7 +397,7 @@ figure {
   color: var(--opcional);
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -594,7 +594,7 @@ figure {
   font-weight: 400;
   line-height: 2;
   letter-spacing: .6rem;
-  margin: 3rem;
+  margin: 1rem;
 }
 
 #Especialistas h2 {
@@ -603,7 +603,7 @@ figure {
   text-align: center;
   font-size: 2rem;
   color: var(--texto);
-  margin: 3rem;
+  margin: 2rem;
 }
 
 .col {
@@ -1484,7 +1484,6 @@ main {
 
 
   .container-all{
-    margin-bottom: 25rem !important;
     margin-left: -5em !important;
   }
 
@@ -1523,12 +1522,10 @@ main {
 
   .twentytwenty-container{
     margin: 3rem 0 auto 7rem !important;
-    height: 30rem !important;
+  
   }
  
-    .img_hero img{
-      height: 25vh !important;
-    }
+
 
     .contenido_VIP{
       display: flex;
@@ -1567,7 +1564,7 @@ main {
   }
 
   .descuento{
-    margin-bottom: 15rem !important;
+    margin-bottom: 8rem !important;
   }
 }
 
