@@ -300,11 +300,11 @@ figure {
   margin: 8rem auto;
 }
 
-.carro{
+.carro {
   position: relative;
 }
 
-.tooltip_i{
+.tooltip_i {
   position: absolute;
   top: 0;
   left: 0;
@@ -318,37 +318,40 @@ figure {
   color: var(--blanco);
   font-size: 1.4rem;
   padding: .5rem 1rem;
-  border-radius: .5rem; 
+  border-radius: .5rem;
   /**es una transicion de abajo hacia arriba*/
   transform: translateY(10px);
 }
 
-.tooltip_i.activo{
+.tooltip_i.activo {
   opacity: 1;
   transform: translateY(0px);
 }
 
-.marketing h2:hover 
-.tooltip-box {
+.marketing h2:hover .tooltip-box {
   display: block !important;
 }
 
-.tooltip_i::after{
+.tooltip_i::after {
   content: "";
   display: block;
   /**se agregar el triangulo que señala de donde es el texto se agrega con bordes*/
   border-top: .7rem solid var(--principal);
-  border-left: .7rem solid transparent; /**Para darle forma al triangulo*/
-  border-right: .7rem solid transparent; /**Para darle forma al triangulo*/
-  position: absolute; /**lo pone encina y con este podemos debajo*/
+  border-left: .7rem solid transparent;
+  /**Para darle forma al triangulo*/
+  border-right: .7rem solid transparent;
+  /**Para darle forma al triangulo*/
+  position: absolute;
+  /**lo pone encina y con este podemos debajo*/
   /**listo ahora toca decirle que muestre un poco más el triangulo, lo hacemos con: */
-  bottom: -.7rem; /**le decimos que lo empuje de abajo hacia arriba*/
+  bottom: -.7rem;
+  /**le decimos que lo empuje de abajo hacia arriba*/
   /**Si queremos que este centrado utilizamos la funcion de "calc"*/
   left: calc(50% - .7rem);
   /**ay algo fantante y es que cuando el texto de los span"o sea de los tooltip-box" crezca la fecha no se va a centrar sola  °*/
 }
 
-.fa-info-circle{
+.fa-info-circle {
   color: var(--principal);
 }
 
@@ -400,7 +403,6 @@ figure {
   margin-bottom: 3rem;
 }
 
-
 .title button {
   color: #FF5773;
   text-decoration: none;
@@ -416,7 +418,7 @@ figure {
   color: #545B6B;
 }
 
-.modales_seguimiento{
+.modales_seguimiento {
   position: relative;
   margin-bottom: 10rem;
 }
@@ -450,7 +452,7 @@ figure {
   margin-left: 5rem;
 }
 
-.img_hero img{
+.img_hero img {
   width: 100%;
   height: 70vh;
 }
@@ -491,6 +493,7 @@ figure {
   background: yellowgreen;
   color: #545B6B;
 }
+
 /**INDEX-DESCUENTOS PERSONALIZADOS*/
 
 .descuento {
@@ -506,7 +509,6 @@ figure {
 .content {
   margin: auto 5rem;
   width: 80rem;
-  
 }
 
 /*.background-img {
@@ -962,7 +964,7 @@ footer .footer-below {
 
 /**Css Servicos*/
 
-.servicios-all{
+.servicios-all {
   margin-top: 5rem;
 }
 
@@ -977,7 +979,7 @@ footer .footer-below {
   font-size: 1.5rem;
 }
 
-.texto-abajo{
+.texto-abajo {
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -1310,19 +1312,18 @@ main {
   grid-auto-flow: dense;
 }
 
-
-.contenedor_galeria-2 p{
+.contenedor_galeria-2 p {
   text-align: center;
   font-weight: 600;
   font-size: 2rem !important;
 }
 
-.contenedor_galeria-2 .featurette-divider{
+.contenedor_galeria-2 .featurette-divider {
   margin: 2rem auto !important;
 }
 
-.contenedor_galeria-2 hr{
-  border-top: 1px solid rgba(0,0,0, .3);
+.contenedor_galeria-2 hr {
+  border-top: 1px solid rgba(0, 0, 0, .3);
 }
 
 .item, .item_g {
@@ -1367,8 +1368,9 @@ main {
 
 /**Css Contactenos*/
 
-.contenido h1 {
-  font-size: 4rem !important;
+.contenido_c h1 {
+  font-size: 4rem;
+  text-align: center;
 }
 
 .backgroud {
@@ -1383,21 +1385,17 @@ main {
   align-items: center;
 }
 
-.contenido {
+.contenido_c {
   display: flex;
   flex-direction: column;
   font-size: 2.1rem;
   text-align: justify;
   line-height: 4.5rem;
   color: var(--blanco);
-  padding: 1rem 10rem 1rem 10rem;
+  padding: 3rem;
 }
 
-.contenido h1{
-  text-align: center;
-}
-
-.contenido_VIP{
+.contenido_VIP {
   display: flex;
   flex-direction: column;
   font-size: 2.1rem;
@@ -1421,7 +1419,7 @@ main {
   margin: 2rem 3rem;
 }
 
-.iconos-contacto{
+.iconos-contacto {
   margin: 1rem 40% 5rem 40%;
   width: 8rem;
   height: 13vh;
@@ -1438,16 +1436,16 @@ main {
   width: 5rem;
 }
 
-.all_contenido h2{
+.all_contenido h2 {
   text-align: center;
 }
 
-.all_contenido p{
+.all_contenido p {
   font-size: 1.5rem;
   text-align: justify;
 }
 
-.info-contacto{
+.info-contacto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1475,18 +1473,15 @@ main {
   color: #545B6B;
 }
 
-
 /* Responsive */
+
 /**480*/
+
 @media (max-width:480px) {
-
   /**INDEX*/
-
-
-  .container-all{
+  .container-all {
     margin-left: -5em !important;
   }
-
   .modales_seguimiento {
     width: 100%;
     margin: auto;
@@ -1516,44 +1511,37 @@ main {
   .formulario_btn {
     width: 100%;
   }
-  .formulario_grupo{
+  .formulario_grupo {
     margin-bottom: .2rem !important;
   }
-
-  .twentytwenty-container{
+  .twentytwenty-container {
     margin: 3rem 0 auto 7rem !important;
-  
   }
- 
-
-
-    .contenido_VIP{
-      display: flex;
-      align-items: center;
-      text-align: center;
-      font-size: 1.5rem;
-    }
-
-    .lead{
-      font-size: 1.5rem;
-    }
+  .contenido_VIP {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .lead {
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 576px){
-  .icono{
+@media (max-width: 576px) {
+  .icono {
     margin-bottom: 1rem;
   }
-
-  .tooltip_i{
+  .tooltip_i {
     position: static;
     opacity: 1;
     width: 100%;
     transform: translate(0);
   }
-  figure{
-   text-align: center;
+  figure {
+    text-align: center;
   }
-  .tooltip_i::after{
+  .tooltip_i::after {
     content: "";
     position: absolute;
     border-top: none;
@@ -1562,51 +1550,58 @@ main {
     top: -.6rem;
     left: calc(70% - .7rem);
   }
-
-  .descuento{
+  .descuento {
     margin-bottom: 8rem !important;
+  }
+
+  /**Contacto*/
+
+  .contenido_c{
+    padding: .5rem;
+    text-align:center;
+  }
+  .contenido_c h1 {
+    font-size: 3rem;
+  }
+
+  .contenido_c{
+    line-height: 4rem;
   }
 }
 
 @media (max-width: 768px) {
   /**INDEX*/
-
-  .modales_seguimiento{
+  .modales_seguimiento {
     display: flex;
     flex-direction: column;
     margin-bottom: 8rem;
   }
-
-    figcaption .tooltip_i{
+  figcaption .tooltip_i {
     font-size: 12px;
-    }
-
-   .carro{
+  }
+  .carro {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .row {
     justify-content: center;
   }
-
-   .img_hero{
+  .img_hero {
     margin-left: 0;
   }
-  .img_hero img{
+  .img_hero img {
     display: flex;
     align-items: center;
     width: 70%;
     height: 50vh;
     margin: auto;
   }
-  .twentytwenty-container{
+  .twentytwenty-container {
     width: 70%;
     margin: 0 auto;
   }
-
   /**DISPOSITIVOS MOVILES para Srobre Nosotros*/
   .logo {
     padding-left: 25px;
@@ -1653,18 +1648,15 @@ main {
     justify-content: center;
     align-items: center;
   }
-
   .header li:hover {
     border-radius: 0;
   }
-
   /**Espesialistas*/
   #Especialistas .col {
     width: 60px;
     margin: 0;
   }
   .row {
-
     margin-right: 0 !important;
   }
   .counter {
@@ -1683,7 +1675,6 @@ main {
   #Especialistas h1 {
     margin: 0;
   }
-
   /**Registro*/
   .banner .img2 {
     display: none;
@@ -1694,7 +1685,7 @@ main {
   .formulario {
     margin-bottom: 60rem !important;
     width: 80%;
-    height: 107rem !important; 
+    height: 107rem !important;
     margin: auto 5rem;
   }
   .formulario_btn {
@@ -1706,14 +1697,13 @@ main {
   .Carro button {
     display: flex;
   }
-   .formulario_grupo{
+  .formulario_grupo {
     margin: 1.5rem;
   }
   .formulario_validacion-estado {
     position: absolute;
     bottom: 1.5rem !important;
   }
-
   /**SERVICIOS*/
   .servicios .row {
     display: flex;
@@ -1736,64 +1726,60 @@ main {
   .servicios .card-body {
     text-align: justify;
   }
-
   /**CONTACTENOS*/
-
-  .backgroud{
+  .backgroud {
     flex-direction: column;
   }
-
-  .all_contenido{
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-direction: column;
-      margin: 2rem 20%;
+  .all_contenido {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto 20%;
   }
-
   .grupo_contenido {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    margin: 1rem 1rem;
+    margin: 1rem auto;
   }
-  
-  .contenido{
+  .contenido {
     margin: auto 1rem;
     text-align: center;
     line-height: 3rem;
   }
-
   .all_contenido hr {
     border: .1rem solid rgb(0, 0, 0, .3);
     height: 0;
     width: 100%;
   }
-
-  .iconos-contacto{
+  
+  .iconos-contacto {
+    text-align: center;
     margin: 1rem 35%;
-    width: 8rem;
-    height: 13vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
 
+  .grupo_contenido figure{
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 @media (max-width:1280px) {
   /**Index*/
-
   .twentytwenty-container {
     width: 80%;
     margin-left: auto;
   }
-
   .twentytwenty-container img {
-    height: 40vh; }
-
+    height: 40vh;
+  }
   /**Registro*/
   .formulario {
     height: 90rem;
@@ -1803,39 +1789,30 @@ main {
     margin-bottom: 15rem;
     padding: 1rem;
   }
-
   .formulario_nombres {
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
-
   .formulario_nombres input {
     width: 120rem;
   }
-
   .formulario_grupo-input {
     margin-bottom: .2rem;
- 
   }
-
   .formulario_validacion-estado {
     position: absolute;
     bottom: 1rem;
   }
-
-  .formulario_grupo{
+  .formulario_grupo {
     margin-bottom: 1.5rem;
   }
-
-  .formulario_grupo p{
+  .formulario_grupo p {
     margin-left: .5rem;
   }
-
-  .formulario_btn{
+  .formulario_btn {
     width: 70%;
   }
-
   /**Sobre Nosotros*/
   .contenedor_galeria-2 {
     gap: 10rem;
@@ -1860,24 +1837,22 @@ main {
   }
 }
 
-
-@media (min-width: 1281px){
-  .formulario_nombres input{
+@media (min-width: 1281px) {
+  .formulario_nombres input {
     width: 45rem;
   }
 }
 
-@media (min-width: 1400px){
-  .formulario_nombres input{
+@media (min-width: 1400px) {
+  .formulario_nombres input {
     width: 48rem;
   }
 }
 
-@media (min-width: 1600px){
-  .formulario_nombres input{
+@media (min-width: 1600px) {
+  .formulario_nombres input {
     width: 49rem;
   }
-
   .formulario {
     margin: 2rem 30rem;
   }
@@ -1898,7 +1873,6 @@ main {
     justify-content: center;
   }
 }
-
 
 /**COMENTARIOS
 @media(max-width: 480px){
