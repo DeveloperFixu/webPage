@@ -1552,46 +1552,20 @@ main {
   .lead {
     font-size: 1.5rem;
   }
+
 }
 
 @media (max-width: 576px) {
-  .icono {
-    position: absolute;
-    right: 7.5rem;
-    bottom: -3rem;
-    margin-bottom: 1rem;
-  }
-  .icono_2 {
-    position: absolute;
-    right: 8.5rem;
-    bottom: -3rem;
-    margin-bottom: 1rem;
-  }
-  .icono_3 {
-    position: absolute;
-    right: 14.5rem;
-    bottom: -3rem;
-    margin-bottom: 1rem;
-  }
-  .icono_4 {
-    position: absolute;
-    right: 21rem;
-    bottom: -3rem;
-    margin-bottom: 1rem;
-  }
-  .icono_5 {
-    position: absolute;
-    right: 21rem;
-    bottom: -3rem;
-    margin-bottom: 1rem;
-  }
+ 
   .tooltip_i {
     position: static;
     opacity: 1;
-    margin-top: 3rem;
     width: 100%;
     transform: translate(0);
   }
+    .tooltip_i::after{
+      border-bottom: .7rem solid transparent !important;
+    }
   figure {
     text-align: center;
   }
