@@ -72,6 +72,172 @@ icono.addEventListener('mouseleave', () => {
 icono.addEventListener('mouseleave', () => tooltip.classList.remove('activo'));
 });
 
+/**Esta funcion permite generar los globos sobre los iconos de index ¿Cómo Funciona? */
+$(function(){
+  
+  //crearemos una variable y accedemos a la ID de los iconos  y de tooltop_i con "document.querySelectro()"
+  const icono = document.getElementById('icono_2'); //querrySelector
+  const tooltip = document.getElementById('tooltip_i-2');
+  
+  //calcular la posicion del tootip en mobil
+  
+  const calcularPosicionTooltip = () => {
+  
+    //calculamos las coordenasdas de icono
+    const x = icono.offsetLeft;
+    const y = icono.offsetTop;
+    //calculamos el tamaño del tooltip
+    const anchoTooltip = tooltip.clientWidth;
+    const altoTooltip = tooltip.clientHeight;
+    //Calculamos donde posicionaremos el tooltip
+    const izquierda = x - (anchoTooltip / 2) + 15;//utilizamos el "/ 2" de (anchoTooltip / 2) para ubicarlo a la mitad del icono
+    const arriba = y - altoTooltip - 10;
+     // modificar nuestro tooltop y posicionarlo deacuerdo a las coordenadas
+    tooltip.style.left = `${izquierda}px`; //nos permite ubicarlo donde este la ID icono, `${x}px` indica que se pocisionara justo al lado derecho donde se encuentre el ID icono
+    tooltip.style.top = `${arriba}px`;
+  };
+  //Cuando la pagina cargue ejecute una función de tipo flecha
+  window.addEventListener('load', () => calcularPosicionTooltip());
+  window.addEventListener('resive', () => calcularPosicionTooltip());
+  //la funcion nos permite mostrar el tooltip al pasar el cursor, al igual nos permite recalcular la posición del tooltip
+  icono.addEventListener('mouseenter', () => {
+      tooltip.classList.add('activo');
+      calcularPosicionTooltip();
+  });
+  
+  icono.addEventListener('mouseleave', () => {
+      tooltip.classList.remove('activo');
+  });
+  
+  //esta función nos permite ocultar el tooltip una vez el cursor este fuera
+  icono.addEventListener('mouseleave', () => tooltip.classList.remove('activo'));
+  });
+
+/**Esta funcion permite generar los globos sobre los iconos de index ¿Cómo Funciona? */
+$(function(){
+  
+  //crearemos una variable y accedemos a la ID de los iconos  y de tooltop_i con "document.querySelectro()"
+  const icono = document.getElementById('icono_3'); //querrySelector
+  const tooltip = document.getElementById('tooltip_i-3');
+  
+  //calcular la posicion del tootip en mobil
+  
+  const calcularPosicionTooltip = () => {
+  
+    //calculamos las coordenasdas de icono
+    const x = icono.offsetLeft;
+    const y = icono.offsetTop;
+    //calculamos el tamaño del tooltip
+    const anchoTooltip = tooltip.clientWidth;
+    const altoTooltip = tooltip.clientHeight;
+    //Calculamos donde posicionaremos el tooltip
+    const izquierda = x - (anchoTooltip / 2) + 15;//utilizamos el "/ 2" de (anchoTooltip / 2) para ubicarlo a la mitad del icono
+    const arriba = y - altoTooltip - 10;
+     // modificar nuestro tooltop y posicionarlo deacuerdo a las coordenadas
+    tooltip.style.left = `${izquierda}px`; //nos permite ubicarlo donde este la ID icono, `${x}px` indica que se pocisionara justo al lado derecho donde se encuentre el ID icono
+    tooltip.style.top = `${arriba}px`;
+  };
+  //Cuando la pagina cargue ejecute una función de tipo flecha
+  window.addEventListener('load', () => calcularPosicionTooltip());
+  window.addEventListener('resive', () => calcularPosicionTooltip());
+  //la funcion nos permite mostrar el tooltip al pasar el cursor, al igual nos permite recalcular la posición del tooltip
+  icono.addEventListener('mouseenter', () => {
+      tooltip.classList.add('activo');
+      calcularPosicionTooltip();
+  });
+  
+  icono.addEventListener('mouseleave', () => {
+      tooltip.classList.remove('activo');
+  });
+  
+  //esta función nos permite ocultar el tooltip una vez el cursor este fuera
+  icono.addEventListener('mouseleave', () => tooltip.classList.remove('activo'));
+  });
+  
+  /**Esta funcion permite generar los globos sobre los iconos de index ¿Cómo Funciona? */
+  $(function(){
+    
+    //crearemos una variable y accedemos a la ID de los iconos  y de tooltop_i con "document.querySelectro()"
+    const icono = document.getElementById('icono_4'); //querrySelector
+    const tooltip = document.getElementById('tooltip_i-4');
+    
+    //calcular la posicion del tootip en mobil
+    
+    const calcularPosicionTooltip = () => {
+    
+      //calculamos las coordenasdas de icono
+      const x = icono.offsetLeft;
+      const y = icono.offsetTop;
+      //calculamos el tamaño del tooltip
+      const anchoTooltip = tooltip.clientWidth;
+      const altoTooltip = tooltip.clientHeight;
+      //Calculamos donde posicionaremos el tooltip
+      const izquierda = x - (anchoTooltip / 2) + 15;//utilizamos el "/ 2" de (anchoTooltip / 2) para ubicarlo a la mitad del icono
+      const arriba = y - altoTooltip - 10;
+       // modificar nuestro tooltop y posicionarlo deacuerdo a las coordenadas
+      tooltip.style.left = `${izquierda}px`; //nos permite ubicarlo donde este la ID icono, `${x}px` indica que se pocisionara justo al lado derecho donde se encuentre el ID icono
+      tooltip.style.top = `${arriba}px`;
+    };
+    //Cuando la pagina cargue ejecute una función de tipo flecha
+    window.addEventListener('load', () => calcularPosicionTooltip());
+    window.addEventListener('resive', () => calcularPosicionTooltip());
+    //la funcion nos permite mostrar el tooltip al pasar el cursor, al igual nos permite recalcular la posición del tooltip
+    icono.addEventListener('mouseenter', () => {
+        tooltip.classList.add('activo');
+        calcularPosicionTooltip();
+    });
+    
+    icono.addEventListener('mouseleave', () => {
+        tooltip.classList.remove('activo');
+    });
+    
+    //esta función nos permite ocultar el tooltip una vez el cursor este fuera
+    icono.addEventListener('mouseleave', () => tooltip.classList.remove('activo'));
+    });
+
+      /**Esta funcion permite generar los globos sobre los iconos de index ¿Cómo Funciona? */
+  $(function(){
+    
+    //crearemos una variable y accedemos a la ID de los iconos  y de tooltop_i con "document.querySelectro()"
+    const icono = document.getElementById('icono_5'); //querrySelector
+    const tooltip = document.getElementById('tooltip_i-5');
+    
+    //calcular la posicion del tootip en mobil
+    
+    const calcularPosicionTooltip = () => {
+    
+      //calculamos las coordenasdas de icono
+      const x = icono.offsetLeft;
+      const y = icono.offsetTop;
+      //calculamos el tamaño del tooltip
+      const anchoTooltip = tooltip.clientWidth;
+      const altoTooltip = tooltip.clientHeight;
+      //Calculamos donde posicionaremos el tooltip
+      const izquierda = x - (anchoTooltip / 2) + 15;//utilizamos el "/ 2" de (anchoTooltip / 2) para ubicarlo a la mitad del icono
+      const arriba = y - altoTooltip - 10;
+       // modificar nuestro tooltop y posicionarlo deacuerdo a las coordenadas
+      tooltip.style.left = `${izquierda}px`; //nos permite ubicarlo donde este la ID icono, `${x}px` indica que se pocisionara justo al lado derecho donde se encuentre el ID icono
+      tooltip.style.top = `${arriba}px`;
+    };
+    //Cuando la pagina cargue ejecute una función de tipo flecha
+    window.addEventListener('load', () => calcularPosicionTooltip());
+    window.addEventListener('resive', () => calcularPosicionTooltip());
+    //la funcion nos permite mostrar el tooltip al pasar el cursor, al igual nos permite recalcular la posición del tooltip
+    icono.addEventListener('mouseenter', () => {
+        tooltip.classList.add('activo');
+        calcularPosicionTooltip();
+    });
+    
+    icono.addEventListener('mouseleave', () => {
+        tooltip.classList.remove('activo');
+    });
+    
+    //esta función nos permite ocultar el tooltip una vez el cursor este fuera
+    icono.addEventListener('mouseleave', () => tooltip.classList.remove('activo'));
+    });
+
+
+
 /**Nos permite ejecutar el TwentyTwenty vertical */
 $(function(){
   $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
