@@ -905,6 +905,12 @@ footer .footer-below {
   height: 50vh;
 }
 
+
+.tarjeta_i .icono_cliente-scania{
+  height: 30vh;
+}
+
+
 .card_i{
     height: 50vh;
     border: 1px solid transparent !important;
@@ -1550,11 +1556,39 @@ main {
 
 @media (max-width: 576px) {
   .icono {
+    position: absolute;
+    right: 7.5rem;
+    bottom: -3rem;
+    margin-bottom: 1rem;
+  }
+  .icono_2 {
+    position: absolute;
+    right: 8.5rem;
+    bottom: -3rem;
+    margin-bottom: 1rem;
+  }
+  .icono_3 {
+    position: absolute;
+    right: 14.5rem;
+    bottom: -3rem;
+    margin-bottom: 1rem;
+  }
+  .icono_4 {
+    position: absolute;
+    right: 21rem;
+    bottom: -3rem;
+    margin-bottom: 1rem;
+  }
+  .icono_5 {
+    position: absolute;
+    right: 21rem;
+    bottom: -3rem;
     margin-bottom: 1rem;
   }
   .tooltip_i {
     position: static;
     opacity: 1;
+    margin-top: 3rem;
     width: 100%;
     transform: translate(0);
   }
@@ -1568,7 +1602,7 @@ main {
     border-bottom: .7rem solid var(--principal);
     bottom: auto;
     top: -.6rem;
-    left: calc(70% - .7rem);
+    left: calc(50% - .7rem);
   }
   .descuento {
     margin-bottom: 8rem !important;
