@@ -1552,6 +1552,10 @@ main {
   .lead {
     font-size: 1.5rem;
   }
+  /**REGISTRO*/
+  .formulario_nombres input {
+    width: 100% !important;
+  }
 
 }
 
