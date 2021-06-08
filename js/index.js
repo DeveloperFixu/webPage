@@ -309,7 +309,7 @@ $(function(){
 
 // Comentarios
 
-$(function(){
+
   /** Esta funcion se llama cuando la persona hace click en la fecha derecha del carousel para navegar a la derecha */
   function clickRight() {
     const currentLeft = parseInt(
@@ -387,7 +387,7 @@ $(function(){
       updateCount();
     });
   }
-});
+
 
 /**Validación para formulario registro**/
 
