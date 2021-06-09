@@ -1551,12 +1551,12 @@ main {
   }
   .lead_reparaciones {
     margin-left: 10rem !important;
+    text-align: start !important;
   }
-  .title_centrado h1 {
-    text-align: center;
-    display: flex;
+  .descuento .title{
     margin-left: 10rem !important;
   }
+ 
   /**REGISTRO*/
   .formulario_nombres input {
     width: 100% !important;
