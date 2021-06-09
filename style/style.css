@@ -1399,7 +1399,7 @@ main {
 }
 
 .backgroud {
-  background-image: url(/webPage/assets/img/IMG_1176.jpg);
+  background-image: url("/assets/img/IMG_1176.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
