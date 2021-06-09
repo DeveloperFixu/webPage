@@ -1609,8 +1609,8 @@ main {
   /**Contacto*/
   .contenido_c {
     padding: .5rem;
-    text-align: center;
-    line-height: 4rem;
+    line-height: 3rem;
+    width: 90%;
   }
   .contenido_c h1 {
     font-size: 3rem;
