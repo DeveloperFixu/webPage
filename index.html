@@ -22,9 +22,11 @@
   <!-- header -->
   <header class="header animated" id="inicio">
     <nav class="menu">
+      <!--Inicia el menu de vanegación -->
       <figure class="logo">
         <img src="./assets/img/Logo.png" alt="logo de la navegación" height="60rem">
       </figure>
+      <!--se usa una lista para manejar el menú-->
       <ul class="enlaces-menu">
         <li><a href="">Inicio</a></li>
         <li><a href="./servicios.html">Servicios</a></li>
@@ -34,6 +36,7 @@
         <a class="boton" type="submit">Ingresar</a>
       </ul>
       <button class="ham" type="button">
+        <!-- los span estan ocualtos y se activan en modo movil, estos son lineas usando 3 para formar un menu desplegable-->
         <span class="br-1"></span>
         <span class="br-2"></span>
         <span class="br-3"></span>
@@ -41,18 +44,22 @@
     </nav>
   </header>
 
-  <!-- hero -->
+  <!-- hero, seccion creada para almacenar 3 imagenes y poder tener una transicion entre ellas -->
   <section id="gallery" class="animated fadeIn">
+    <!--a este div se le agrega un Id"altura" para indicarle a la funcion del header
+      -que pueda activardes una ves el escrol llegue a esta parte-->
     <div id="altura">
       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
           <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+          <!--Se le agrega la clase "active" para indicar a la función que apartir de acá inicie agregando la clase a los otros y se pueda visualizar la transicion-->
           <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
           <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
         </ol>
+        <!--dentro de este bloque se llaman las imagenes-->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/img/carrousel 1.jpg" class="d-block w-100 oscureser-img" alt="...">
+            <img src="./assets/img/carrousel 1.jpg" class="d-block w-100 oscureser-img" alt="carrousel">
             <div class="carousel-caption d-none d-md-block">
               <figure class="logo">
                 <img src="./assets/img/icono_carrusel_de_imágenes.png" alt="logo de la navegación" height="120px">
@@ -82,6 +89,7 @@
             </div>
           </div>
         </div>
+        <!--se crean con un enlace apoyado de un span para darle forma a una flecha y poder dar clic ya sea para regresar o siguiente-->
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <!--<span class="visually-hidden">Previous</span>-->
@@ -93,18 +101,21 @@
       </div>
     </div>
   </section>
+
+  <!--Creamos lineas horizontales-->
   <hr class="featurette-divider">
 
-  <!-- Flujo -->
+  <!-- Flujo, Sección para crear 5 iconos y sobre ellos unos tooltips "borbujas con mensajes" que al pasar el cursor
+    - se muestren-->
   <section id="seguimiento">
     <div class="container marketing">
+      <!--Usamos un bloque para ubicar un titulo-->
       <div class="titulo">
         <h1>¿Como Funciona?</h1>
       </div>
 
-      <!-- Three columns of text below the carousel -->
+      <!-- desde esta parte añadimos los bloques necesarios para así dentro de ellos poner los iconos y tooltips -->
       <div class="modales_seguimiento row justify-content-center">
-
         <div class="col-lg-2 col-auto carro">
           <figure>
             <img class=" bd-placeholder-img rounded-circle carro-img-1" width="100" height="100"
@@ -188,9 +199,11 @@
       </div><!-- /.row -->
     </div>
   </section>
+
+  <!--Creamos lineas horizontales-->
   <hr class="featurette-divider">
 
-  <!--SERVICIO VIP-->
+  <!--SERVICIO VIP, Sección creada para poner una imagen y al lado información y cada cosa en bloques en este caso 2 bloques -->
   <section class="hero">
     <div class="row justify-content-center align-items-center">
       <div class="img_hero col-md col-auto">
@@ -217,12 +230,18 @@
     </div>
   </section>
 
-  <!--parte 4 - ¡Reparaciones inmediatas! -->
+  <!--parte 4 - Sección creada para mostrar en dos bloques información, en una texto y otra una imagen,
+    -en este caso en la imagen se planea poner en un bloque una dos imagenes con un transición (antes y despues) al dar clic y sostenerlo -->
   <section class="descuento">
-    <!-- START THE FEATURETTES -->
+
+    <!--Creamos lineas horizontales-->
     <hr class="featurette-divider">
+    <!--Dentro de este contenedor estan los bloques de texto y imagen-->
     <div class="container-all row featurette justify-content-center align-items-center">
+      <!--Primer bloque-->
+      <!--Bloque con contenito texto-->
       <div class="contenido_hero col-md col-auto">
+        <!--bloque para el Titulo-->
         <div class="title">
           <h1>¡Reparaciones inmediatas!</h1>
         </div>
@@ -246,12 +265,15 @@
           </ul>
         </div>
       </div>
+      <!--Segundo bloque-->
+      <!--Bloque con imagenes_antes y despues-->
       <div class="col-md content ">
         <div class="twentytwenty-container">
-          <img src="./assets/img/3.jpeg" alt="imagen pruebas">
-          <img src="./assets/img/4.jpeg" alt="imagens pruebas">
+          <img src="./assets/img/3.jpeg" alt="imagen_antes">
+          <img src="./assets/img/4.jpeg" alt="imagens_despues">
         </div>
-        <!-- <input type="range" min="1" max="100" value="50" class="slider" name="slider" id="slider">
+        <!-- Se comenta forma de hacer un antes y despues sin librerias
+        <input type="range" min="1" max="100" value="50" class="slider" name="slider" id="slider">
         <div class="img background-img"></div>
         <div class="img foreground-img"></div>
         <div class='slider-button'></div>-->
