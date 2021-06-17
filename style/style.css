@@ -749,7 +749,7 @@ figure {
 }
 
 .main {
-  background-color: #00BB2D;
+  background-color: var(--principal);
   box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.35);
   cursor: pointer;
   z-index: 50;
