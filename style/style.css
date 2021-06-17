@@ -181,8 +181,8 @@ figure {
 }
 
 .header .boton:hover {
-  background: yellowgreen;
-  color: #545B6B;
+  background: #6D7484;
+  color: var(--blanco);
 }
 
 .header a {
@@ -271,8 +271,8 @@ figure {
 }
 
 .carousel .boton:hover {
-  background: yellowgreen;
-  color: #545B6B;
+  background: #6D7484;
+  color: var(--blanco);
 }
 
 .oscureser-img {
@@ -482,8 +482,8 @@ figure {
 }
 
 .hero .boton:hover {
-  background: yellowgreen;
-  color: #545B6B;
+  background: #6D7484;
+  color: var(--blanco);
 }
 
 /**INDEX-DESCUENTOS PERSONALIZADOS*/
@@ -1285,6 +1285,10 @@ main {
 
 .formulario_grupo-incorrecto .formulario_input {
   border: .3rem solid #bb2929;
+}
+
+#correo-enviado{
+  opacity: 0;
 }
 
 /*Css Sobre Nosotros*/

@@ -51,14 +51,14 @@
                 <h2>¡Salúdanos!</h2>
                 <h2>Mantente en Contacto</h2>
             </div>
-            <form action="enviar.php"  method="POST" class="formulario" id="formulario">
+            <form action="https://formspree.io/f/xknkbpoq" method="POST" class="formulario" id="formulario" name="formulario">
                 <div class="formulario_nombres">
                     <!--1° Primer campo de formulario NOMBRES-->
                     <div class="formulario_grupo" id="grupo_nombre">
-                        <!-- <label for="nombre" class="formulario_label">Tu Nombre y apellido</label> -->
+                        <!-- <label for="nombre" class="formulario_label">Nombre y apellido</label> -->
                         <div class="formulario_grupo-input">
                             <input type="text" class="formulario_input" name="nombre"
-                                placeholder="Tu Nombre y apellido" required>
+                                placeholder="Nombre y apellido" required>
                             <i class="formulario_validacion-estado fas fa-times"></i>
                         </div>
                         <p class="formulario_input-error">El nombre y apellidos debe contener solo letras</p>
@@ -172,10 +172,11 @@
                 <!--Boton de enviar-->
                 <div class="formulario_grupo formulario_grupo-btn-enviar">
                     <button type="submit" class="formulario_btn">Enviar Datos</button>
-                    <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formilario Enviado Correctamente
+                    <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario Enviado Correctamente
                     </p>
                 </div>
             </form>
+            <a href="mailto:dalopezm11@gmail.com" id="correo-enviado">Correo</a>
             <!-- Scrollable modal -->
             <div class="modal-dialog modal-dialog-scrollable">
                 <!-- Modal -->
@@ -522,9 +523,9 @@
     </footer>
 
     <!-- Scripts -->
+    
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0"
         nonce="0fMkFIpr"></script>
-
     <script src="https://use.fontawesome.com/12a99b6783.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
