@@ -1508,6 +1508,11 @@ main {
   color: #545B6B;
 }
 
+.fa-whatsapp{
+  position: relative;
+  bottom: .2rem;
+}
+
 /* Responsive */
 
 @media (min-width: 200px) {
