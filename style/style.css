@@ -17,9 +17,11 @@ html {
   box-sizing: inherit;
   margin: 0;
 }
-a, h1, h2, h5, p{
-font-family: 'Questrial', sans-serif;
+
+a, h1, h2, h5, p {
+  font-family: 'Questrial', sans-serif;
 }
+
 body {
   margin: 0;
   font-family: 'Questrial', sans-serif;
@@ -1289,7 +1291,7 @@ main {
   border: .3rem solid #bb2929;
 }
 
-#correo-enviado{
+#correo-enviado {
   opacity: 0;
 }
 
@@ -1451,7 +1453,7 @@ main {
   text-align: center;
 }
 
-.grupo_contenido figure{
+.grupo_contenido figure {
   text-align: -webkit-center;
 }
 
@@ -1508,7 +1510,7 @@ main {
   color: #545B6B;
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
   position: relative;
   bottom: .2rem;
 }
@@ -1617,23 +1619,18 @@ main {
   .descuento {
     margin-bottom: 8rem !important;
   }
-
-/**comentarios-indez*/
-
-  #Comentarios{
+  /**comentarios-indez*/
+  #Comentarios {
     display: none;
   }
-
-  .fv-1, .fv-2{
+  .fv-1, .fv-2 {
     display: none;
   }
-
   /**servicio vip*/
-  .img_hero img{
+  .img_hero img {
     width: 60% !important;
     height: 30vh !important;
   }
-
   /**Contacto*/
   .contenido_c {
     padding: .5rem;
@@ -1886,7 +1883,6 @@ main {
   .formulario_nombres input {
     width: 120rem;
   }
-
   .formulario_grupo-input {
     margin-bottom: .2rem;
   }
@@ -1935,7 +1931,7 @@ main {
   }
 }
 
-@media (min-width: 1500px){
+@media (min-width: 1500px) {
   .formulario_nombres input {
     width: 52rem;
   }
@@ -1957,7 +1953,6 @@ main {
     border: none;
     /*border-radius: 50%;*/
   }
-
   .banner h1 {
     position: absolute;
     top: 38%;
@@ -1971,7 +1966,7 @@ main {
   }
 }
 
-@media (min-width: 1800px){
+@media (min-width: 1800px) {
   .formulario_nombres input {
     width: 57rem;
   }
@@ -1984,7 +1979,6 @@ main {
   .formulario_nombres input {
     width: 60rem;
   }
-
   .banner h1 {
     position: absolute;
     top: 40%;
