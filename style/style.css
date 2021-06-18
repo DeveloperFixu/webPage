@@ -1617,6 +1617,23 @@ main {
   .descuento {
     margin-bottom: 8rem !important;
   }
+
+/**comentarios-indez*/
+
+  #Comentarios{
+    display: none;
+  }
+
+  .fv-1, .fv-2{
+    display: none;
+  }
+
+  /**servicio vip*/
+  .img_hero img{
+    width: 60% !important;
+    height: 30vh !important;
+  }
+
   /**Contacto*/
   .contenido_c {
     padding: .5rem;
