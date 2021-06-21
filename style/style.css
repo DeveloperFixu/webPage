@@ -86,7 +86,11 @@ figure {
   align-items: center;
   justify-content: space-around;
   min-height: 11vh;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 15%, rgba(255, 87, 115, 1) 44%, rgba(232, 59, 59, 1) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 8%, rgba(255, 87, 115, 1) 44%, rgba(232, 59, 59, 1) 100%);
+}
+
+.header a{
+ margin: auto .5rem;
 }
 
 .menu, .ham {
@@ -187,10 +191,6 @@ figure {
 .header .boton:hover {
   background: #6D7484;
   color: var(--blanco);
-}
-
-.header a {
-  margin: auto;
 }
 
 .header ul {
@@ -868,6 +868,7 @@ figure {
 
 footer {
   color: var(--opcional);
+  font-size: 1.4rem;
 }
 
 footer h3 {
@@ -880,9 +881,6 @@ footer .footer-above {
   background-color: var(--background);
 }
 
-footer .footer-col {
-  margin-bottom: 1rem;
-}
 
 footer .footer-below {
   padding: 2.5rem 0;
@@ -1008,7 +1006,7 @@ footer .footer-below {
 }
 
 .texto-abajo {
-  font-size: 1.5rem;
+  font-size: 1.9rem !important;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -1514,6 +1512,7 @@ main {
   position: relative;
   bottom: .2rem;
 }
+
 
 /* Responsive */
 
